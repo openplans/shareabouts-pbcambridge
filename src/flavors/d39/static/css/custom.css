@@ -1,0 +1,403 @@
+/*
+ * This CSS file follows the default Shareabouts style.css.
+ * All rules herein will override the default Shareabouts styles.
+ * NOTE: "With great power comes great responsibility."
+ */
+
+ /* =Base Typography
+ -------------------------------------------------------------- */
+
+ body { font:13px/1.231 sans-serif; *font-size:small; }
+ select, input, textarea, button { font:99% sans-serif; }
+ pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+ /* =The Site Header
+ -------------------------------------------------------------- */
+
+ #site-header {
+   color: #000;
+   background-color: #fff;
+ }
+ #site-title {
+   font-family: "Helvetica Neue", Arial, Helvetica, serif;
+   font-weight: bold;
+   text-shadow: none;
+   float: left;
+   margin: 0 0.5em 0 0;
+   padding: 0.5em 0;
+   height: 100%;
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+ }
+ 
+ #site-title a:link,
+ #site-title a:visited {
+   font-size: .5em;
+   display: block;
+   height: 100%;
+   padding-left: 5.25em;
+   position: relative;
+   color: #000;
+ }
+ #site-title a:hover {
+   color: #000;
+ }
+ #site-logo {
+   height: 4.5em;
+   width: 4.5em;
+   float: left;
+   position: absolute;
+   top: -0.25em;
+   left: 0.25em;
+ }
+ #site-tagline {
+   display: none;
+ }
+
+  #site-header a, #site-header button { white-space: nowrap; }
+  #site-header a, #site-header a:active, #site-header a:visited,
+  #site-header button, #site-header button:active, #site-header button:visited { color: #a3c7d9; }
+  #site-header a:hover, #site-header button:hover { color: #fff; }
+
+
+
+ /* =Navigation Menu
+ -------------------------------------------------------------- */
+
+ .access {
+   border: 1em solid #fff;
+   border-top: 0.5em solid #fff;
+   background: #eee;
+   box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
+ }
+
+ .access li {
+   border-bottom: 2px solid #fff;
+ }
+ .access a:visited, 
+ .access a:active, 
+ .access a:link {
+   color: #000 !important;
+ }
+ .access a:hover {
+   background: #000;
+   color: #fff !important;
+ }
+
+ #nav-bttn {
+   float: right;
+   width: 1.25em;
+   font-size: 2em;
+   line-height: 1;
+   background: #444;
+   text-decoration: none;
+   text-align: center;
+   padding: 0.125em 0;
+   margin: 0.4em;
+   position: absolute;
+   left: 0;
+ }
+
+ /* =The Big Button to Add A New Point
+ -------------------------------------------------------------- */
+
+ a.add-place {
+   background-color: #000;
+   color: #eee;
+   text-shadow: none;
+ }
+ a.add-place:hover {
+   color: #fff;
+ }
+
+/* =Forms
+-------------------------------------------------------------- */
+
+label {
+/*  color: #806080;*/
+}
+
+input[type=text],
+textarea {
+/*  border: 1px solid #000; */
+}
+
+.required {
+/*  color: red;*/
+}
+
+.bttn {
+/*  color: #eee;*/
+/*  background-color: #ff40ff;*/
+/*  text-shadow: none;*/
+}
+
+.bttn:hover {
+/*  color: #fff;*/
+/*  background-color: #e500e5;*/
+}
+
+.fileinput-container {
+  background-color: #00aaff;
+  color: #f0f0f0;
+  padding: 0.75em 1em;
+  border: 0;
+  margin: 0 0 0.667em;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  text-shadow: 1px -1px 0 #06A;
+     -moz-box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
+  -webkit-box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
+          box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
+}
+.fileinput-container.disabled {
+  background-color: #e0e0e0;
+  color: #f0f0f0;
+  text-shadow: 1px -1px 0 #999;
+     -moz-box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
+  -webkit-box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
+          box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
+}
+
+a.reply-link {
+/*  color: #eee;*/
+/*  background: #000;*/
+}
+
+a.reply-link:hover {
+  color: #fff;
+}
+
+
+/* =The Ticker
+-------------------------------------------------------------- */
+
+#ticker {
+  background-color: #fff;
+}
+ul.recent-points {
+  color: #000;
+}
+.recent-points li {
+  border-bottom: 1px solid #ddd;
+}
+.recent-points li:hover {
+  background: #eee;
+}
+.recent-points a {
+  color: #000;
+}
+.recent-points li:hover a,
+.recent-points a:hover {
+  color: #000;
+}
+
+
+/* =Legend & Guidelines Chart
+-------------------------------------------------------------- */
+
+.legend {
+  background-color: #eee;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  margin-left: 0 !important;
+  font-weight: bold;
+}
+.legend li {
+  padding: 8px 0 2px 0 !important;
+}
+.legend img {
+  float: left;
+  position: relative;
+  z-index: 2;
+  margin-top: -8px;
+}
+.legend img + img {
+  margin-right: -21px;
+  right: 31px;
+  z-index: 1;
+  opacity: 0.25;
+}
+.color-info {
+  font-size: 0.85em;
+  background: #ddd;
+  color: #666;
+  margin: 0 0 -6px !important;
+  padding: 6px 4px 8px 0 !important;
+}
+.color-info img {
+  margin-top: -12px;
+}
+
+.guidelines-header {
+  clear: both;
+  padding-top: 0.75em;
+  border-top: 1px solid #ddd;
+}
+.guidelines-header img {
+  float: right;
+  position: relative;
+  z-index: 2;
+}
+.guidelines-header img + img {
+  margin-right: -31px;
+  z-index: 1;
+  opacity: 0.25;
+}
+.eligibility-header {
+  text-transform: uppercase;
+  color: #777;
+}
+.eligible {
+  float: left;
+  width: 48%;
+}
+.non-eligible {
+  float: right;
+  width: 48%;
+}
+.muted {
+  font-size: 0.85em;
+  font-weight: normal;
+}
+
+/* =Place Details
+-------------------------------------------------------------- */
+
+.place-items {
+  padding-bottom: 1.5em;
+}
+.place-items p {
+  margin-bottom: 0.5em !important;
+}
+.description {
+  font-size: 1.5em;
+}
+.approved-location-type {
+  background-color: #ffee80;
+  float: left;
+  padding: 0.5em 1em 0.5em 36px;
+  position: relative;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+.approved-location-type + h1 {
+  clear: left;
+}
+.approved-location-icon {
+  float: left;
+  width: 31px;
+  height: 32px;
+  position: absolute;
+  top: -6px;
+  left: 2px;
+  z-index: 2;
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.approved-location-shadow {
+  content: '';
+  float: left;
+  width: 31px;
+  height: 32px;
+  background: transparent url(images/markers/shadow-square.png) 0 0 no-repeat scroll;
+  position: absolute;
+  top: -6px;
+  left: 2px;
+  z-index: 1;
+  opacity: 0.25;
+}
+.culture-approved .approved-location-icon {
+  background-image: url(images/markers/communitycenter-gold.png); 
+}
+.education-approved .approved-location-icon {
+  background-image: url(images/markers/books-gold.png); 
+}
+.environment-approved .approved-location-icon {
+  background-image: url(images/markers/tree-gold.png); 
+}
+.housing-approved .approved-location-icon {
+  background-image: url(images/markers/building-gold.png); 
+}
+.parks-approved .approved-location-icon {
+  background-image: url(images/markers/swings-gold.png); 
+}
+.health-approved .approved-location-icon {
+  background-image: url(images/markers/cross-gold.png); 
+}
+.safety-approved .approved-location-icon {
+  background-image: url(images/markers/badge-gold.png); 
+}
+.seniors-approved .approved-location-icon {
+  background-image: url(images/markers/seniors-gold.png); 
+}
+.streets-approved .approved-location-icon {
+  background-image: url(images/markers/cone-gold.png); 
+}
+.transit-approved .approved-location-icon {
+  background-image: url(images/markers/bus-gold.png); 
+}
+.youth-approved .approved-location-icon {
+  background-image: url(images/markers/balloons-gold.png); 
+}
+
+/* =Media Queries
+-------------------------------------------------------------- */
+
+@media only screen and (min-width: 480px) { /* menu is visible */
+  #site-tagline {
+    display: block;
+    font-size: 1.5em;
+    width: 10em;
+    white-space: normal;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (min-width: 768px) { /* menu is visible */
+  .access {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .access li {
+    border-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) { /* ticker is visible */
+  #site-title a:link,
+  #site-title a:visited {
+    padding-left: 6em;
+  }
+  #site-logo {
+    height: 5em;
+    width: 5em;
+    top: 0;
+    left: 0;
+  }
+  #site-tagline {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #site-title a:link,
+  #site-title a:visited {
+    padding-left: 7em;
+  }
+  #site-logo {
+    height: 6em;
+    width: 6em;
+    top: 0;
+    left: 0;
+  }
+  #site-tagline {
+    font-size: 2.5em;
+  }
+}
