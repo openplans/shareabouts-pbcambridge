@@ -1,173 +1,85 @@
-/*
- * This CSS file follows the default Shareabouts style.css.
- * All rules herein will override the default Shareabouts styles.
- * NOTE: "With great power comes great responsibility."
- */
 
- /* =Base Typography
- -------------------------------------------------------------- */
-
- body { font:13px/1.231 sans-serif; *font-size:small; }
- select, input, textarea, button { font:99% sans-serif; }
- pre, code, kbd, samp { font-family: monospace, sans-serif; }
-
- /* =The Site Header
- -------------------------------------------------------------- */
-
- #site-header {
-   color: #000;
-   background-color: #fff;
- }
- #site-title {
-   font-family: "Helvetica Neue", Arial, Helvetica, serif;
-   font-weight: bold;
-   text-shadow: none;
-   float: left;
-   margin: 0 0.5em 0 0;
-   padding: 0.5em 0;
-   height: 100%;
-   box-sizing: border-box;
-   -moz-box-sizing: border-box;
- }
- 
- #site-title a:link,
- #site-title a:visited {
-   font-size: .5em;
-   display: block;
-   height: 100%;
-   padding-left: 5.25em;
-   position: relative;
-   color: #000;
- }
- #site-title a:hover {
-   color: #000;
- }
- #site-logo {
-   height: 4.5em;
-   width: 4.5em;
-   float: left;
-   position: absolute;
-   top: -0.25em;
-   left: 0.25em;
- }
- #site-tagline {
-   display: none;
- }
-
-  #site-header a, #site-header button { white-space: nowrap; }
-  #site-header a, #site-header a:active, #site-header a:visited,
-  #site-header button, #site-header button:active, #site-header button:visited { color: #a3c7d9; }
-  #site-header a:hover, #site-header button:hover { color: #fff; }
-
-
-
- /* =Navigation Menu
- -------------------------------------------------------------- */
-
- .access {
-   border: 1em solid #fff;
-   border-top: 0.5em solid #fff;
-   background: #eee;
-   box-shadow: 0 4px 0 rgba(85, 85, 85, 0.5);
- }
-
- .access li {
-   border-bottom: 2px solid #fff;
- }
- .access a:visited, 
- .access a:active, 
- .access a:link {
-   color: #000 !important;
- }
- .access a:hover {
-   background: #000;
-   color: #fff !important;
- }
-
- #nav-bttn {
-   float: right;
-   width: 1.25em;
-   font-size: 2em;
-   line-height: 1;
-   background: #444;
-   text-decoration: none;
-   text-align: center;
-   padding: 0.125em 0;
-   margin: 0.4em;
-   position: absolute;
-   left: 0;
- }
-
- /* =The Big Button to Add A New Point
- -------------------------------------------------------------- */
-
- a.add-place {
-   background-color: #000;
-   color: #eee;
-   text-shadow: none;
- }
- a.add-place:hover {
-   color: #fff;
- }
-
-/* =Forms
+/* =The Site Header
 -------------------------------------------------------------- */
 
-label {
-/*  color: #806080;*/
+#site-header {
+  color: #000;
+  background-color: #fff;
 }
-
-input[type=text],
-textarea {
-/*  border: 1px solid #000; */
-}
-
-.required {
-/*  color: red;*/
-}
-
-.bttn {
-/*  color: #eee;*/
-/*  background-color: #ff40ff;*/
-/*  text-shadow: none;*/
-}
-
-.bttn:hover {
-/*  color: #fff;*/
-/*  background-color: #e500e5;*/
-}
-
-.fileinput-container {
-  background-color: #00aaff;
-  color: #f0f0f0;
-  padding: 0.75em 1em;
-  border: 0;
-  margin: 0 0 0.667em;
-  font-size: 1.1em;
+#site-title {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  text-shadow: 1px -1px 0 #06A;
-     -moz-box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
-  -webkit-box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
-          box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
+  text-shadow: none;
 }
-.fileinput-container.disabled {
-  background-color: #e0e0e0;
-  color: #f0f0f0;
-  text-shadow: 1px -1px 0 #999;
-     -moz-box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
-  -webkit-box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
-          box-shadow: -4px 4px 0 rgba(85, 85, 85, 0.5);
+#site-title a:link,
+#site-title a:visited {
+  display: block;
+  position: relative;
+  color: #000;
+  font-size: 1em;
+}
+#site-title a:hover {
+  color: #000;
+}
+#site-logo {
+  float: left;
+  height: 2.75em;
+  margin-right: 0.5em;
+}
+#site-tagline {
+  display: none;
+  float: left;
+  max-width: 10em;
+  position: relative;
+  top: 0.25em;
 }
 
-a.reply-link {
-/*  color: #eee;*/
-/*  background: #000;*/
+
+/* =Navigation Menu
+-------------------------------------------------------------- */
+
+#nav-btn {
+  background-color: #eee;
+  color: #999;
+  text-shadow: none;
+}
+.access a:visited, 
+.access a:active, 
+.access a:link {
+  color: #000;
+  background-color: #eee;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+.access a:hover {
+  background-color: #000;
+  color: #fff;
 }
 
-a.reply-link:hover {
+a.list-toggle-btn:visited, 
+a.list-toggle-btn:active, 
+a.list-toggle-btn:link {
+  background-color: #000;
+  color: #eee;
+  text-shadow: none;
+  box-shadow: none;
+}
+a.list-toggle-btn:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+
+/* =The Big Button to Add A New Point
+-------------------------------------------------------------- */
+
+a.add-place {
+  background-color: #000;
+  color: #eee;
+  text-shadow: none;
+}
+a.add-place:hover {
   color: #fff;
 }
 
@@ -204,7 +116,7 @@ ul.recent-points {
   padding: 15px 10px;
   border-bottom: 1px solid #ddd;
   list-style: none;
-  margin-left: 0 !important;
+  margin: 0;
   font-weight: bold;
 }
 .legend li {
@@ -349,55 +261,27 @@ ul.recent-points {
 /* =Media Queries
 -------------------------------------------------------------- */
 
-@media only screen and (min-width: 480px) { /* menu is visible */
+@media only screen and (min-width: 22em) {
   #site-tagline {
     display: block;
-    font-size: 1.5em;
-    width: 10em;
-    white-space: normal;
-    line-height: 1.2;
   }
 }
 
-@media only screen and (min-width: 768px) { /* menu is visible */
-  .access {
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-  .access li {
-    border-bottom: 0;
-  }
-}
-
-@media only screen and (min-width: 1024px) { /* ticker is visible */
+@media only screen and (min-width: 60em) {
   #site-title a:link,
   #site-title a:visited {
-    padding-left: 6em;
-  }
-  #site-logo {
-    height: 5em;
-    width: 5em;
-    top: 0;
-    left: 0;
+    font-size: 1.375em;
   }
   #site-tagline {
-    font-size: 2em;
+    top: 0.125em;
   }
-}
-
-@media only screen and (min-width: 1300px) {
-  #site-title a:link,
-  #site-title a:visited {
-    padding-left: 7em;
+  .access a:visited, 
+  .access a:active, 
+  .access a:link {
+    background-color: #fff;
   }
-  #site-logo {
-    height: 6em;
-    width: 6em;
-    top: 0;
-    left: 0;
-  }
-  #site-tagline {
-    font-size: 2.5em;
+  .access a:hover {
+    background-color: #000;
+    color: #fff;
   }
 }
