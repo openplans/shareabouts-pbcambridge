@@ -28,7 +28,7 @@ map:
 
 place_types:
 # Icons for new additions
-  culture:
+  culture-shortlisted:
     label: _(Culture & Community Facilities)
     rules:
       - condition: 'true'
@@ -44,7 +44,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  education:
+  education-shortlisted:
     label: _(Schools & Education)
     rules:
       - condition: 'true'
@@ -60,7 +60,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  environment:
+  environment-shortlisted:
     label: _(Environment)
     rules:
       - condition: 'true'
@@ -76,7 +76,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  housing:
+  housing-shortlisted:
     label: _(Housing)
     rules:
       - condition: 'true'
@@ -92,7 +92,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  parks:
+  parks-shortlisted:
     label: _(Parks & Recreation)
     rules:
       - condition: 'true'
@@ -108,7 +108,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  health:
+  health-shortlisted:
     label: _(Public Health)
     rules:
       - condition: 'true'
@@ -124,7 +124,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  safety:
+  safety-shortlisted:
     label: _(Public Safety)
     rules:
       - condition: 'true'
@@ -140,7 +140,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  seniors:
+  seniors-shortlisted:
     label: _(Seniors)
     rules:
       - condition: 'true'
@@ -156,7 +156,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]  
-  streets:
+  streets-shortlisted:
     label: _(Streets & Sidewalks)
     rules:
       - condition: 'true'
@@ -172,7 +172,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]     
-  transit:
+  transit-shortlisted:
     label: _(Transit)
     rules:
       - condition: 'true'
@@ -188,7 +188,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  youth:
+  youth-shortlisted:
     label: _(Youth)
     rules:
       - condition: 'true'
@@ -384,8 +384,8 @@ place_types:
           iconAnchor: [16, 25]
 
 
-# Icons for rejected projects
-  culture-rejected:
+# Icons for proposed projects that didn't make it onto the shortlist
+  culture:
     label: _(Culture & Community Facilities)
     rules:
       - condition: 'true'
@@ -401,7 +401,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  education-rejected:
+  education:
     label: _(Schools & Education)
     rules:
       - condition: 'true'
@@ -417,7 +417,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  environment-rejected:
+  environment:
     label: _(Environment)
     rules:
       - condition: 'true'
@@ -433,7 +433,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  housing-rejected:
+  housing:
     label: _(Housing)
     rules:
       - condition: 'true'
@@ -449,7 +449,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  parks-rejected:
+  parks:
     label: _(Parks & Recreation)
     rules:
       - condition: 'true'
@@ -465,7 +465,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  health-rejected:
+  health:
     label: _(Public Health)
     rules:
       - condition: 'true'
@@ -481,7 +481,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  safety-rejected:
+  safety:
     label: _(Public Safety)
     rules:
       - condition: 'true'
@@ -497,7 +497,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  seniors-rejected:
+  seniors:
     label: _(Seniors)
     rules:
       - condition: 'true'
@@ -513,7 +513,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]  
-  streets-rejected:
+  streets:
     label: _(Streets & Sidewalks)
     rules:
       - condition: 'true'
@@ -529,7 +529,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]     
-  transit-rejected:
+  transit:
     label: _(Transit)
     rules:
       - condition: 'true'
@@ -545,7 +545,7 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  youth-rejected:
+  youth:
     label: _(Youth)
     rules:
       - condition: 'true'
