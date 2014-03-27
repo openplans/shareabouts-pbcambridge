@@ -1,19 +1,32 @@
+{{#if shortlisted }}
+{{ else }}
 {{#if year }}
 {{ else }}
 {{> place-detail-promotion-bar }}
 {{/if }}
+{{/if }}
 
 <header class="place-header clearfix">
-  
+
+    {{#if shortlisted }}
+            
+        <h1>{{ name }}</h1>
+        <p> A {{ place_type_label location_type }} project on the ballot in 2014.</p>
+        
+        
+    {{ else }}
+    
   <!-- if it's an old project, we don't want to show who submitted it -->
   {{#if year }}
 
-    <p class="approved-location-type {{ location_type }}"><span class="approved-location-shadow"></span><span class="approved-location-icon"></span>{{ label }} project from <strong>{{ year }}</strong>.</p>
+    <p class="approved-location-type {{ location_type }}"><span class="approved-location-shadow"></span><span class="approved-location-icon"></span>{{ place_type_label location_type }} project from <strong>{{ year }}</strong>.</p>
 
     <h1>{{ name }}</h1>
 
   {{ else }} <!-- no year means it's a user-submitted location -->
 
+    <h1>{{ name }}</h1>
+      
     <span class="place-submission-details">
 
     {{#_}}<strong class="point-submitter">
@@ -23,18 +36,23 @@
         <!-- TODO: FIXME: don't hardcode image URL -->
         <img src="/static/css/images/user-50.png" class="avatar" /> {{ submitter_name }}
       {{/if}}
-    </strong> suggested this {{#if place_type_label }}{{ place_type_label }}{{/if }} idea
+    </strong> suggested this {{place_type_label location_type }} idea.
     {{/_}}
 
     <time datetime="{{ created_datetime }}" class="response-date">{{ pretty_created_datetime }}</time>
     </span>
 
   {{/if }}
+  {{/if }}
   
 </header>
 
 <section class="place-items">
-  
+  {{#if shortlisted }}
+  <p><strong>Location</strong>: {{ Location }}</p>
+  <p><strong>Description</strong>: {{ description }}</p>
+  <p><strong>Cost</strong>: {{ Cost }}</p>
+  {{ else }}
   {{#if year }} <!-- it's a manually-added project from previous years -->
   <p class="description">{{ description }}.</p>
   
@@ -58,6 +76,12 @@
   {{/ attachments }}
 
   {{/if }}
+  {{/if }}
+  
+  {{^if survey_config}}
+  <a href="/place/{{ id }}" class="view-on-map-btn btn btn-small">View On Map</a>
+  {{/if}}
+  
 </section>
 
 {{#survey_config}}
