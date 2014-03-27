@@ -34,7 +34,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/communitycenter.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
+          shadowUrl: /static/css/images/markers/shadow-square-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -50,7 +50,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/books.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
+          shadowUrl: /static/css/images/markers/shadow-square-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -66,7 +66,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/tree.png
-          shadowUrl: /static/css/images/markers/shadow-round.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -82,7 +82,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/building.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
+          shadowUrl: /static/css/images/markers/shadow-square-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -98,7 +98,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/swings.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
+          shadowUrl: /static/css/images/markers/shadow-square-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -114,7 +114,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/cross.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
+          shadowUrl: /static/css/images/markers/shadow-square-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -130,7 +130,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/badge.png
-          shadowUrl: /static/css/images/markers/shadow-round.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -146,7 +146,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/seniors.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
+          shadowUrl: /static/css/images/markers/shadow-square-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -162,7 +162,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/cone.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
+          shadowUrl: /static/css/images/markers/shadow-square-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -178,7 +178,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/bus.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
+          shadowUrl: /static/css/images/markers/shadow-square-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -194,7 +194,7 @@ place_types:
       - condition: 'true'
         icon:
           iconUrl: /static/css/images/markers/balloons.png
-          shadowUrl: /static/css/images/markers/shadow-round.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -211,14 +211,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/communitycenter-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/communitycenter-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -227,14 +225,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/books-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/books-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -243,14 +239,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/tree-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/tree-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -259,14 +253,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/building-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/building-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -275,14 +267,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/swings-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/swings-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -291,14 +281,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/cross-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/cross-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -307,14 +295,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/badge-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/badge-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -323,14 +309,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/seniors-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/seniors-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]  
@@ -339,14 +323,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/cone-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/cone-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]     
@@ -355,14 +337,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/bus-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/bus-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -371,14 +351,12 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/balloons-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
         focus_icon:
           iconUrl: /static/css/images/markers/balloons-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -390,11 +368,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/communitycenter-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/communitycenter-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
@@ -406,11 +382,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/books-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/books-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
@@ -422,11 +396,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/tree-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/tree-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
@@ -438,11 +410,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/building-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/building-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
@@ -454,11 +424,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/swings-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/swings-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
@@ -470,11 +438,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/cross-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/cross-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
@@ -486,11 +452,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/badge-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/badge-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
@@ -502,11 +466,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/seniors-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/seniors-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
@@ -518,11 +480,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/cone-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/cone-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
@@ -534,11 +494,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/bus-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/bus-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
@@ -550,11 +508,9 @@ place_types:
     rules:
       - condition: 'true'
         icon:
-          iconUrl: /static/css/images/markers/balloons-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/dot8x8-gray.png
+          iconSize: [8, 8]
+          iconAnchor: [4, 4]
         focus_icon:
           iconUrl: /static/css/images/markers/balloons-gray.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png

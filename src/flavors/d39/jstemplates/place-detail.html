@@ -1,0 +1,65 @@
+{{#if year }}
+{{ else }}
+{{> place-detail-promotion-bar }}
+{{/if }}
+
+<header class="place-header clearfix">
+  
+  <!-- if it's an old project, we don't want to show who submitted it -->
+  {{#if year }}
+
+    <p class="approved-location-type {{ location_type }}"><span class="approved-location-shadow"></span><span class="approved-location-icon"></span>{{ label }} project from <strong>{{ year }}</strong>.</p>
+
+    <h1>{{ name }}</h1>
+
+  {{ else }} <!-- no year means it's a user-submitted location -->
+
+    <span class="place-submission-details">
+
+    {{#_}}<strong class="point-submitter">
+      {{#if submitter}}
+        <img src="{{ submitter.avatar_url }}" class="avatar" /> {{ submitter.name }}
+      {{^}}
+        <!-- TODO: FIXME: don't hardcode image URL -->
+        <img src="/static/css/images/user-50.png" class="avatar" /> {{ submitter_name }}
+      {{/if}}
+    </strong> suggested this {{#if place_type_label }}{{ place_type_label }}{{/if }} idea
+    {{/_}}
+
+    <time datetime="{{ created_datetime }}" class="response-date">{{ pretty_created_datetime }}</time>
+    </span>
+
+  {{/if }}
+  
+</header>
+
+<section class="place-items">
+  
+  {{#if year }} <!-- it's a manually-added project from previous years -->
+  <p class="description">{{ description }}.</p>
+  
+  {{#if status }}
+  <p><strong>Status</strong>: {{ status }} {{#if updated }} (last updated {{ updated }}) {{/if }}</p>
+  {{/if }}
+
+  <p><strong>Cost</strong>: {{ cost }}</p>
+  <p><strong>Agency</strong>: {{ agency }}</p>
+  
+  {{ else }}
+  
+    {{#if name }} <p>My project idea is: <span class="idea-title">{{ name }}</span></p> {{/if }}
+
+    {{#if description }} <p>So that people could: {{ description }}</p> {{/if }}
+  
+  {{# attachments }}
+  <div class="place-item place-attachment-{{ name }}">
+    <img src="{{ file }}" class="place-value place-value-{{ name }}" alt="{{ name }}">
+  </div>
+  {{/ attachments }}
+
+  {{/if }}
+</section>
+
+{{#survey_config}}
+<section class="survey"></section>
+{{/survey_config}}
