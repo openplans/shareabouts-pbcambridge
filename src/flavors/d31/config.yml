@@ -15,16 +15,15 @@ map:
   geolocation_onload: false
   options:
     center:
-      lat: 40.7397
-      lng: -73.7399
-    zoom: 14
-    minZoom: 14
+      lat: 40.5939
+      lng: -73.7722
+    zoom: 16
+    minZoom: 15
     maxZoom: 18
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.map-w29s5fls/{z}/{x}/{y}.png
       attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-    - url: http://{s}.tiles.mapbox.com/v3/openplans.PB-D23/{z}/{x}/{y}.png
-
+    - url: http://{s}.tiles.mapbox.com/v3/openplans.PB-D31/{z}/{x}/{y}.png
 
 place_types:
 # Icons for new additions
