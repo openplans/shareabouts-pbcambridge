@@ -1,9 +1,9 @@
 # Settings for the app
 app:
   # HTML Title
-  title: Participatory Budgeting NYC - District 39
+  title: Participatory Budgeting NYC - District 8
   # Header name
-  name: Participatory Budgeting NYC - District 39
+  name: Participatory Budgeting NYC - District 8
   # Meta description that will show up in Google search results
   meta_description: _(Participatory Budgeting for NYC)
   district: 39th
@@ -15,15 +15,15 @@ map:
   geolocation_onload: false
   options:
     center:
-      lat: 40.6623
-      lng: -73.9794
+      lat: 40.8053
+      lng: -73.9229
     zoom: 14
     minZoom: 14
     maxZoom: 18
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.map-w29s5fls/{z}/{x}/{y}.png
       attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-    - url: http://{s}.tiles.mapbox.com/v3/openplans.PB-D39/{z}/{x}/{y}.png
+    - url: http://{s}.tiles.mapbox.com/v3/openplans.PB-D08/{z}/{x}/{y}.png
 
 
 place_types:
