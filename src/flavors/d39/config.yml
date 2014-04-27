@@ -361,6 +361,181 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
+# Icons for winner
+  culture-winner:
+    label: _(Funded Culture & Community Facilities)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/communitycenter-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/communitycenter-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  education-winner:
+    label: _(Funded Schools & Education)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/books-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/books-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  environment-winner:
+    label: _(Funded Environment)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/tree-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/tree-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  housing-winner:
+    label: _(Funded Housing)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/building-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/building-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  parks-winner:
+    label: _(Funded Parks & Recreation)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/swings-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/swings-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  health-winner:
+    label: _(Funded Public Health)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/cross-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/cross-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  safety-winner:
+    label: _(Funded Public Safety)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/badge-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/badge-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  seniors-winner:
+    label: _(Funded Seniors)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/seniors-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/seniors-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]  
+  streets-winner:
+    label: _(Funded Streets & Sidewalks)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/cone-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/cone-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]     
+  transit-winner:
+    label: _(Funded Transit)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/bus-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+        focus_icon:
+          iconUrl: /static/css/images/markers/bus-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  youth-winner:
+    label: _(Funded Youth)
+    rules:
+      - condition: 'true'
+        icon:
+          iconUrl: /static/css/images/markers/balloons-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+        focus_icon:
+          iconUrl: /static/css/images/markers/balloons-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
 
 # Icons for proposed projects that didn't make it onto the shortlist
   culture:
