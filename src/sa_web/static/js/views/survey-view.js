@@ -17,7 +17,18 @@ var Shareabouts = Shareabouts || {};
 
     render: function() {
       var self = this,
-          responses = [];
+          responses = [],
+          url = window.location.toString(),
+          urlParts = url.split('response/'),
+          // will be "mobile" or "desktop", as defined in default.css
+          layout = window.getComputedStyle(document.body,':after').getPropertyValue('content'),
+          responseIdToScrollTo,
+          $responseToScrollTo;
+
+      // get the response id from the url
+      if (urlParts.length === 2) {
+        responseIdToScrollTo = urlParts[1];
+      }
 
       // I don't understand why we need to redelegate the event here, but they
       // are definitely unbound after the first render.
@@ -42,6 +53,22 @@ var Shareabouts = Shareabouts || {};
         user_token: this.options.userToken,
         survey_config: this.options.surveyConfig
       }));
+
+      // get the element based on the id
+      $responseToScrollTo = this.$el.find('[data-response-id="'+ responseIdToScrollTo +'"]');
+
+      // call scrollIntoView()
+      if ($responseToScrollTo.length > 0) {
+        setTimeout(function() {
+          // For desktop, the panel content is scrollable
+          if (layout === 'desktop') {
+            $('#content article').scrollTo($responseToScrollTo);
+          } else {
+            // For mobile, it's the window
+            $(window).scrollTo($responseToScrollTo);
+          }
+        }, 700);
+      }
 
       return this;
     },

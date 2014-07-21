@@ -13,6 +13,8 @@ app:
 map:
   geolocation_enabled: true
   geolocation_onload: false
+  geocoding_enabled: true
+
   options:
     center:
       lat: 40.7163
@@ -23,7 +25,7 @@ map:
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.map-w29s5fls/{z}/{x}/{y}.png
       attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-    - url: http://{s}.tiles.mapbox.com/v3/openplans.PB-D39/{z}/{x}/{y}.png
+    - url: http://{s}.tiles.mapbox.com/v3/openplans.pbnyc-2014/{z}/{x}/{y}.png
 
 
 place_types:
@@ -203,7 +205,7 @@ place_types:
           shadowUrl: /static/css/images/markers/shadow-round-white.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
-          iconAnchor: [16, 25]           
+          iconAnchor: [16, 25]
 
 # Icons for previous-approved projects
   culture-approved:
@@ -700,7 +702,7 @@ activity:
   interval: 30000
 
 place:
-  adding_supported: false
+  adding_supported: true
   add_button_label: _(Submit an idea)
   # Labels for the buttons that toggle the map and list views
   show_list_button_label: _(Show as a list)

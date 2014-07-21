@@ -10,7 +10,7 @@
           <ol class="responses unstyled-list">
             {{#responses}}
             <li>
-              <article class="response">
+              <article data-response-id="{{ id }}" class="response">
                 <header class="response-header clearfix">
                   {{#_}}<strong class="response-submitter">
                     {{#if submitter}}
@@ -31,7 +31,7 @@
                   {{#items}}
                   <div class="response-item response-item-{{ name }}">
                     <span class="response-label response-label-{{ name }}">{{ label }}</span>
-                    <p class="response-value response-value-{{ name }}">{{ value }}</p>
+                    <p class="response-value response-value-{{ name }}">{{nlToBr value }}</p>
                   </div>
                   {{/items}}
 

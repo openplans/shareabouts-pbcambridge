@@ -25,10 +25,12 @@ var Shareabouts = Shareabouts || {};
     },
     initialize: function(){
       var self = this,
+          // Only include submissions if the list view is enabled (anything but false)
+          includeSubmissions = S.Config.flavor.app.list_enabled !== false,
           placeParams = {
             // NOTE: this is to simply support the list view. It won't
             // scale well, so let's think about a better solution.
-            include_submissions: true
+            include_submissions: includeSubmissions
           };
 
       // Use the page size as dictated by the server by default, unless
@@ -133,10 +135,61 @@ var Shareabouts = Shareabouts || {};
         placeTypes: this.options.placeTypes
       });
 
-      this.listView = new S.PlaceListView({
-        el: '#list-container',
-        collection: this.collection
-      }).render();
+      // Init the address search bar
+      this.geocodeAddressView = (new S.GeocodeAddressView({
+        el: '#geocode-address-bar',
+        router: this.options.router,
+        mapConfig: this.options.mapConfig
+      })).render();
+
+      // When the user chooses a geocoded address, the address view will fire
+      // a geocode event on the namespace. At that point we center the map on
+      // the geocoded location.
+      $(S).on('geocode', function(evt, locationData) {
+        self.mapView.zoomInOn(locationData.latLng);
+
+        if (self.isAddingPlace()) {
+          self.placeFormView.setLatLng(locationData.latLng);
+          self.placeFormView.setLocation(locationData);
+        }
+      });
+
+      // When the map center moves, the map view will fire a mapmoveend event
+      // on the namespace. If the move was the result of the user dragging, a
+      // mapdragend event will be fired.
+      //
+      // If the user is adding a place, we want to take the opportunity to
+      // reverse geocode the center of the map, if geocoding is enabled. If
+      // the user is doing anything else, we just want to clear out any text
+      // that's currently set in the address search bar.
+      $(S).on('mapdragend', function(evt) {
+        if (self.isAddingPlace()) {
+          self.conditionallyReverseGeocode();
+        } else if (self.geocodeAddressView) {
+          self.geocodeAddressView.setAddress('');
+        }
+      });
+
+      // After reverse geocoding, the map view will fire a reversegeocode
+      // event. This should only happen when adding a place while geocoding
+      // is enabled.
+      $(S).on('reversegeocode', function(evt, locationData) {
+        var locationString = Handlebars.templates['location-string'](locationData);
+        self.geocodeAddressView.setAddress(locationString.trim());
+        self.placeFormView.setLatLng(locationData.latLng);
+        self.placeFormView.setLocation(locationData);
+      });
+
+
+      // List view is enabled by default (undefined) or by enabling it
+      // explicitly. Set it to a falsey value to disable activity.
+      if (_.isUndefined(S.Config.flavor.app.list_enabled) ||
+        S.Config.flavor.app.list_enabled) {
+          this.listView = new S.PlaceListView({
+            el: '#list-container',
+            collection: this.collection
+          }).render();
+      }
 
       // Cache panel elements that we use a lot
       this.$panel = $('#content');
@@ -171,6 +224,9 @@ var Shareabouts = Shareabouts || {};
       this.activities.fetch({reset: true});
     },
 
+    isAddingPlace: function(model) {
+      return this.$panel.is(":visible") && this.$panel.hasClass('place-form');
+    },
     loadPlaces: function(placeParams) {
       var self = this,
           $progressContainer = $('#map-progress'),
@@ -187,8 +243,10 @@ var Shareabouts = Shareabouts || {};
 
         success: function() {
           // Sort the list view after all of the pages have been fetched
-          self.listView.sort();
-          self.listView.updateSortLinks();
+          if (self.listView) {
+            self.listView.sort();
+            self.listView.updateSortLinks();
+          }
         },
 
         // Only do this for the first page...
@@ -272,6 +330,13 @@ var Shareabouts = Shareabouts || {};
         this.showPanel(this.placeFormView.render().$el);
         this.showNewPin();
         this.hideAddButton();
+
+        this.conditionallyReverseGeocode();
+      }
+    },
+    conditionallyReverseGeocode: function() {
+      if (this.options.mapConfig.geocoding_enabled) {
+        this.mapView.reverseGeocodeMapCenter();
       }
     },
     onRemovePlace: function(model) {
@@ -308,13 +373,16 @@ var Shareabouts = Shareabouts || {};
       // Called by the router
       this.collection.add({});
     },
-    viewPlace: function(model, zoom) {
+    viewPlace: function(model, responseId, zoom) {
       var self = this,
+          includeSubmissions = S.Config.flavor.app.list_enabled !== false,
+          // will be "mobile" or "desktop", as defined in default.css
+          layout = window.getComputedStyle(document.body,':after').getPropertyValue('content'),
           onPlaceFound, onPlaceNotFound, modelId;
 
       onPlaceFound = function(model) {
         var map = self.mapView.map,
-            layer, center, placeDetailView;
+            layer, center, placeDetailView, $responseToScrollTo;
 
         // If this model is a duplicate of one that already exists in the
         // places collection, it may not correspond to a layerView. For this
@@ -325,24 +393,45 @@ var Shareabouts = Shareabouts || {};
 
         layer = self.mapView.layerViews[model.cid].layer;
         placeDetailView = self.getPlaceDetailView(model);
-        center = layer.getLatLng ? layer.getLatLng() : layer.getBounds().getCenter();
+
+        if (layer) {
+          center = layer.getLatLng ? layer.getLatLng() : layer.getBounds().getCenter();
+        }
 
         self.$panel.removeClass().addClass('place-detail place-detail-' + model.id);
-        self.showPanel(placeDetailView.render().$el);
+        self.showPanel(placeDetailView.render().$el, !!responseId);
         self.hideNewPin();
         self.destroyNewModels();
         self.hideCenterPoint();
         self.hideAddButton();
 
-        if (zoom) {
-          if (layer.getLatLng) {
-            map.setView(center, map.getMaxZoom()-1, {animate: true});
-          } else {
-            map.fitBounds(layer.getBounds());
-          }
+        if (layer) {
+          if (zoom) {
+            if (layer.getLatLng) {
+              map.setView(center, map.getMaxZoom()-1, {animate: true});
+            } else {
+              map.fitBounds(layer.getBounds());
+            }
 
-        } else {
-          map.panTo(center, {animate: true});
+          } else {
+            map.panTo(center, {animate: true});
+          }
+        }
+
+        if (responseId) {
+          // get the element based on the id
+          $responseToScrollTo = placeDetailView.$el.find('[data-response-id="'+ responseId +'"]');
+
+          // call scrollIntoView()
+          if ($responseToScrollTo.length > 0) {
+            if (layout === 'desktop') {
+              // For desktop, the panel content is scrollable
+              self.$panelContent.scrollTo($responseToScrollTo, 500);
+            } else {
+              // For mobile, it's the window
+              $(window).scrollTo($responseToScrollTo, 500);
+            }
+          }
         }
 
         // Focus the one we're looking
@@ -375,7 +464,7 @@ var Shareabouts = Shareabouts || {};
           success: onPlaceFound,
           error: onPlaceNotFound,
           data: {
-            include_submissions: true
+            include_submissions: includeSubmissions
           }
         });
       }
@@ -395,7 +484,7 @@ var Shareabouts = Shareabouts || {};
       this.hideCenterPoint();
       this.hideAddButton();
     },
-    showPanel: function(markup) {
+    showPanel: function(markup, preventScrollToTop) {
       var map = this.mapView.map;
 
       this.unfocusAllPlaces();
@@ -403,13 +492,21 @@ var Shareabouts = Shareabouts || {};
       this.$panelContent.html(markup);
       this.$panel.show();
 
-      this.$panelContent.scrollTop(0);
-      // Scroll to the top of window when showing new content on mobile. Does
-      // nothing on desktop.
-      window.scrollTo(0, 0);
+      if (!preventScrollToTop) {
+        // will be "mobile" or "desktop", as defined in default.css
+        var layout = window.getComputedStyle(document.body,':after').getPropertyValue('content');
+        if (layout === 'desktop') {
+          // For desktop, the panel content is scrollable
+          this.$panelContent.scrollTo(0, 0);
+        } else {
+          // Scroll to the top of window when showing new content on mobile. Does
+          // nothing on desktop. (Except when embedded in a scrollable site.)
+          window.scrollTo(0, 0);
+        }
+      }
 
       $('body').addClass('content-visible');
-      map.invalidateSize({ pan:false });
+      map.invalidateSize({ animate:true, pan:true });
 
       $(S).trigger('panelshow', [this.options.router, Backbone.history.getFragment()]);
       S.Util.log('APP', 'panel-state', 'open');
@@ -436,7 +533,7 @@ var Shareabouts = Shareabouts || {};
       this.unfocusAllPlaces();
       this.$panel.hide();
       $('body').removeClass('content-visible');
-      map.invalidateSize({ pan:false });
+      map.invalidateSize({ animate:true, pan:true });
 
       S.Util.log('APP', 'panel-state', 'closed');
     },
