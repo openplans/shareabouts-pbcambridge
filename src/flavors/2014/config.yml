@@ -14,12 +14,11 @@ map:
   geolocation_enabled: true
   geolocation_onload: false
   geocoding_enabled: true
-
   options:
     center:
-      lat: 40.7163
-      lng: -73.9981
-    zoom: 10
+      lat: 40.6623
+      lng: -73.9880
+    zoom: 13
     minZoom: 10
     maxZoom: 18
   layers:
@@ -29,6 +28,327 @@ map:
 
 
 place_types:
+
+# Icons for previous winners and current submissions
+  culture:
+    label: _(Culture & Community Facilities)
+    rules:
+      - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/communitycenter-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/communitycenter-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  
+  education:
+    label: _(Schools & Education)
+    rules:
+      - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/books-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === true'  
+        icon:
+          iconUrl: /static/css/images/markers/books-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+  environment:
+    label: _(Environment)
+    rules:
+      - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/tree-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === true'  
+        icon:
+          iconUrl: /static/css/images/markers/tree-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+  housing:
+    label: _(Housing)
+    rules:
+      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/building-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/building-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  
+  parks:
+    label: _(Parks & Recreation)
+    rules:
+      - condition: '"{{location_type}}" === "parks" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "parks" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
+        icon:
+          iconUrl: /static/css/images/markers/swings-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === true  '  
+        icon:
+          iconUrl: /static/css/images/markers/swings-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+  health:
+    label: _(Public Health)
+    rules:
+      - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === true'    
+        icon:
+          iconUrl: /static/css/images/markers/cross-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+  
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/cross-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+  safety:
+    label: _(Public Safety)
+    rules:
+      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
+        icon:
+          iconUrl: /static/css/images/markers/badge-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+ 
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/badge-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+  seniors:
+    label: _(Seniors)
+    rules:
+      - condition: '"{{location_type}}" === "seniors" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "seniors" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
+        icon:
+          iconUrl: /static/css/images/markers/seniors-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]  
+
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === true'  
+        icon:
+          iconUrl: /static/css/images/markers/seniors-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]  
+
+  streets:
+    label: _(Streets & Sidewalks)
+    rules:
+      - condition: '"{{location_type}}" === "streets" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "streets" && "{{winner}}" === "winner" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/cone-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]     
+ 
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === true'  
+        icon:
+          iconUrl: /static/css/images/markers/cone-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]     
+
+  transit:
+    label: _(Transit)
+    rules:
+      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
+        icon:
+          iconUrl: /static/css/images/markers/bus-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === true'
+        icon:
+          iconUrl: /static/css/images/markers/bus-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+  youth:
+    label: _(Youth)
+    rules:
+      - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gold.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
+        icon:
+          iconUrl: /static/css/images/markers/balloons-gold.png
+          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false'
+        icon:
+          iconUrl: /static/css/images/markers/dot20x20-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === true'  
+        icon:
+          iconUrl: /static/css/images/markers/balloons-gray.png
+          shadowUrl: /static/css/images/markers/shadow-square-white.png
+          iconSize: [31, 32]
+          shadowSize: [31, 32]
+          iconAnchor: [16, 25]
+
 # Icons for new additions
   culture-shortlisted:
     label: _(Culture & Community Facilities)
@@ -207,163 +527,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
-# Icons for previous-approved projects
-  culture-approved:
-    label: _(Funded Culture & Community Facilities)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/communitycenter-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  education-approved:
-    label: _(Funded Schools & Education)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/books-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  environment-approved:
-    label: _(Funded Environment)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/tree-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  housing-approved:
-    label: _(Funded Housing)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/building-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  parks-approved:
-    label: _(Funded Parks & Recreation)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/swings-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  health-approved:
-    label: _(Funded Public Health)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/cross-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  safety-approved:
-    label: _(Funded Public Safety)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/badge-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  seniors-approved:
-    label: _(Funded Seniors)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/seniors-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]  
-  streets-approved:
-    label: _(Funded Streets & Sidewalks)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/cone-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]     
-  transit-approved:
-    label: _(Funded Transit)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/bus-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  youth-approved:
-    label: _(Funded Youth)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/balloons-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-
-# Icons for winner
+# Icons for new winners
   culture-winner:
     label: _(Funded Culture & Community Facilities)
     rules:
@@ -539,162 +703,6 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
-# Icons for proposed projects that didn't make it onto the shortlist
-  culture:
-    label: _(Culture & Community Facilities)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/communitycenter-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  education:
-    label: _(Schools & Education)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/books-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  environment:
-    label: _(Environment)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/tree-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  housing:
-    label: _(Housing)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/building-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  parks:
-    label: _(Parks & Recreation)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/swings-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  health:
-    label: _(Public Health)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/cross-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  safety:
-    label: _(Public Safety)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/badge-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  seniors:
-    label: _(Seniors)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/seniors-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]  
-  streets:
-    label: _(Streets & Sidewalks)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/cone-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]     
-  transit:
-    label: _(Transit)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/bus-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  youth:
-    label: _(Youth)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-        focus_icon:
-          iconUrl: /static/css/images/markers/balloons-gray.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-
 activity:
   # Optional. Activity is supported by default. Set to false to disable.
   enabled: true
@@ -837,3 +845,17 @@ pages:
     slug: involved
     name: involved
     start_page: true
+  - title: _(Filter Ideas ⌄)
+    pages:
+      - title: _(Show All)
+        url: /
+        external: true
+      - title: _(Education)
+        url: /filter/education
+        external: true
+      - title: _(Housing)
+        url: /filter/housing
+        external: true
+      - title: _(Parks & Recreation)
+        url: /filter/parks
+        external: true
