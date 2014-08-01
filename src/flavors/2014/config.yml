@@ -845,17 +845,3 @@ pages:
     slug: involved
     name: involved
     start_page: true
-  - title: _(Filter Ideas ⌄)
-    pages:
-      - title: _(Show All)
-        url: /
-        external: true
-      - title: _(Education)
-        url: /filter/education
-        external: true
-      - title: _(Housing)
-        url: /filter/housing
-        external: true
-      - title: _(Parks & Recreation)
-        url: /filter/parks
-        external: true
