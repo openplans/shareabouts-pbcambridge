@@ -224,37 +224,37 @@ ul.recent-points {
   z-index: 1;
   opacity: 0.25;
 }
-.culture-approved .approved-location-icon {
+.culture .approved-location-icon {
   background-image: url(images/markers/communitycenter-gold.png); 
 }
-.education-approved .approved-location-icon {
+.education .approved-location-icon {
   background-image: url(images/markers/books-gold.png); 
 }
-.environment-approved .approved-location-icon {
+.environment .approved-location-icon {
   background-image: url(images/markers/tree-gold.png); 
 }
-.housing-approved .approved-location-icon {
+.housing .approved-location-icon {
   background-image: url(images/markers/building-gold.png); 
 }
-.parks-approved .approved-location-icon {
+.parks .approved-location-icon {
   background-image: url(images/markers/swings-gold.png); 
 }
-.health-approved .approved-location-icon {
+.health .approved-location-icon {
   background-image: url(images/markers/cross-gold.png); 
 }
-.safety-approved .approved-location-icon {
+.safety .approved-location-icon {
   background-image: url(images/markers/badge-gold.png); 
 }
-.seniors-approved .approved-location-icon {
+.seniors .approved-location-icon {
   background-image: url(images/markers/seniors-gold.png); 
 }
-.streets-approved .approved-location-icon {
+.streets .approved-location-icon {
   background-image: url(images/markers/cone-gold.png); 
 }
-.transit-approved .approved-location-icon {
+.transit .approved-location-icon {
   background-image: url(images/markers/bus-gold.png); 
 }
-.youth-approved .approved-location-icon {
+.youth .approved-location-icon {
   background-image: url(images/markers/balloons-gold.png); 
 }
 
