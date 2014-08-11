@@ -14,6 +14,7 @@
 
         {{#if is_place }}
           {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span class="place-type">{{ place.place_type_label }} idea </span>
+          {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}
           {{#if place.name }}
             named <span class="place-name">{{ place.name }}</span>
           {{^}}
@@ -29,7 +30,7 @@
           {{else}}
             a{{# place.type_starts_with_vowel }}n{{/ place.type_starts_with_vowel }} {{ place.place_type_label }}
           {{/if }}
-
+          {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}
         {{/if }}
         {{/_}}</a>
       </li>
@@ -51,6 +52,7 @@
 
       {{#if is_place }}
         {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span class="place-type">{{ place.place_type_label }} idea </span>
+        {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}
         {{#if place.name }}
           named <span class="place-name">{{ place.name }}</span>
         {{^}}
@@ -66,7 +68,7 @@
         {{else}}
           a{{# place.type_starts_with_vowel }}n{{/ place.type_starts_with_vowel }} {{ place.place_type_label }}
         {{/if }}
-
+        {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}
       {{/if }}
       {{/_}}</a>
     </li>
