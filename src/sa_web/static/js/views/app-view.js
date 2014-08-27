@@ -214,7 +214,7 @@ var Shareabouts = Shareabouts || {};
       this.placeDetailViews = {};
 
       // Show tools for adding data
-      this.showAddButton();
+      this.setBodyClass();
       this.showCenterPoint();
 
       // Load places from the API
@@ -276,10 +276,6 @@ var Shareabouts = Shareabouts || {};
       });
     },
 
-    // Get the center of the map
-    getCenter: function() {
-      return this.mapView.map.getCenter();
-    },
     setPlaceFormViewLatLng: function(centerLatLng) {
       if (this.placeFormView) {
         this.placeFormView.setLatLng(centerLatLng);
@@ -289,16 +285,23 @@ var Shareabouts = Shareabouts || {};
       this.$centerpoint.addClass('dragging');
     },
     onMapMoveEnd: function(evt) {
+      var ll = this.mapView.map.getCenter(),
+          zoom = this.mapView.map.getZoom();
+
       this.$centerpoint.removeClass('dragging');
 
       // Never set the placeFormView's latLng until the user does it with a
       // drag event (below)
       if (this.placeFormView && this.placeFormView.center) {
-        this.setPlaceFormViewLatLng(this.getCenter());
+        this.setPlaceFormViewLatLng(ll);
+      }
+
+      if (this.hasBodyClass('content-visible') === false) {
+        this.setLocationRoute(zoom, ll.lat, ll.lng);
       }
     },
     onMapDragEnd: function(evt) {
-      this.setPlaceFormViewLatLng(this.getCenter());
+      this.setPlaceFormViewLatLng(this.mapView.map.getCenter());
     },
     onClickAddPlaceBtn: function(evt) {
       evt.preventDefault();
@@ -329,10 +332,31 @@ var Shareabouts = Shareabouts || {};
         this.$panel.removeClass().addClass('place-form');
         this.showPanel(this.placeFormView.render().$el);
         this.showNewPin();
-        this.hideAddButton();
+        this.setBodyClass('content-visible', 'place-form-visible');
 
         this.conditionallyReverseGeocode();
       }
+    },
+    setBodyClass: function(/* newBodyClasses */) {
+      var bodyClasses = ['content-visible', 'place-form-visible'],
+          newBodyClasses = Array.prototype.slice.call(arguments, 0),
+          i, $body = $('body');
+
+      for (i = 0; i < bodyClasses.length; ++i) {
+        $body.removeClass(bodyClasses[i]);
+      }
+      for (i = 0; i < newBodyClasses.length; ++i) {
+        // If the newBodyClass isn't among the ones that will be cleared
+        // (bodyClasses), then we probably don't want to use this method and
+        // should fail loudly.
+        if (bodyClasses.indexOf(newBodyClasses[i]) === -1) {
+          S.Util.console.error('Setting an unrecognized body class.\nYou should probably just use jQuery directly.');
+        }
+        $body.addClass(newBodyClasses[i]);
+      }
+    },
+    hasBodyClass: function(className) {
+      return $('body').hasClass(className);
     },
     conditionallyReverseGeocode: function() {
       if (this.options.mapConfig.geocoding_enabled) {
@@ -363,11 +387,29 @@ var Shareabouts = Shareabouts || {};
 
       return placeDetailView;
     },
-    viewMap: function() {
+    setLocationRoute: function(zoom, lat, lng) {
+      this.options.router.navigate('/' + zoom + '/' +
+        parseFloat(lat).toFixed(5) + '/' + parseFloat(lng).toFixed(5));
+    },
+
+    viewMap: function(zoom, lat, lng) {
+      var ll;
+
+      // If the map locatin is part of the url already
+      if (zoom && lat && lng) {
+        ll = L.latLng(parseFloat(lat), parseFloat(lng));
+        this.mapView.map.setView(ll, parseInt(zoom, 10));
+      } else {
+        // If not, set it to the current map location but don't trigger the route
+        zoom = this.mapView.map.getZoom();
+        ll = this.mapView.map.getCenter();
+        this.setLocationRoute(zoom, ll.lat, ll.lng);
+      }
+
       this.hidePanel();
       this.hideNewPin();
       this.destroyNewModels();
-      this.showAddButton();
+      this.setBodyClass();
     },
     newPlace: function() {
       // Called by the router
@@ -403,7 +445,7 @@ var Shareabouts = Shareabouts || {};
         self.hideNewPin();
         self.destroyNewModels();
         self.hideCenterPoint();
-        self.hideAddButton();
+        self.setBodyClass('content-visible');
 
         if (layer) {
           if (zoom) {
@@ -482,7 +524,7 @@ var Shareabouts = Shareabouts || {};
       this.hideNewPin();
       this.destroyNewModels();
       this.hideCenterPoint();
-      this.hideAddButton();
+      this.setBodyClass('content-visible');
     },
     showPanel: function(markup, preventScrollToTop) {
       var map = this.mapView.map;
@@ -505,21 +547,14 @@ var Shareabouts = Shareabouts || {};
         }
       }
 
-      $('body').addClass('content-visible');
+      this.setBodyClass('content-visible');
       map.invalidateSize({ animate:true, pan:true });
 
       $(S).trigger('panelshow', [this.options.router, Backbone.history.getFragment()]);
       S.Util.log('APP', 'panel-state', 'open');
     },
     showNewPin: function() {
-      var map = this.mapView.map;
       this.$centerpoint.show().addClass('newpin');
-    },
-    showAddButton: function() {
-      this.$addButton.show();
-    },
-    hideAddButton: function() {
-      this.$addButton.hide();
     },
     showCenterPoint: function() {
       this.$centerpoint.show().removeClass('newpin');
@@ -532,7 +567,7 @@ var Shareabouts = Shareabouts || {};
 
       this.unfocusAllPlaces();
       this.$panel.hide();
-      $('body').removeClass('content-visible');
+      this.setBodyClass();
       map.invalidateSize({ animate:true, pan:true });
 
       S.Util.log('APP', 'panel-state', 'closed');
