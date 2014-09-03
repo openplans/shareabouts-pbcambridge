@@ -923,4 +923,6 @@ pages:
   - title: Get More Involved
     slug: involved
     name: involved
-    start_page: true
+  - title: Go to your District
+    slug: district
+    name: district
