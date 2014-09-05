@@ -849,6 +849,7 @@ place:
     - prompt: _(Your name (required and will be shown on map))
       type: text
       name: submitter_name
+      sticky: true
       optional: false
       attrs:
         - key: size
@@ -858,6 +859,7 @@ place:
     - prompt: _(Your email (required and will NOT be shown on the map))
       type: text
       name: private-email
+      sticky: true
       attrs:
         - key: size
           value: 30
@@ -866,18 +868,21 @@ place:
     - prompt: _(Your zip code (optional and will NOT be shown on the map))
       type: text
       name: private-zip
+      sticky: true
       attrs:
         - key: size
           value: 30
     - prompt: _(Your age (optional and will NOT be shown on the map))
       type: text
       name: private-age
+      sticky: true
       attrs:
         - key: size
           value: 30
     - prompt: _(Your gender (optional and will NOT be shown on the map))
       type: text
       name: private-gender
+      sticky: true
       attrs:
         - key: size
           value: 30
