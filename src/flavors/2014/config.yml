@@ -129,14 +129,14 @@ place_types:
       - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
         icon:
           iconUrl: /static/css/images/markers/tree-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          shadowUrl: /static/css/images/markers/shadow-round-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
       - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/tree-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          shadowUrl: /static/css/images/markers/shadow-round-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -149,14 +149,14 @@ place_types:
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
         icon:
           iconUrl: /static/css/images/markers/tree.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === true'  
         icon:
           iconUrl: /static/css/images/markers/tree.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -258,14 +258,14 @@ place_types:
       - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
         icon:
           iconUrl: /static/css/images/markers/cross-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          shadowUrl: /static/css/images/markers/shadow-round-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
       - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === true'    
         icon:
           iconUrl: /static/css/images/markers/cross-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          shadowUrl: /static/css/images/markers/shadow-round-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -278,14 +278,14 @@ place_types:
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 14'
         icon:
           iconUrl: /static/css/images/markers/cross.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/cross.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -301,14 +301,14 @@ place_types:
       - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
         icon:
           iconUrl: /static/css/images/markers/badge-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          shadowUrl: /static/css/images/markers/shadow-round-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
       - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
         icon:
           iconUrl: /static/css/images/markers/badge-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          shadowUrl: /static/css/images/markers/shadow-round-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -321,14 +321,14 @@ place_types:
       - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 14'
         icon:
           iconUrl: /static/css/images/markers/badge.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
       - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/badge.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -473,14 +473,14 @@ place_types:
       - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
         icon:
           iconUrl: /static/css/images/markers/balloons-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          shadowUrl: /static/css/images/markers/shadow-round-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
       - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === true'  
         icon:
           iconUrl: /static/css/images/markers/balloons-gold.png
-          shadowUrl: /static/css/images/markers/shadow-square-gold.png
+          shadowUrl: /static/css/images/markers/shadow-round-gold.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -493,14 +493,14 @@ place_types:
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
         icon:
           iconUrl: /static/css/images/markers/balloons.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === true'  
         icon:
           iconUrl: /static/css/images/markers/balloons.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
+          shadowUrl: /static/css/images/markers/shadow-round-pale.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
