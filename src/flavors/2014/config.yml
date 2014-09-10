@@ -766,6 +766,13 @@ place:
           value: 30
         - key: required
           value: true
+    - prompt: _(Your phone number (optional and will NOT be shown on the map))
+      type: text
+      name: private-phone
+      sticky: true
+      attrs:
+        - key: size
+          value: 10
     - prompt: _(Your zip code (optional and will NOT be shown on the map))
       type: text
       name: private-zip
@@ -787,6 +794,13 @@ place:
       attrs:
         - key: size
           value: 30
+    - prompt: _(I'd like to volunteer)
+      type: checkbox
+      name: private-volunteer
+      attrs:
+        - key: value
+          value: _(Volunteer)
+
 survey:
   submission_type: comments
 
