@@ -71,4 +71,28 @@
   Analytics, custom JS, and such go here
  -->
 {% block includes %}
+<script>
+var mapQuest_geocode = Shareabouts.Util.MapQuest.geocode;
+Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
+  // Since this is all Chicago-specific, go ahead and specify the city.
+  if (location.toLowerCase().indexOf('NYC') === -1) {
+    location += ', NYC NY'
+  }
+  return mapQuest_geocode.call(this, location, bounds, options);
+}
+
+var placeFormView_setLocation = Shareabouts.PlaceFormView.prototype.setLocation;
+Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
+  placeFormView_setLocation.call(this, locationData);
+
+  var $placeNameField = this.$('[name="name"]'),
+      $approxAddress = $placeNameField.next();
+
+  if ($approxAddress.length === 0) {
+    $approxAddress = $('<p class="approx-address"></p>').insertAfter($placeNameField);
+  }
+
+  $approxAddress.html('<span class="address-label">Approximate location:</span> ' + Handlebars.templates['location-string'](locationData));
+}
+</script>
 {% endblock %}

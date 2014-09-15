@@ -700,6 +700,7 @@ place:
   help_text: _(Ideas must be "capital" projects - building, installing, or repairing something for public benefit, such as renovating a public basketball court or purchasing new computers for a library.)
   anonymous_name: _(Someone)
   submit_button_label: _(Share my idea)
+  location_item_name: location
   items:
     - prompt: _(My project idea is...)
       type: text
