@@ -18,9 +18,9 @@ map:
   geocode_field_label: _(Enter an address...)
   options:
     center:
-      lat: 33.808
-      lng: -118.1597
-    zoom: 12
+      lat: 33.87084
+      lng: -118.18002
+    zoom: 14
     minZoom: 12
     maxZoom: 17
   layers:
