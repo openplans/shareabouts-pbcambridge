@@ -838,12 +838,12 @@ pages:
     slug: about
     name: about
     start_page: true
-#  - title: Guidelines
-#    slug: guidelines
-#    name: guidelines
-#  - title: Get More Involved
-#    slug: involved
-#    name: involved
+  - title: Participate
+    slug: participate
+    name: participate
+  - title: About PB
+    slug: pb
+    name: pb
   - title: Go to your District
     pages:
       - title: _(District 1)
