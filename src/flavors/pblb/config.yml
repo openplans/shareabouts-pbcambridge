@@ -1,11 +1,11 @@
 # Settings for the app
 app:
   # HTML Title
-  title: Participatory Budgeting NYC
+  title: Participatory Budgeting Long Beach
   # Header name
-  name: Participatory Budgeting NYC
+  name: Participatory Budgeting Long Beach
   # Meta description that will show up in Google search results
-  meta_description: _(Participatory Budgeting for NYC)
+  meta_description: _(Participatory Budgeting for Long Beach)
   district: 
   tagline: _(How would YOU spend $1 Million?)
 
