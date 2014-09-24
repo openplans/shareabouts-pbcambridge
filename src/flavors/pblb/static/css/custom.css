@@ -1,4 +1,65 @@
 
+/* =Base Styles
+-------------------------------------------------------------- */
+
+/* Typography */
+body, select, input, textarea {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+/* Buttons */
+.btn,
+.btn:visited,
+.btn:link {
+  background-color: #116faf;
+  color: #fff;
+}
+.btn:hover, .button:hover, button:hover {
+  background-color: #e28623;
+}
+.btn-primary, .btn-primary:visited, .btn-primary:link {
+  background-color: #116faf;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #e28623;
+}
+.btn-secondary,
+.btn-secondary:visited,
+.btn-secondary:link {
+  background-color: #116faf;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #e28623;
+  color: #fff;
+}
+
+/* Forms */
+label {
+}
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea {
+  border: 0.25em solid #c3d7e5;
+}
+input:focus,
+textarea:focus {
+  border: 0.25em solid #116faf;
+  outline: 2px solid #116faf;
+}
+
+
 /* =The Site Header
 -------------------------------------------------------------- */
 
@@ -6,68 +67,34 @@
   color: #000;
   background-color: #fff;
 }
-#site-title {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-shadow: none;
-}
-#site-title a:link,
-#site-title a:visited {
-  display: block;
-  position: relative;
-  color: #000;
-  font-size: 1em;
-}
-#site-title a:hover {
-  color: #000;
-}
 #site-logo {
   float: left;
-  height: 2.75em;
-  margin-right: 0.5em;
+  height: 1em;
+  margin-bottom: 0.5em;
 }
-#site-tagline {
-  display: none;
-  float: left;
-  max-width: 10em;
-  position: relative;
-  top: 0.25em;
-}
-
-
-/* =Navigation Menu
--------------------------------------------------------------- */
-
 #nav-btn {
-  background-color: #eee;
-  color: #999;
+  background-color: #fff;
+  color: #e28623;
   text-shadow: none;
 }
+.access a, 
 .access a:visited, 
 .access a:active, 
 .access a:link {
-  color: #000;
-  background-color: #eee;
+  color: #fff;
+  background-color: #116faf;
   border: 0;
-  box-shadow: none;
-  border-radius: 0;
 }
 .access a:hover {
-  background-color: #000;
+  background-color: #e28623;
   color: #fff;
 }
-
-a.list-toggle-btn:visited, 
-a.list-toggle-btn:active, 
-a.list-toggle-btn:link {
-  background-color: #000;
-  color: #eee;
-  text-shadow: none;
-  box-shadow: none;
+#auth-nav-container {}
+a#sign-in-btn {
+  color: #116faf;
 }
-a.list-toggle-btn:hover {
-  color: #fff;
-  background-color: #333;
+a#sign-in-btn:hover {
+  color: #e28623;
 }
 
 
@@ -84,27 +111,53 @@ a.add-place:hover {
 }
 
 
+/* =Geocoding
+-------------------------------------------------------------- */
+
+#geocode-address-bar {
+  background-color: #e6f0f9;
+  border-right: 1px solid #c3d7e5;
+}
+input.geocode-address-field {
+  border-width: 0;
+  background-color: #fff;
+  color: #555;
+}
+#geocode-address-bar .error {
+  line-height: 1.75;
+  background-color: #F26161;
+  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
+}
+#geocode-address-bar .error + form {
+  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
+}
+#geocode-address-bar .error.is-hidden + form {
+  box-shadow: none;
+}
+.geocode-spinner {
+  background-color: #fff;
+}
+
+
 /* =The Ticker
 -------------------------------------------------------------- */
 
 #ticker {
   background-color: #fff;
 }
-ul.recent-points {
-  color: #000;
-}
-.recent-points li {
-  border-bottom: 1px solid #ddd;
-}
+.recent-points li {}
 .recent-points li:hover {
   background: #eee;
 }
 .recent-points a {
-  color: #000;
+  color: #555;
+  border-bottom: 1px solid #ddd;
 }
 .recent-points li:hover a,
 .recent-points a:hover {
-  color: #000;
+  color: #555;
+  background-color: #c3d7e5;
+  border-color: #c3d7e5;
 }
 
 
@@ -112,7 +165,7 @@ ul.recent-points {
 -------------------------------------------------------------- */
 
 .legend {
-  background-color: #eee;
+  background-color: #e6f0f9;
   padding: 15px 10px;
   border-bottom: 1px solid #ddd;
   list-style: none;
@@ -176,6 +229,7 @@ ul.recent-points {
   font-size: 0.85em;
   font-weight: normal;
 }
+
 
 /* =Place Details
 -------------------------------------------------------------- */
@@ -258,6 +312,18 @@ ul.recent-points {
   background-image: url(images/markers/balloons-gold.png); 
 }
 
+/* Promotion: Voting & Sharing */
+.user-support label {
+  color: #fff;
+}
+.user-support input[type=checkbox]:checked ~ label {
+}
+.user-support:hover label {
+  background-color: #e28623;
+  color: #fff;
+}
+
+
 /* =Media Queries
 -------------------------------------------------------------- */
 
@@ -270,18 +336,51 @@ ul.recent-points {
 @media only screen and (min-width: 60em) {
   #site-title a:link,
   #site-title a:visited {
-    font-size: 1.375em;
+    font-size: 1em;
   }
-  #site-tagline {
-    top: 0.125em;
+  #site-logo {
+    height: 3.25em;
   }
+  .access {
+    font-size: 0.75em;
+  }
+  .access li {
+    margin: 0;
+  }
+  .access a, 
   .access a:visited, 
   .access a:active, 
   .access a:link {
     background-color: #fff;
+    color: #e28623;
+    box-shadow: none;
   }
   .access a:hover {
-    background-color: #000;
+    background-color: #116faf;
     color: #fff;
+  }
+  .list-toggle-nav {
+    font-size: 0.75em;
+    float: left;
+  }
+  a.list-toggle-btn:visited, 
+  a.list-toggle-btn:active, 
+  a.list-toggle-btn:link {
+    background-color: #fff;
+    color: #e28623;
+    text-shadow: none;
+    box-shadow: none;
+    border: 0;
+  }
+  a.list-toggle-btn:hover {
+    color: #116faf;
+    background-color: #fff;
+  }
+}
+
+@media only screen and (min-width: 70em) {
+  .access,
+  .list-toggle-nav {
+    font-size: 0.875em;
   }
 }
