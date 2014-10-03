@@ -26,7 +26,7 @@ map:
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.jlb70f57/{z}/{x}/{y}.png
       attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-#    - url: http://{s}.tiles.mapbox.com/v3/openplans.longbeach/{z}/{x}/{y}.png
+    - url: http://{s}.tiles.mapbox.com/v3/openplans.longbeach/{z}/{x}/{y}.png
 
 
 place_types:
