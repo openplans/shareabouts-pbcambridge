@@ -24,7 +24,7 @@ map:
     minZoom: 12
     maxZoom: 17
   layers:
-    - url: http://{s}.tiles.mapbox.com/v3/openplans.map-w29s5fls/{z}/{x}/{y}.png
+    - url: http://{s}.tiles.mapbox.com/v3/openplans.jlb70f57/{z}/{x}/{y}.png
       attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
     - url: http://{s}.tiles.mapbox.com/v3/openplans.longbeach/{z}/{x}/{y}.png
 
@@ -35,12 +35,7 @@ place_types:
   culture:
     label: _(Culture & Community Facilities)
     rules:
-      - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "culture" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/communitycenter-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
@@ -55,12 +50,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
-      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/communitycenter.png
           shadowUrl: /static/css/images/markers/shadow-square-pale.png
@@ -78,12 +68,7 @@ place_types:
   education:
     label: _(Schools & Education)
     rules:
-      - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/books-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
@@ -98,12 +83,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
-      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false'  
         icon:
           iconUrl: /static/css/images/markers/books.png
           shadowUrl: /static/css/images/markers/shadow-square-pale.png
@@ -121,12 +101,7 @@ place_types:
   environment:
     label: _(Environment)
     rules:
-      - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "environment" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/tree-gold.png
           shadowUrl: /static/css/images/markers/shadow-round-gold.png
@@ -141,12 +116,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
-      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false'  
         icon:
           iconUrl: /static/css/images/markers/tree.png
           shadowUrl: /static/css/images/markers/shadow-round-pale.png
@@ -164,12 +134,7 @@ place_types:
   housing:
     label: _(Housing)
     rules:
-      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/building-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
@@ -184,12 +149,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/building.png
           shadowUrl: /static/css/images/markers/shadow-square-pale.png
@@ -207,12 +167,7 @@ place_types:
   parks:
     label: _(Parks & Recreation)
     rules:
-      - condition: '"{{location_type}}" === "parks" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "parks" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "parks" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/swings-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
@@ -227,12 +182,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
-      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false'  
         icon:
           iconUrl: /static/css/images/markers/swings.png
           shadowUrl: /static/css/images/markers/shadow-square-pale.png
@@ -250,12 +200,7 @@ place_types:
   health:
     label: _(Public Health)
     rules:
-      - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/cross-gold.png
           shadowUrl: /static/css/images/markers/shadow-round-gold.png
@@ -270,12 +215,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
   
-      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/cross.png
           shadowUrl: /static/css/images/markers/shadow-round-pale.png
@@ -293,12 +233,7 @@ place_types:
   safety:
     label: _(Public Safety)
     rules:
-      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/badge-gold.png
           shadowUrl: /static/css/images/markers/shadow-round-gold.png
@@ -313,12 +248,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
  
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/badge.png
           shadowUrl: /static/css/images/markers/shadow-round-pale.png
@@ -336,12 +266,7 @@ place_types:
   seniors:
     label: _(Seniors)
     rules:
-      - condition: '"{{location_type}}" === "seniors" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "seniors" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "seniors" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/seniors-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
@@ -356,12 +281,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]  
 
-      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false'  
         icon:
           iconUrl: /static/css/images/markers/seniors.png
           shadowUrl: /static/css/images/markers/shadow-square-pale.png
@@ -379,12 +299,7 @@ place_types:
   streets:
     label: _(Streets & Sidewalks)
     rules:
-      - condition: '"{{location_type}}" === "streets" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "streets" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "streets" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/cone-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
@@ -399,12 +314,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]     
  
-      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false'  
         icon:
           iconUrl: /static/css/images/markers/cone.png
           shadowUrl: /static/css/images/markers/shadow-square-pale.png
@@ -422,12 +332,7 @@ place_types:
   transit:
     label: _(Transit)
     rules:
-      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "transit" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/bus-gold.png
           shadowUrl: /static/css/images/markers/shadow-square-gold.png
@@ -442,12 +347,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/bus.png
           shadowUrl: /static/css/images/markers/shadow-square-pale.png
@@ -465,12 +365,7 @@ place_types:
   youth:
     label: _(Youth)
     rules:
-      - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gold.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14'
+      - condition: '"{{location_type}}" === "youth" && "{{winner}}" === "winner" && {{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/balloons-gold.png
           shadowUrl: /static/css/images/markers/shadow-round-gold.png
@@ -485,12 +380,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
 
-      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/dot20x20-gray.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} >= 14'  
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false'  
         icon:
           iconUrl: /static/css/images/markers/balloons.png
           shadowUrl: /static/css/images/markers/shadow-round-pale.png
