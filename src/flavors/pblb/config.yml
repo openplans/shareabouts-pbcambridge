@@ -734,7 +734,7 @@ pages:
   - title: About PB
     slug: pb
     name: pb
-  - title: Go to your District
+  - title: Choose District
     pages:
       - title: _(District 1)
         url: /14/33.77522/-118.21512
