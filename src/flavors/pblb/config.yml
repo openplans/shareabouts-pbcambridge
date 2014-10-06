@@ -52,18 +52,16 @@ place_types:
 
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false'
         icon:
-          iconUrl: /static/css/images/markers/communitycenter.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/dot-aa3c1e.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/communitycenter.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/facilities.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
   
   education:
     label: _(Schools & Education)
@@ -85,18 +83,16 @@ place_types:
 
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false'  
         icon:
-          iconUrl: /static/css/images/markers/books.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/dot-7fccd9.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/books.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/education.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   environment:
     label: _(Environment)
@@ -118,18 +114,16 @@ place_types:
 
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false'  
         icon:
-          iconUrl: /static/css/images/markers/tree.png
-          shadowUrl: /static/css/images/markers/shadow-round-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/dot-55a504.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/tree.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/tree.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   housing:
     label: _(Housing)
@@ -151,18 +145,16 @@ place_types:
 
       - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false'
         icon:
-          iconUrl: /static/css/images/markers/building.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/dot-f50a8e.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/building.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/housing.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
   
   parks:
     label: _(Parks & Recreation)
@@ -184,18 +176,17 @@ place_types:
 
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false'  
         icon:
-          iconUrl: /static/css/images/markers/swings.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/dot-fa5b13.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/swings.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/playground.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
+  
 
   health:
     label: _(Public Health)
@@ -217,18 +208,16 @@ place_types:
   
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false'
         icon:
-          iconUrl: /static/css/images/markers/cross.png
-          shadowUrl: /static/css/images/markers/shadow-round-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/dot-ff78be.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/cross.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/health.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   safety:
     label: _(Public Safety)
@@ -250,18 +239,16 @@ place_types:
  
       - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false'
         icon:
-          iconUrl: /static/css/images/markers/badge.png
-          shadowUrl: /static/css/images/markers/shadow-round-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/dot-fc9229.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/badge.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/safety.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   seniors:
     label: _(Seniors)
@@ -283,18 +270,16 @@ place_types:
 
       - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false'  
         icon:
-          iconUrl: /static/css/images/markers/seniors.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]  
+          iconUrl: /static/css/images/markers/new/dot-c4ed52.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/seniors.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]  
+          iconUrl: /static/css/images/markers/new/seniors.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   streets:
     label: _(Streets & Sidewalks)
@@ -316,18 +301,16 @@ place_types:
  
       - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false'  
         icon:
-          iconUrl: /static/css/images/markers/cone.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]     
+          iconUrl: /static/css/images/markers/new/dot-a0b4c6.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/cone.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]     
+          iconUrl: /static/css/images/markers/new/street-sidewalk.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   transit:
     label: _(Transit)
@@ -349,18 +332,16 @@ place_types:
 
       - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false'
         icon:
-          iconUrl: /static/css/images/markers/bus.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/dot-b75ab8.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/bus.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/transit.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
   youth:
     label: _(Youth)
@@ -382,18 +363,16 @@ place_types:
 
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false'  
         icon:
-          iconUrl: /static/css/images/markers/balloons.png
-          shadowUrl: /static/css/images/markers/shadow-round-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/dot-ffd614.png
+          iconSize: [15, 15]
+          iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === true'  
         icon:
-          iconUrl: /static/css/images/markers/balloons.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
+          iconUrl: /static/css/images/markers/new/youth.png
+          shadowUrl: /static/css/images/markers/new/marker-shadow.png
+          iconSize: [75, 90]
+          shadowSize: [41, 41]
+          iconAnchor: [38, 90]
 
 # Icons for new additions
   culture-shortlisted:
