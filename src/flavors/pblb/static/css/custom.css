@@ -139,6 +139,25 @@ input.geocode-address-field {
 }
 
 
+/* =Footer
+-------------------------------------------------------------- */
+
+#colophon {
+  background-color: #aaa;
+}
+
+
+/* =Map
+-------------------------------------------------------------- */
+#map-container {
+  background: #ccc;
+}
+
+#map {
+  background: #ccc;
+}
+
+
 /* =The Ticker
 -------------------------------------------------------------- */
 
@@ -178,8 +197,9 @@ input.geocode-address-field {
 .legend img {
   float: left;
   position: relative;
+  margin-right: 8px;
+  margin-top: 1px;
   z-index: 2;
-  margin-top: -8px;
 }
 .legend img + img {
   margin-right: -21px;
