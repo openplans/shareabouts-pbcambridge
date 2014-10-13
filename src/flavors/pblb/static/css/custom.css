@@ -69,8 +69,8 @@ textarea:focus {
 }
 #site-logo {
   float: left;
-  height: 1em;
-  margin-bottom: 0.5em;
+  height: 1.25em;
+  margin-bottom: 0.25em;
 }
 #nav-btn {
   background-color: #fff;
@@ -106,8 +106,12 @@ a#sign-in-btn:hover {
   border: 0;
 }
 a#add-place {
+  background-color: #e28623;
+  color: #fff;
 }
 a#add-place:hover {
+  background-color: #68bab9;
+  color: #fff;
 }
 
 
@@ -350,7 +354,8 @@ input.geocode-address-field {
     font-size: 1em;
   }
   #site-logo {
-    height: 3.25em;
+    height: 4em;
+    margin: 0 0 0 -0.5em;
   }
   .access {
     font-size: 0.75em;
