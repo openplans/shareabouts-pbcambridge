@@ -100,7 +100,8 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
     $(Shareabouts).on('panelshow', function(evt, app, path) {
       $( "<br/><br/><h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> and will help us to assess whether these maps are reaching the full diversity of our community:</p>" ).insertAfter( "#place-private-volunteer" );
       $( "<br/><small>Note: Council district staff will review idea categories and make any revisions as needed.</small>" ).insertAfter( "#place-location_type" );
-      $( "<br/><label>Your Race/Ethnicity:</label>" ).insertAfter( "#place-private-age" );
+      var firstRaceItem = $('#place-private-race-amerind').parent('p');
+      $( "<br/><label>Your Race/Ethnicity:</label>" ).insertBefore(firstRaceItem);
     });
     
     var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
