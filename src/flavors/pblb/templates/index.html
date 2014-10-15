@@ -50,10 +50,7 @@
   <li class="clearfix"><img src="/static/css/images/markers/new/tree-small.png" width="25" height="30"> Environment</li>
   <li class="clearfix"><img src="/static/css/images/markers/new/playground-small.png" width="25" height="30"> Parks and Recreation</li>
   <li class="clearfix"><img src="/static/css/images/markers/new/health-small.png" width="25" height="30"> Public Health and Safety</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/seniors-small.png" width="25" height="30"> Seniors</li>
   <li class="clearfix"><img src="/static/css/images/markers/new/street-sidewalk-small.png" width="25" height="30"> Streets and Sidewalks</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/transit-small.png" width="25" height="30"> Transit</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/youth-small.png" width="25" height="30"> Youth</li>
 </ul>
 {% endblock %}
 
@@ -73,7 +70,7 @@ var mapQuest_geocode = Shareabouts.Util.MapQuest.geocode;
 Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
   // Since this is all Chicago-specific, go ahead and specify the city.
   if (location.toLowerCase().indexOf('NYC') === -1) {
-    location += ', NYC NY'
+    location += ', Long Beach, CA'
   }
   return mapQuest_geocode.call(this, location, bounds, options);
 }

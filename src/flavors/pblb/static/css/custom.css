@@ -123,6 +123,9 @@ a#add-place:hover {
   background-color: #DAF2F2;
   border-right: 1px solid #c3d7e5;
 }
+.geocode-address-label {
+  font-size: 0.75em;
+}
 input.geocode-address-field {
   border-width: 0;
   background-color: #fff;

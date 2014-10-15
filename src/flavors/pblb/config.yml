@@ -608,14 +608,8 @@ place:
           value: parks
         - label: _(Public Health & Safety)
           value: health
-        - label: _(Seniors)
-          value: seniors
         - label: _(Streets & Sidewalks)
           value: streets
-        - label: _(Transit)
-          value: transit
-        - label: _(Youth)
-          value: youth
       name: location_type
     - prompt: _(Your Name (required, will be shown on the map))
       type: text
