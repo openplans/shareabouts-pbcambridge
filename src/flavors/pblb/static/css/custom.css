@@ -6,19 +6,20 @@
 body, select, input, textarea {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
+label { font-size: 1em; text-transform: none; color: #555; }
 
 /* Buttons */
 .btn,
 .btn:visited,
 .btn:link {
-  background-color: #116faf;
+  background-color: #68bab9;
   color: #fff;
 }
 .btn:hover, .button:hover, button:hover {
   background-color: #e28623;
 }
 .btn-primary, .btn-primary:visited, .btn-primary:link {
-  background-color: #116faf;
+  background-color: #68bab9;
   color: #fff;
 }
 .btn-primary:hover {
@@ -51,12 +52,12 @@ input[type=time],
 input[type=url],
 input[type=week],
 textarea {
-  border: 0.25em solid #c3d7e5;
+  border: 0.25em solid #ACE6E6;
 }
 input:focus,
 textarea:focus {
-  border: 0.25em solid #116faf;
-  outline: 2px solid #116faf;
+  border: 0.25em solid #68bab9;
+  outline: 2px solid #68bab9;
 }
 
 
@@ -69,8 +70,8 @@ textarea:focus {
 }
 #site-logo {
   float: left;
-  height: 1em;
-  margin-bottom: 0.5em;
+  height: 1.25em;
+  margin-bottom: 0.25em;
 }
 #nav-btn {
   background-color: #fff;
@@ -82,7 +83,7 @@ textarea:focus {
 .access a:active, 
 .access a:link {
   color: #fff;
-  background-color: #116faf;
+  background-color: #68bab9;
   border: 0;
 }
 .access a:hover {
@@ -91,7 +92,7 @@ textarea:focus {
 }
 #auth-nav-container {}
 a#sign-in-btn {
-  color: #116faf;
+  color: #68bab9;
 }
 a#sign-in-btn:hover {
   color: #e28623;
@@ -101,12 +102,16 @@ a#sign-in-btn:hover {
 /* =The Big Button to Add A New Point
 -------------------------------------------------------------- */
 
-a.add-place {
-  background-color: #000;
-  color: #eee;
-  text-shadow: none;
+#add-place-btn-container {
+  background-color: #DAF2F2;
+  border: 0;
 }
-a.add-place:hover {
+a#add-place {
+  background-color: #e28623;
+  color: #fff;
+}
+a#add-place:hover {
+  background-color: #68bab9;
   color: #fff;
 }
 
@@ -115,7 +120,7 @@ a.add-place:hover {
 -------------------------------------------------------------- */
 
 #geocode-address-bar {
-  background-color: #e6f0f9;
+  background-color: #DAF2F2;
   border-right: 1px solid #c3d7e5;
 }
 input.geocode-address-field {
@@ -142,8 +147,13 @@ input.geocode-address-field {
 /* =Footer
 -------------------------------------------------------------- */
 
-#colophon {
-  background-color: #aaa;
+#colophon,
+#powered-by a.shareabouts-logo,
+#powered-by a.shareabouts-logo:hover,
+#powered-by a.openplans-logo,
+#powered-by a.openplans-logo:hover {
+  background-color: #fff;
+  color: #888;
 }
 
 
@@ -174,9 +184,9 @@ input.geocode-address-field {
 }
 .recent-points li:hover a,
 .recent-points a:hover {
-  color: #555;
-  background-color: #c3d7e5;
-  border-color: #c3d7e5;
+  color: #fff;
+  background-color: #68bab9;
+  border-color: #68bab9;
 }
 
 
@@ -184,7 +194,7 @@ input.geocode-address-field {
 -------------------------------------------------------------- */
 
 .legend {
-  background-color: #e6f0f9;
+  background-color: #DAF2F2;
   padding: 15px 10px;
   border-bottom: 1px solid #ddd;
   list-style: none;
@@ -320,6 +330,14 @@ input.geocode-address-field {
   background-image: url(images/markers/new/youth-small.png); 
 }
 
+/* Promotion: Voting & Sharing */
+.user-support label {
+  color: #fff;
+}
+.user-support input[type=checkbox]:checked ~ label {}
+.user-support:hover label {
+  background-color: #e28623;
+}
 
 
 /* =Media Queries
@@ -337,7 +355,8 @@ input.geocode-address-field {
     font-size: 1em;
   }
   #site-logo {
-    height: 3.25em;
+    height: 4em;
+    margin: 0 0 0 -0.5em;
   }
   .access {
     font-size: 0.75em;
@@ -354,7 +373,7 @@ input.geocode-address-field {
     box-shadow: none;
   }
   .access a:hover {
-    background-color: #116faf;
+    background-color: #68bab9;
     color: #fff;
   }
   .list-toggle-nav {
@@ -371,8 +390,11 @@ input.geocode-address-field {
     border: 0;
   }
   a.list-toggle-btn:hover {
-    color: #116faf;
-    background-color: #fff;
+    background-color: #68bab9;
+    color: #fff;
+  }
+  #add-place-btn-container {
+    background-color: transparent;
   }
 }
 

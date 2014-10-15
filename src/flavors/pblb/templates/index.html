@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block site-title %}
-<a href="http://www.pblongbeach.org/" target="_blank"><img id="site-logo" src="/static/css/images/logo2.jpg"></a>
+<a href="http://www.pblongbeach.org/" target="_blank"><img id="site-logo" src="/static/css/images/pblongbeach-logobanner.jpg"></a>
 {% endblock %}
 
 
@@ -45,17 +45,15 @@
 {% block sidebar %}
 
 <ul class="legend">
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-aa3c1e.png" width="20" height="20"> Culture and Community Facilities</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-7fccd9.png" width="20" height="20"> Schools and Education</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-55a504.png" width="20" height="20"> Environment</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-f50a8e.png" width="20" height="20"> Housing</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-fa5b13.png" width="20" height="20"> Parks and Recreation</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-ff78be.png" width="20" height="20"> Public Health</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-fc9229.png" width="20" height="20"> Public Safety</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-c4ed52.png" width="20" height="20"> Seniors</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-8ea4b8.png" width="20" height="20"> Streets and Sidewalks</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-b75ab8.png" width="20" height="20"> Transit</li>
-  <li class="clearfix"><img src="/static/css/images/markers/new/dot-ffd614.png" width="20" height="20"> Youth</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/facilities-small.png" width="25" height="30"> Culture and Community Facilities</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/education-small.png" width="25" height="30"> Schools and Education</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/tree-small.png" width="25" height="30"> Environment</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/playground-small.png" width="25" height="30"> Parks and Recreation</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/health-small.png" width="25" height="30"> Public Health and Safety</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/seniors-small.png" width="25" height="30"> Seniors</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/street-sidewalk-small.png" width="25" height="30"> Streets and Sidewalks</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/transit-small.png" width="25" height="30"> Transit</li>
+  <li class="clearfix"><img src="/static/css/images/markers/new/youth-small.png" width="25" height="30"> Youth</li>
 </ul>
 {% endblock %}
 
@@ -98,6 +96,12 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
 <!-- zoom to marker on click -->
 <script>
   (function(NS, $) {
+
+    $(Shareabouts).on('panelshow', function(evt, app, path) {
+      $( "<br/><br/><h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> and will help us to assess whether these maps are reaching the full diversity of our community:</p>" ).insertAfter( "#place-private-volunteer" );
+      $( "<br/><small>Note: Council district staff will review idea categories and make any revisions as needed.</small>" ).insertAfter( "#place-location_type" );
+      $( "<br/><label>Your Race/Ethnicity:</label>" ).insertAfter( "#place-private-age" );
+    });
     
     var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
     NS.LayerView.prototype.onMarkerClick = function(evt) {

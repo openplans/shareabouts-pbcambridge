@@ -21,7 +21,7 @@ map:
       lat: 33.87084
       lng: -118.18002
     zoom: 14
-    minZoom: 12
+    minZoom: 14
     maxZoom: 17
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.jlb70f57/{z}/{x}/{y}.png
@@ -158,48 +158,6 @@ place_types:
           shadowSize: [41, 41]
           iconAnchor: [38, 90]
 
-  housing:
-    label: _(Housing)
-    rules:
-      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/new/dot-white.png
-          iconSize: [11, 11]
-          iconAnchor: [6, 6]
-      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/dot-white.png
-          iconSize: [15, 15]
-          iconAnchor: [8, 8]
-      - condition: '"{{location_type}}" === "housing" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/dot-white.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
-
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/new/dot-f50a8e.png
-          iconSize: [15, 15]
-          iconAnchor: [8, 8]
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
-        icon:
-          iconUrl: /static/css/images/markers/new/housing-small.png
-          iconSize: [25, 30]
-          iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
-        icon:
-          iconUrl: /static/css/images/markers/new/housing-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-      - condition: '"{{location_type}}" === "housing" && {{layer.focused}} === true'
-        icon:
-          iconUrl: /static/css/images/markers/new/housing.png
-          shadowUrl: /static/css/images/markers/new/marker-shadow.png
-          iconSize: [75, 90]
-          shadowSize: [41, 41]
-          iconAnchor: [38, 90]
-  
   parks:
     label: _(Parks & Recreation)
     rules:
@@ -243,7 +201,7 @@ place_types:
           iconAnchor: [38, 90]
 
   health:
-    label: _(Public Health)
+    label: _(Public Health and Safety)
     rules:
       - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -279,48 +237,6 @@ place_types:
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === true'
         icon:
           iconUrl: /static/css/images/markers/new/health.png
-          shadowUrl: /static/css/images/markers/new/marker-shadow.png
-          iconSize: [75, 90]
-          shadowSize: [41, 41]
-          iconAnchor: [38, 90]
-
-  safety:
-    label: _(Public Safety)
-    rules:
-      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/new/dot-white.png
-          iconSize: [11, 11]
-          iconAnchor: [6, 6]
-      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/dot-white.png
-          iconSize: [15, 15]
-          iconAnchor: [8, 8]
-      - condition: '"{{location_type}}" === "safety" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} >= 16'
-        icon:
-          iconUrl: /static/css/images/markers/new/dot-white.png
-          iconSize: [20, 20]
-          iconAnchor: [10, 10]
- 
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} < 14'
-        icon:
-          iconUrl: /static/css/images/markers/new/dot-fc9229.png
-          iconSize: [15, 15]
-          iconAnchor: [8, 8]
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 16'  
-        icon:
-          iconUrl: /static/css/images/markers/new/safety-small.png
-          iconSize: [25, 30]
-          iconAnchor: [13, 30]
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === false && {{map.zoom}} >= 16'  
-        icon:
-          iconUrl: /static/css/images/markers/new/safety-small.png
-          iconSize: [50, 60]
-          iconAnchor: [25, 60]
-      - condition: '"{{location_type}}" === "safety" && {{layer.focused}} === true'
-        icon:
-          iconUrl: /static/css/images/markers/new/safety.png
           shadowUrl: /static/css/images/markers/new/marker-shadow.png
           iconSize: [75, 90]
           shadowSize: [41, 41]
@@ -543,22 +459,6 @@ place_types:
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
-  housing-shortlisted:
-    label: _(Housing)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/building.png
-          shadowUrl: /static/css/images/markers/shadow-square-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-        focus_icon:
-          iconUrl: /static/css/images/markers/building.png
-          shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
   parks-shortlisted:
     label: _(Parks & Recreation)
     rules:
@@ -576,7 +476,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
   health-shortlisted:
-    label: _(Public Health)
+    label: _(Public Health and Safety)
     rules:
       - condition: 'true'
         icon:
@@ -588,22 +488,6 @@ place_types:
         focus_icon:
           iconUrl: /static/css/images/markers/cross.png
           shadowUrl: /static/css/images/markers/shadow-square-white.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-  safety-shortlisted:
-    label: _(Public Safety)
-    rules:
-      - condition: 'true'
-        icon:
-          iconUrl: /static/css/images/markers/badge.png
-          shadowUrl: /static/css/images/markers/shadow-round-pale.png
-          iconSize: [31, 32]
-          shadowSize: [31, 32]
-          iconAnchor: [16, 25]
-        focus_icon:
-          iconUrl: /static/css/images/markers/badge.png
-          shadowUrl: /static/css/images/markers/shadow-round-white.png
           iconSize: [31, 32]
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
@@ -686,7 +570,7 @@ place:
   show_map_button_label: _(Show on a map)
   title: _(Describe your idea)
   action_text: _(suggested)
-  help_text: _(Ideas must be "capital" projects - building, installing, or repairing something for public benefit, such as renovating a public basketball court or purchasing new computers for a library.)
+  help_text: _(Ideas must be "capital" projects - building, installing, or repairing something for public benefit.)
   anonymous_name: _(Someone)
   submit_button_label: _(Share my idea)
   location_item_name: location
@@ -701,12 +585,12 @@ place:
           value: 30
         - key: maxlength
           value: 100
-    - prompt: _(So that people could...)
+    - prompt: _(My idea is needed because...)
       type: textarea
       name: description
       attrs:
         - key: placeholder
-          value: _(...)
+          value: _(What need does your idea address? Who does it benefit? Share any relevant details about your idea.)
         - key: maxlength
           value: 1000
     - prompt: _(Pick a category for your idea)
@@ -720,14 +604,10 @@ place:
           value: education
         - label: _(Environment)
           value: environment
-        - label: _(Housing)
-          value: housing
         - label: _(Parks & Recreation)
           value: parks
-        - label: _(Public Health)
+        - label: _(Public Health & Safety)
           value: health
-        - label: _(Public Safety)
-          value: safety
         - label: _(Seniors)
           value: seniors
         - label: _(Streets & Sidewalks)
@@ -737,7 +617,7 @@ place:
         - label: _(Youth)
           value: youth
       name: location_type
-    - prompt: _(Your name (required and will be shown on map))
+    - prompt: _(Your Name (required, will be shown on the map))
       type: text
       name: submitter_name
       sticky: true
@@ -747,7 +627,7 @@ place:
           value: 30
         - key: required
           value: true
-    - prompt: _(Your email (required and will NOT be shown on the map))
+    - prompt: _(Your Email (required, will NOT be shown on the map))
       type: text
       name: private-email
       sticky: true
@@ -756,40 +636,93 @@ place:
           value: 30
         - key: required
           value: true
-    - prompt: _(Your phone number (optional and will NOT be shown on the map))
+    - prompt: _(Your Phone Number (optional, will NOT be shown on the map))
       type: text
       name: private-phone
       sticky: true
       attrs:
         - key: size
           value: 10
-    - prompt: _(Your zip code (optional and will NOT be shown on the map))
-      type: text
-      name: private-zip
-      sticky: true
-      attrs:
-        - key: size
-          value: 30
-    - prompt: _(Your age (optional and will NOT be shown on the map))
-      type: text
-      name: private-age
-      sticky: true
-      attrs:
-        - key: size
-          value: 30
-    - prompt: _(Your gender (optional and will NOT be shown on the map))
-      type: text
-      name: private-gender
-      sticky: true
-      attrs:
-        - key: size
-          value: 30
     - prompt: _(I'd like to volunteer)
       type: checkbox
       name: private-volunteer
       attrs:
         - key: value
           value: _(Volunteer)
+    - prompt: _(Your Age)
+      type: text
+      name: private-age
+      sticky: true
+      attrs:
+        - key: size
+          value: 30
+    - prompt: _(American Indian/Alaskan Native)
+      type: checkbox
+      name: private-race-amerind
+      attrs:
+        - key: value
+          value: _(American Indian/Alaskan Native)
+    - prompt: _(Asian)
+      type: checkbox
+      name: private-race-asian
+      attrs:
+        - key: value
+          value: _(Asian)
+    - prompt: _(Black or African American)
+      type: checkbox
+      name: private-race-black
+      attrs:
+        - key: value
+          value: _(Black or African American)
+    - prompt: _(Hispanic or Latino/a)
+      type: checkbox
+      name: private-race-hispanic
+      attrs:
+        - key: value
+          value: _(Hispanic or Latino/a)
+    - prompt: _(Native Hawaiian or Pacific Islander)
+      type: checkbox
+      name: private-race-pacific
+      attrs:
+        - key: value
+          value: _(Native Hawaiian or Pacific Islander)
+    - prompt: _(White)
+      type: checkbox
+      name: private-race-white
+      attrs:
+        - key: value
+          value: _(White)
+    - prompt: _(Other)
+      type: checkbox
+      name: private-race-other
+      attrs:
+        - key: value
+          value: _(Other)
+    - prompt: _(Your Household Income)
+      type: select
+      options:
+        - label: _(Please choose...)
+          value:
+        - label: _(Under $10,000)
+          value: under10
+        - label: _($10,000 - $14,999)
+          value: 10to15
+        - label: _($15,000 - $24,999)
+          value: 15to25
+        - label: _($25,000 - $34,999)
+          value: 25to35
+        - label: _($35,000 - $49,999)
+          value: 35to50
+        - label: _($50,000 - $74,999)
+          value: 50to75
+        - label: _($75,000 - $99,999)
+          value: 75to100
+        - label: _($100,000 - $149,999)
+          value: 100to150
+        - label: _($150,000 or more)
+          value: 150ormore
+      name: private-income
+      sticky: true
 
 survey:
   submission_type: comments
@@ -827,17 +760,13 @@ pages:
     slug: about
     name: about
     start_page: true
-  - title: Participate
-    slug: participate
-    name: participate
-  - title: About PB
-    slug: pb
-    name: pb
-  - title: Choose District
-    pages:
-      - title: _(District 1)
-        url: /14/33.77522/-118.21512
-        external: true
-      - title: _(District 9)
-        url: /14/33.87084/-118.18002
-        external: true
+  - title: Guidelines
+    slug: guidelines
+    name: guidelines
+  - title: Get More Involved
+    slug: involved
+    name: involved
+
+notifications:
+  on_new_place: true
+  submitter_email_field: "private-email"

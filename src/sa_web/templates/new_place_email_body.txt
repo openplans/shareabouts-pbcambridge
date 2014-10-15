@@ -1,3 +1,7 @@
-Thanks for submitting a new {{ place.properties.location_type }}!
+Thanks for submitting a new idea to improve your community!
 
-The URL for your place is http://{{ request.get_host }}/places/{{ place.id }}. Share it around.
+Here's what you suggested: {{ place.properties.name }}
+
+You can see people's comments on your idea at http://ideas.pblongbeach.org/place/{{ place.id }}.
+
+For more information on the participatory budgeting process, go to www.pblongbeach.org. 
