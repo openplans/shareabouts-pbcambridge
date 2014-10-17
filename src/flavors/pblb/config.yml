@@ -1,9 +1,9 @@
 # Settings for the app
 app:
   # HTML Title
-  title: Participatory Budgeting Long Beach
+  title: _(Participatory Budgeting Long Beach)
   # Header name
-  name: Participatory Budgeting Long Beach
+  name: _(Participatory Budgeting Long Beach)
   # Meta description that will show up in Google search results
   meta_description: _(Participatory Budgeting for Long Beach)
   district: 
@@ -21,7 +21,7 @@ map:
       lat: 33.87084
       lng: -118.18002
     zoom: 14
-    minZoom: 14
+    minZoom: 13
     maxZoom: 17
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.jlb70f57/{z}/{x}/{y}.png
@@ -75,7 +75,7 @@ place_types:
           iconAnchor: [38, 90]
   
   education:
-    label: _(Schools & Education)
+    label: _(Education)
     rules:
       - condition: '"{{location_type}}" === "education" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -201,7 +201,7 @@ place_types:
           iconAnchor: [38, 90]
 
   health:
-    label: _(Public Health and Safety)
+    label: _(Public Health & Safety)
     rules:
       - condition: '"{{location_type}}" === "health" && "{{winner}}" === "winner" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -428,7 +428,7 @@ place_types:
           shadowSize: [31, 32]
           iconAnchor: [16, 25]
   education-shortlisted:
-    label: _(Schools & Education)
+    label: _(Education)
     rules:
       - condition: 'true'
         icon:
@@ -746,18 +746,18 @@ support:
   submit_btn_text: _(Support This!)
   response_name: _(support)
   response_plural_name: _(supports)
-  action_text: supported
+  action_text: _(supported)
   anonymous_name: _(Someone)
 
 pages:
-  - title: About
+  - title: _(About)
     slug: about
     name: about
     start_page: true
-  - title: Guidelines
+  - title: _(Guidelines)
     slug: guidelines
     name: guidelines
-  - title: Get More Involved
+  - title: _(Get More Involved)
     slug: involved
     name: involved
 
