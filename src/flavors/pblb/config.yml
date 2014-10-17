@@ -600,7 +600,7 @@ place:
           value:
         - label: _(Culture & Community Facilities)
           value: culture
-        - label: _(Schools & Education)
+        - label: _(Education)
           value: education
         - label: _(Environment)
           value: environment
