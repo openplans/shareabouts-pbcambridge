@@ -7,7 +7,7 @@ app:
   # Meta description that will show up in Google search results
   meta_description: _(Participatory Budgeting for Long Beach)
   district: 
-  tagline: _(How would YOU spend $250K?)
+  tagline: _(DATA ENTRY PAGE)
 
 # Settings for map and layer configs
 map:
@@ -568,16 +568,28 @@ place:
   # Labels for the buttons that toggle the map and list views
   show_list_button_label: _(Show as a list)
   show_map_button_label: _(Show on a map)
-  title: _(Describe your idea)
+  title: _(Add a new place)
   action_text: _(suggested)
-  help_text: _(Ideas must be "capital" projects - building, installing, or repairing something for public benefit.)
   anonymous_name: _(Someone)
-  submit_button_label: _(Share my idea)
+  submit_button_label: _(Add to map)
   location_item_name: location
   items:
-    - prompt: _(My project idea is...)
+    - prompt: _(Source of idea)
+      type: text
+      name: source
+      sticky: true
+      optional: false
+      attrs:
+        - key: placeholder
+          value: _(e.g. neighborhood assembly, informal idea collection, etc)
+        - key: size
+          value: 30
+        - key: required
+          value: true
+    - prompt: _(Idea)
       type: text
       name: name
+      optional: false
       attrs:
         - key: placeholder
           value: _(...)
@@ -585,15 +597,17 @@ place:
           value: 30
         - key: maxlength
           value: 100
-    - prompt: _(My idea is needed because...)
+        - key: required
+          value: true
+    - prompt: _(Purpose / Rationale (if given))
       type: textarea
       name: description
       attrs:
         - key: placeholder
-          value: _(What need does your idea address? Who does it benefit? Share any relevant details about your idea.)
+          value: _(...)
         - key: maxlength
           value: 1000
-    - prompt: _(Pick a category for your idea)
+    - prompt: _(Category)
       type: select
       options:
         - label: _(Please choose...)
@@ -611,112 +625,57 @@ place:
         - label: _(Streets & Sidewalks)
           value: streets
       name: location_type
-    - prompt: _(Your Name (required, will be shown on the map))
+    - prompt: _(Submitter name)
       type: text
       name: submitter_name
       sticky: true
-      optional: false
+      optional: true
       attrs:
         - key: size
           value: 30
-        - key: required
-          value: true
-    - prompt: _(Your Email (required, will NOT be shown on the map))
-      type: text
-      name: private-email
-      sticky: true
-      attrs:
-        - key: size
-          value: 30
-        - key: required
-          value: true
-    - prompt: _(Your Phone Number (optional, will NOT be shown on the map))
-      type: text
-      name: private-phone
-      sticky: true
-      attrs:
-        - key: size
-          value: 10
-    - prompt: _(I'd like to volunteer)
-      type: checkbox
-      name: private-volunteer
-      attrs:
-        - key: value
-          value: _(Volunteer)
-    - prompt: _(Your Age)
-      type: text
-      name: private-age
-      sticky: true
-      attrs:
-        - key: size
-          value: 30
-    - prompt: _(American Indian/Alaskan Native)
-      type: checkbox
-      name: private-race-amerind
-      attrs:
-        - key: value
-          value: _(American Indian/Alaskan Native)
-    - prompt: _(Asian)
-      type: checkbox
-      name: private-race-asian
-      attrs:
-        - key: value
-          value: _(Asian)
-    - prompt: _(Black or African American)
-      type: checkbox
-      name: private-race-black
-      attrs:
-        - key: value
-          value: _(Black or African American)
-    - prompt: _(Hispanic or Latino/a)
-      type: checkbox
-      name: private-race-hispanic
-      attrs:
-        - key: value
-          value: _(Hispanic or Latino/a)
-    - prompt: _(Native Hawaiian or Pacific Islander)
-      type: checkbox
-      name: private-race-pacific
-      attrs:
-        - key: value
-          value: _(Native Hawaiian or Pacific Islander)
-    - prompt: _(White)
-      type: checkbox
-      name: private-race-white
-      attrs:
-        - key: value
-          value: _(White)
-    - prompt: _(Other)
-      type: checkbox
-      name: private-race-other
-      attrs:
-        - key: value
-          value: _(Other)
-    - prompt: _(Your Household Income)
+    - prompt: _(Capital eligibility)
       type: select
       options:
         - label: _(Please choose...)
           value:
-        - label: _(Under $10,000)
-          value: under10
-        - label: _($10,000 - $14,999)
-          value: 10to15
-        - label: _($15,000 - $24,999)
-          value: 15to25
-        - label: _($25,000 - $34,999)
-          value: 25to35
-        - label: _($35,000 - $49,999)
-          value: 35to50
-        - label: _($50,000 - $74,999)
-          value: 50to75
-        - label: _($75,000 - $99,999)
-          value: 75to100
-        - label: _($100,000 - $149,999)
-          value: 100to150
-        - label: _($150,000 or more)
-          value: 150ormore
-      name: private-income
+        - label: _(Yes)
+          value: yes
+        - label: _(No)
+          value: no
+        - label: _(Maybe)
+          value: maybe
+      name: private-capital
+    - prompt: _(Explanation (if eligibility is "no" or "maybe"))
+      type: text
+      name: private-explanation
+      attrs:
+        - key: size
+          value: 30
+    - prompt: _(Relevant city agency (if known))
+      type: text
+      name: private-agency
+      attrs:
+        - key: size
+          value: 30
+    - prompt: _(Notes)
+      type: textarea
+      name: private-notes
+      optional: true
+      attrs:
+        - key: maxlength
+          value: 1000
+    - prompt: _(Date entry person name)
+      type: text
+      name: data-entry-name
       sticky: true
+      attrs:
+        - key: size
+          value: 30
+    - type: hidden
+      name: data-entry-map
+      attrs:
+        - key: value
+          value: yes
 
 survey:
   submission_type: comments
@@ -754,13 +713,3 @@ pages:
     slug: about
     name: about
     start_page: true
-  - title: _(Guidelines)
-    slug: guidelines
-    name: guidelines
-  - title: _(Get More Involved)
-    slug: involved
-    name: involved
-
-notifications:
-  on_new_place: true
-  submitter_email_field: "private-email"
