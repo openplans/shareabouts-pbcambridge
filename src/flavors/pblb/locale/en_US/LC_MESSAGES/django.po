@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-17 17:05-0400\n"
+"POT-Creation-Date: 2014-10-27 15:52-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,8 +39,8 @@ msgid "supported"
 msgstr ""
 
 #: flavors/pblb/_config.translations.py:7
-#: flavors/pblb/_config.translations.py:38
-#: flavors/pblb/_config.translations.py:89
+#: flavors/pblb/_config.translations.py:20
+#: flavors/pblb/_config.translations.py:71
 msgid "Someone"
 msgstr ""
 
@@ -57,244 +57,244 @@ msgid "supports"
 msgstr ""
 
 #: flavors/pblb/_config.translations.py:11
-#: flavors/pblb/_config.translations.py:18
-msgid "Seniors"
-msgstr ""
-
-#: flavors/pblb/_config.translations.py:12
-#: flavors/pblb/_config.translations.py:26
-msgid "Youth"
-msgstr ""
-
-#: flavors/pblb/_config.translations.py:13
-#: flavors/pblb/_config.translations.py:25
-#: flavors/pblb/_config.translations.py:51
-msgid "Parks & Recreation"
-msgstr ""
-
-#: flavors/pblb/_config.translations.py:14
-#: flavors/pblb/_config.translations.py:24
-msgid "Transit"
-msgstr ""
-
-#: flavors/pblb/_config.translations.py:15
-#: flavors/pblb/_config.translations.py:22
-#: flavors/pblb/_config.translations.py:53
-msgid "Streets & Sidewalks"
-msgstr ""
-
-#: flavors/pblb/_config.translations.py:16
-#: flavors/pblb/_config.translations.py:19
-#: flavors/pblb/_config.translations.py:49
-#: flavors/pblb/templates/index.html:50
-msgid "Education"
-msgstr ""
-
-#: flavors/pblb/_config.translations.py:17
-#: flavors/pblb/_config.translations.py:23
-#: flavors/pblb/_config.translations.py:48
-msgid "Culture & Community Facilities"
-msgstr ""
-
-#: flavors/pblb/_config.translations.py:20
-#: flavors/pblb/_config.translations.py:21
-#: flavors/pblb/_config.translations.py:50
-#: flavors/pblb/templates/index.html:51
-msgid "Environment"
-msgstr ""
-
-#: flavors/pblb/_config.translations.py:27
-#: flavors/pblb/_config.translations.py:52
-msgid "Public Health & Safety"
-msgstr ""
-
-#: flavors/pblb/_config.translations.py:28
-#: flavors/pblb/templates/index.html:53
-msgid "Public Health and Safety"
-msgstr ""
-
-#: flavors/pblb/_config.translations.py:29
 msgid "comments"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:30
+#: flavors/pblb/_config.translations.py:12
 msgid "commented on"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:31
-#: flavors/pblb/_config.translations.py:37
+#: flavors/pblb/_config.translations.py:13
+#: flavors/pblb/_config.translations.py:19
 msgid "Leave a Comment"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:32
-#: flavors/pblb/_config.translations.py:33
-#: flavors/pblb/_config.translations.py:35
+#: flavors/pblb/_config.translations.py:14
+#: flavors/pblb/_config.translations.py:15
+#: flavors/pblb/_config.translations.py:17
 msgid "Comment"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:34
+#: flavors/pblb/_config.translations.py:16
 msgid "Your Name"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:36
+#: flavors/pblb/_config.translations.py:18
 msgid "comment"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:39
+#: flavors/pblb/_config.translations.py:21
 msgid "Show on a map"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:40
+#: flavors/pblb/_config.translations.py:22
 msgid "Share my idea"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:41
+#: flavors/pblb/_config.translations.py:23
 msgid "Describe your idea"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:42
+#: flavors/pblb/_config.translations.py:24
 msgid "My project idea is..."
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:43
+#: flavors/pblb/_config.translations.py:25
 msgid "..."
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:44
+#: flavors/pblb/_config.translations.py:26
 msgid "My idea is needed because..."
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:45
+#: flavors/pblb/_config.translations.py:27
 msgid ""
 "What need does your idea address? Who does it benefit? Share any relevant "
 "details about your idea."
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:46
+#: flavors/pblb/_config.translations.py:28
 msgid "Pick a category for your idea"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:47
-#: flavors/pblb/_config.translations.py:75
+#: flavors/pblb/_config.translations.py:29
+#: flavors/pblb/_config.translations.py:57
 msgid "Please choose..."
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:54
+#: flavors/pblb/_config.translations.py:30
+#: flavors/pblb/_config.translations.py:78
+#: flavors/pblb/_config.translations.py:84
+msgid "Culture & Community Facilities"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:31
+#: flavors/pblb/_config.translations.py:77
+#: flavors/pblb/_config.translations.py:80
+#: flavors/pblb/templates/index.html:50
+msgid "Education"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:32
+#: flavors/pblb/_config.translations.py:81
+#: flavors/pblb/_config.translations.py:82
+#: flavors/pblb/templates/index.html:51
+msgid "Environment"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:33
+#: flavors/pblb/_config.translations.py:74
+#: flavors/pblb/_config.translations.py:86
+msgid "Parks & Recreation"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:34
+#: flavors/pblb/_config.translations.py:88
+msgid "Public Health & Safety"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:35
+#: flavors/pblb/_config.translations.py:76
+#: flavors/pblb/_config.translations.py:83
+msgid "Streets & Sidewalks"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:36
 msgid "Your Name (required, will be shown on the map)"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:55
+#: flavors/pblb/_config.translations.py:37
 msgid "Your Email (required, will NOT be shown on the map)"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:56
+#: flavors/pblb/_config.translations.py:38
 msgid "Your Phone Number (optional, will NOT be shown on the map)"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:57
+#: flavors/pblb/_config.translations.py:39
 msgid "I'd like to volunteer"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:58
+#: flavors/pblb/_config.translations.py:40
 #: flavors/pblb/jstemplates/pages/involved.html:14
 msgid "Volunteer"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:59
+#: flavors/pblb/_config.translations.py:41
 msgid "Your Age"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:60
-#: flavors/pblb/_config.translations.py:61
+#: flavors/pblb/_config.translations.py:42
+#: flavors/pblb/_config.translations.py:43
 msgid "American Indian/Alaskan Native"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:62
-#: flavors/pblb/_config.translations.py:63
+#: flavors/pblb/_config.translations.py:44
+#: flavors/pblb/_config.translations.py:45
 msgid "Asian"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:64
-#: flavors/pblb/_config.translations.py:65
+#: flavors/pblb/_config.translations.py:46
+#: flavors/pblb/_config.translations.py:47
 msgid "Black or African American"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:66
-#: flavors/pblb/_config.translations.py:67
+#: flavors/pblb/_config.translations.py:48
+#: flavors/pblb/_config.translations.py:49
 msgid "Hispanic or Latino/a"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:68
-#: flavors/pblb/_config.translations.py:69
+#: flavors/pblb/_config.translations.py:50
+#: flavors/pblb/_config.translations.py:51
 msgid "Native Hawaiian or Pacific Islander"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:70
-#: flavors/pblb/_config.translations.py:71
+#: flavors/pblb/_config.translations.py:52
+#: flavors/pblb/_config.translations.py:53
 msgid "White"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:72
-#: flavors/pblb/_config.translations.py:73
+#: flavors/pblb/_config.translations.py:54
+#: flavors/pblb/_config.translations.py:55
 msgid "Other"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:74
+#: flavors/pblb/_config.translations.py:56
 msgid "Your Household Income"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:76
+#: flavors/pblb/_config.translations.py:58
 msgid "Under $10,000"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:77
+#: flavors/pblb/_config.translations.py:59
 msgid "$10,000 - $14,999"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:78
+#: flavors/pblb/_config.translations.py:60
 msgid "$15,000 - $24,999"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:79
+#: flavors/pblb/_config.translations.py:61
 msgid "$25,000 - $34,999"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:80
+#: flavors/pblb/_config.translations.py:62
 msgid "$35,000 - $49,999"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:81
+#: flavors/pblb/_config.translations.py:63
 msgid "$50,000 - $74,999"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:82
+#: flavors/pblb/_config.translations.py:64
 msgid "$75,000 - $99,999"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:83
+#: flavors/pblb/_config.translations.py:65
 msgid "$100,000 - $149,999"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:84
+#: flavors/pblb/_config.translations.py:66
 msgid "$150,000 or more"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:85
+#: flavors/pblb/_config.translations.py:67
 msgid "Submit an idea"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:86
+#: flavors/pblb/_config.translations.py:68
 msgid "Show as a list"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:87
+#: flavors/pblb/_config.translations.py:69
 msgid "suggested"
 msgstr ""
 
-#: flavors/pblb/_config.translations.py:88
+#: flavors/pblb/_config.translations.py:70
 msgid ""
 "Ideas must be \"capital\" projects - building, installing, or repairing "
 "something for public benefit."
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:72
+#: flavors/pblb/_config.translations.py:79
+msgid "Seniors"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:73
+#: flavors/pblb/_config.translations.py:87
+msgid "Youth"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:75
+#: flavors/pblb/_config.translations.py:85
+msgid "Transit"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:89
+#: flavors/pblb/templates/index.html:53
+msgid "Public Health and Safety"
 msgstr ""
 
 #: flavors/pblb/_config.translations.py:90
@@ -574,9 +574,30 @@ msgid ""
 "    \n"
 "            </strong> suggested this {{place_type_label location_type }} "
 "idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. \n"
-"            <p><small>Near {{>location-string location }}</small></p>\n"
-"\n"
-"        "
+"            <p><small>{{#_}}Near {{>location-string location }}"
+msgstr ""
+
+#: flavors/pblb/jstemplates/place-detail.html:11
+msgid ""
+"A {{ place_type_label location_type }} project in District {{ District }} "
+"funded by {{#is District '19' }}City Council{{^}}{{ council_member }}{{/"
+"is }} in <strong>{{ year }}</strong>."
+msgstr ""
+
+#: flavors/pblb/jstemplates/place-detail.html:12
+msgid "A {{ place_type_label location_type }} project on the ballot in 2014."
+msgstr ""
+
+#: flavors/pblb/jstemplates/place-detail.html:13
+msgid "My project idea is:"
+msgstr ""
+
+#: flavors/pblb/jstemplates/place-detail.html:14
+msgid "So that people could:"
+msgstr ""
+
+#: flavors/pblb/jstemplates/place-detail.html:15
+msgid "View On Map"
 msgstr ""
 
 #: flavors/pblb/templates/index.html:49
@@ -593,4 +614,25 @@ msgstr ""
 
 #: flavors/pblb/templates/index.html:62
 msgid "Powered by"
+msgstr ""
+
+#: flavors/pblb/templates/index.html:90
+msgid "Approximate location:"
+msgstr ""
+
+#: flavors/pblb/templates/index.html:99
+msgid ""
+"<h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> "
+"and will help us to assess whether these maps are reaching the full "
+"diversity of our community:"
+msgstr ""
+
+#: flavors/pblb/templates/index.html:100
+msgid ""
+"Note: Council district staff will review idea categories and make any "
+"revisions as needed."
+msgstr ""
+
+#: flavors/pblb/templates/index.html:102
+msgid "Your Race/Ethnicity:"
 msgstr ""
