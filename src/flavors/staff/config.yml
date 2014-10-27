@@ -599,7 +599,7 @@ place:
           value: 100
         - key: required
           value: true
-    - prompt: _(Purpose / Rationale (if given))
+    - prompt: _(Purpose / Rationale / Description (if given))
       type: textarea
       name: description
       attrs:
@@ -629,6 +629,13 @@ place:
       type: text
       name: submitter_name
       sticky: true
+      optional: true
+      attrs:
+        - key: size
+          value: 30
+    - prompt: _(Number of Dot Votes at the Assembly)
+      type: text
+      name: private-dot-votes
       optional: true
       attrs:
         - key: size

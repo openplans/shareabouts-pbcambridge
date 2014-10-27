@@ -11,12 +11,12 @@
   {{#if shortlisted }}
             
     <h1>{{ name }}</h1>
-    <p> A {{ place_type_label location_type }} project on the ballot in 2014.</p>        
+    <p> {{#_}}A {{ place_type_label location_type }} project on the ballot in 2014.{{/_}}</p>        
   {{ else }}
     <!-- if it's an old project, we don't want to show who submitted it -->
     {{#if year }}
 
-      <p class="approved-location-type {{ location_type }}"><span class="approved-location-shadow"></span><span class="approved-location-icon"></span> A {{ place_type_label location_type }} project in District {{ District }} funded by {{#is District '19' }}City Council{{^}}{{ council_member }}{{/is }} in <strong>{{ year }}</strong>.</p>
+      <p class="approved-location-type {{ location_type }}"><span class="approved-location-shadow"></span><span class="approved-location-icon"></span> {{#_}}A {{ place_type_label location_type }} project in District {{ District }} funded by {{#is District '19' }}City Council{{^}}{{ council_member }}{{/is }} in <strong>{{ year }}</strong>.{{/_}}</p>
 
       <h1>{{ name }}</h1>
 
@@ -35,7 +35,7 @@
           {{/if}}
     
             </strong> suggested this {{place_type_label location_type }} idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. 
-            <p><small>Near {{>location-string location }}</small></p>
+            <p><small>{{#_}}Near {{>location-string location }}{{/_}}</small></p>
 
         {{/_}}
 
@@ -65,9 +65,9 @@
     
     {{ else }}
   
-      {{#if name }} <p>My project idea is: <span class="idea-title">{{ name }}</span></p> {{/if }}
+      {{#if name }} <p>{{#_}}My project idea is:{{/_}} <span class="idea-title">{{ name }}</span></p> {{/if }}
 
-      {{#if description }} <p>So that people could: {{ description }}</p> {{/if }}
+      {{#if description }} <p>{{#_}}So that people could:{{/_}} {{ description }}</p> {{/if }}
   
       {{# attachments }}
         <div class="place-item place-attachment-{{ name }}">
@@ -79,7 +79,7 @@
   {{/if }}
   
   {{^if survey_config}}
-    <a href="/place/{{ id }}" class="view-on-map-btn btn btn-small">View On Map</a>
+    <a href="/place/{{ id }}" class="view-on-map-btn btn btn-small">{{#_}}View On Map{{/_}}</a>
   {{/if}}
   
 </section>
