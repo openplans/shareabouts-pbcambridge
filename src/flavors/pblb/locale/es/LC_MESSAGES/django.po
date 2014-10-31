@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Frank Hebbert <frank@openplans.org>, 2014
 # PB Project <frank+pbproject@openplans.org>, 2014
@@ -9,37 +9,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PB Long Beach\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-27 15:15-0400\n"
-"PO-Revision-Date: 2014-10-27 18:14+0000\n"
+"POT-Creation-Date: 2014-10-31 16:26-0400\n"
+"PO-Revision-Date: 2014-10-31 20:44+0000\n"
 "Last-Translator: Frank Hebbert <frank@openplans.org>\n"
-"Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/pb-long-"
-"beach/language/es_MX/)\n"
-"Language: es_MX\n"
+"Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/pb-long-beach/language/es_MX/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_MX\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: flavors/pblb/_config.translations.py:1
 msgid "Enter an address..."
-msgstr "Escriba una dirección..."
+msgstr "Escribe una dirección..."
 
 #: flavors/pblb/_config.translations.py:2
 msgid "Participatory Budgeting for Long Beach"
-msgstr "Participatory Budgeting para Long Beach"
+msgstr "Participatory Budgeting en Long Beach"
 
 #: flavors/pblb/_config.translations.py:3
 msgid "How would YOU spend $250K?"
-msgstr "¿Cómo utilizarías tú $250,000?"
+msgstr "¿Cómo utilizarías TÚ $250,000?"
 
 #: flavors/pblb/_config.translations.py:4
 #: flavors/pblb/_config.translations.py:5
 msgid "Participatory Budgeting Long Beach"
-msgstr "Participatory Budgeting para Long Beach"
+msgstr "Participatory Budgeting Long Beach"
 
 #: flavors/pblb/_config.translations.py:6
 msgid "supported"
-msgstr "patrocinado"
+msgstr "patrocinó"
 
 #: flavors/pblb/_config.translations.py:7
 #: flavors/pblb/_config.translations.py:20
@@ -53,7 +52,7 @@ msgstr "patrocinio"
 
 #: flavors/pblb/_config.translations.py:9
 msgid "Support This!"
-msgstr "¡Patrocínalo!"
+msgstr "¡Vota a favor!"
 
 #: flavors/pblb/_config.translations.py:10
 msgid "supports"
@@ -76,7 +75,7 @@ msgstr "Dejar un comentario"
 #: flavors/pblb/_config.translations.py:15
 #: flavors/pblb/_config.translations.py:17
 msgid "Comment"
-msgstr "Comentario"
+msgstr "Comentar"
 
 #: flavors/pblb/_config.translations.py:16
 msgid "Your Name"
@@ -88,7 +87,7 @@ msgstr "comentario"
 
 #: flavors/pblb/_config.translations.py:21
 msgid "Show on a map"
-msgstr "Mostrar en un mapa"
+msgstr "Ver como mapa"
 
 #: flavors/pblb/_config.translations.py:22
 msgid "Share my idea"
@@ -100,7 +99,7 @@ msgstr "Describe tu idea"
 
 #: flavors/pblb/_config.translations.py:24
 msgid "My project idea is..."
-msgstr "Mi idea de proyecto es..."
+msgstr "Mi idea para un proyecto es..."
 
 #: flavors/pblb/_config.translations.py:25
 msgid "..."
@@ -108,15 +107,13 @@ msgstr "..."
 
 #: flavors/pblb/_config.translations.py:26
 msgid "My idea is needed because..."
-msgstr "Mi idea es necesaria porque"
+msgstr "Mi idea es necesaria porque..."
 
 #: flavors/pblb/_config.translations.py:27
 msgid ""
 "What need does your idea address? Who does it benefit? Share any relevant "
 "details about your idea."
-msgstr ""
-"¿Qué tema aborda tu idea? ¿A quién beneficia? Comparte cualquier detalle "
-"relevante sobre tu idea."
+msgstr "¿Qué necesidad atiende tu idea? ¿A quién beneficia? Comparte los detalles que sean relevantes sobre tu idea."
 
 #: flavors/pblb/_config.translations.py:28
 msgid "Pick a category for your idea"
@@ -131,7 +128,7 @@ msgstr "Elige..."
 #: flavors/pblb/_config.translations.py:78
 #: flavors/pblb/_config.translations.py:84
 msgid "Culture & Community Facilities"
-msgstr "Instalaciones culturas y comunitarias"
+msgstr "Instalaciones culturales y comunitarias"
 
 #: flavors/pblb/_config.translations.py:31
 #: flavors/pblb/_config.translations.py:77
@@ -151,7 +148,7 @@ msgstr "Medioambiente"
 #: flavors/pblb/_config.translations.py:74
 #: flavors/pblb/_config.translations.py:86
 msgid "Parks & Recreation"
-msgstr "Parques y Recreación"
+msgstr "Parques y recreación"
 
 #: flavors/pblb/_config.translations.py:34
 #: flavors/pblb/_config.translations.py:88
@@ -192,7 +189,7 @@ msgstr "Tu edad"
 #: flavors/pblb/_config.translations.py:42
 #: flavors/pblb/_config.translations.py:43
 msgid "American Indian/Alaskan Native"
-msgstr "Nativoamericano/Nativo de Alaska"
+msgstr "Nativo americano/Nativo de Alaska"
 
 #: flavors/pblb/_config.translations.py:44
 #: flavors/pblb/_config.translations.py:45
@@ -266,11 +263,11 @@ msgstr "$150,000 o más"
 
 #: flavors/pblb/_config.translations.py:67
 msgid "Submit an idea"
-msgstr "Enviar una idea"
+msgstr "Proponer una idea"
 
 #: flavors/pblb/_config.translations.py:68
 msgid "Show as a list"
-msgstr "Mostrar en forma de lista"
+msgstr "Ver como lista"
 
 #: flavors/pblb/_config.translations.py:69
 msgid "suggested"
@@ -280,9 +277,7 @@ msgstr "sugerió"
 msgid ""
 "Ideas must be \"capital\" projects - building, installing, or repairing "
 "something for public benefit."
-msgstr ""
-"Las ideas deben ser proyectos de \"capital\": edificación, instalación o "
-"reparación de algo para beneficio público."
+msgstr "Las ideas deben ser proyectos de \"capital\": edificación, instalación o reparación de algo para beneficio del público."
 
 #: flavors/pblb/_config.translations.py:72
 #: flavors/pblb/_config.translations.py:79
@@ -311,204 +306,120 @@ msgstr "Acerca de"
 #: flavors/pblb/_config.translations.py:91
 #: flavors/pblb/jstemplates/pages/guidelines.html:7
 msgid "Guidelines"
-msgstr "Pautas"
+msgstr "Normas"
 
 #: flavors/pblb/_config.translations.py:92
 #: flavors/pblb/jstemplates/pages/involved.html:8
 msgid "Get More Involved"
-msgstr "Participa más"
+msgstr "Otras formas de participar"
 
 #: flavors/pblb/jstemplates/activity-list-item.html:1
 msgid ""
-"<strong>\n"
 "\n"
-"        {{#if target.submitter}}\n"
-"          <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> "
-"{{ target.submitter.name }}\n"
+"\n"
+"        {{#if place.source}}\n"
+"        A new <span class=\"place-type\">{{   place.place_type_label }} idea </span>from <strong>{{ place.source }}</strong>{{#if place.CounDist}} in District {{ place.CounDist }}{{/if}} named <span class=\"place-name\">{{ place.name }}</span>\n"
+"\n"
 "        {{^}}\n"
-"          <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"          <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
-"{{ target.submitter_name }}\n"
-"        {{/if}}\n"
-"        </strong>\n"
-"\n"
-"        {{#if is_place }}\n"
-"          {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span "
-"class=\"place-type\">{{ place.place_type_label }} idea </span>\n"
-"          {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-"          {{#if place.name }}\n"
-"            named <span class=\"place-name\">{{ place.name }}</span>\n"
+"          <strong>\n"
+"          {{#if target.submitter}}\n"
+"            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n"
 "          {{^}}\n"
-"            {{#if place.location }}\n"
-"              at <span class=\"place-name\">{{>location-string place."
-"location }}</span>\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n"
+"          {{/if}}\n"
+"          </strong>\n"
+"    \n"
+"          {{#if is_place }}\n"
+"            {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span class=\"place-type\">{{     place.place_type_label }} idea </span>\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
+"            {{#if place.name }}\n"
+"              named <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{^}}\n"
+"              {{#if place.location }}\n"
+"                at <span class=\"place-name\">{{>location-string place.location }}</span>\n"
+"              {{/if }}\n"
 "            {{/if }}\n"
-"          {{/if }}\n"
-"        {{else}}\n"
-"          {{ action }}\n"
-"\n"
-"          {{#if place.name }}\n"
-"            <span class=\"place-name\">{{ place.name }}</span>\n"
 "          {{else}}\n"
-"            a{{# place.type_starts_with_vowel }}n{{/ place."
-"type_starts_with_vowel }} {{ place.place_type_label }}\n"
-"          {{/if }}\n"
-"          {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-"        {{/if }}\n"
-"        "
-msgstr ""
-"<strong>\n"
-"\n"
-"        {{#if target.submitter}}\n"
-"          <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> "
-"{{ target.submitter.name }}\n"
-"        {{^}}\n"
-"          <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"          <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
-"{{ target.submitter_name }}\n"
-"        {{/if}}\n"
-"        </strong>\n"
-"\n"
-"        {{#if is_place }}\n"
-"          {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span "
-"class=\"place-type\">{{ place.place_type_label }} idea </span>\n"
-"          {{#if place.CounDist}} en distrito {{ place.CounDist }}{{/if}}\n"
-"          {{#if place.name }}\n"
-"            named <span class=\"place-name\">{{ place.name }}</span>\n"
-"          {{^}}\n"
-"            {{#if place.location }}\n"
-"              at <span class=\"place-name\">{{>location-string place."
-"location }}</span>\n"
+"            {{ action }}\n"
+"    \n"
+"            {{#if place.name }}\n"
+"              <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{else}}\n"
+"              a{{# place.type_starts_with_vowel }}n{{/ place.type_starts_with_vowel }} {{ place.    place_type_label }}\n"
 "            {{/if }}\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
 "          {{/if }}\n"
-"        {{else}}\n"
-"          {{ action }}\n"
-"\n"
-"          {{#if place.name }}\n"
-"            <span class=\"place-name\">{{ place.name }}</span>\n"
-"          {{else}}\n"
-"            a{{# place.type_starts_with_vowel }}n{{/ place."
-"type_starts_with_vowel }} {{ place.place_type_label }}\n"
-"          {{/if }}\n"
-"          {{#if place.CounDist}} en distrito {{ place.CounDist }}{{/if}}\n"
-"        {{/if }}\n"
-"        "
+"          "
+msgstr "\n\n{{#if place.source}}\nUna nueva idea de <span class=\"place-type\">{{ place.place_type_label }} </span>de <strong>\"{{ place.source }}\"</strong>{{#if place.CounDist}} en Distrito {{ place.CounDist }}{{/if}} para <span class=\"place-name\">\"{{ place.name }}\"</span>\n\n{{^}}\n<strong>\n{{#if target.submitter}}\n<img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n{{^}}\n<!-- TODO: FIXME: don't hardcode image URL -->\n<img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n{{/if}}\n</strong>\n\n{{#if is_place }}\n{{ action }} una idea de <span class=\"place-type\">{{ place.place_type_label }} </span>\n{{#if place.CounDist}} en Distrito {{ place.CounDist }}{{/if}}\n{{#if place.name }}\npara <span class=\"place-name\">\"{{ place.name }}\"</span>\n{{^}}\n{{#if place.location }}\ncerca de <span class=\"place-name\">{{>location-string place.location }}</span>\n{{/if }}\n{{/if }}\n{{else}}\n{{ action }}\n\n{{#if place.name }}\n<span class=\"place-name\">\"{{ place.name }}\"</span>\n{{else}}\nuna {{ place. place_type_label }}\n{{/if }}\n{{#if place.CounDist}} en Distrito {{ place.CounDist }}{{/if}}\n{{/if }}"
 
-#: flavors/pblb/jstemplates/activity-list-item.html:32
+#: flavors/pblb/jstemplates/activity-list-item.html:37
 msgid ""
-"<strong>\n"
 "\n"
-"      {{#if target.submitter}}\n"
-"        <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> "
-"{{ target.submitter.name }}\n"
-"      {{^}}\n"
-"        <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"        <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
-"{{ target.submitter_name }}\n"
-"      {{/if}}\n"
-"      </strong>\n"
+"        {{#if place.source}}\n"
+"        A new <span class=\"place-type\">{{   place.place_type_label }} idea </span>from <strong>{{ place.source }}</strong>{{#if place.CounDist}} in District {{ place.CounDist }}{{/if}} named <span class=\"place-name\">{{ place.name }}</span>\n"
 "\n"
-"      {{#if is_place }}\n"
-"        {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span "
-"class=\"place-type\">{{ place.place_type_label }} idea </span>\n"
-"        {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-"        {{#if place.name }}\n"
-"          named <span class=\"place-name\">{{ place.name }}</span>\n"
 "        {{^}}\n"
-"          {{#if place.location }}\n"
-"            at <span class=\"place-name\">{{>location-string place."
-"location }}</span>\n"
+"          <strong>\n"
+"          {{#if target.submitter}}\n"
+"            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n"
+"          {{^}}\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n"
+"          {{/if}}\n"
+"          </strong>\n"
+"  \n"
+"          {{#if is_place }}\n"
+"            {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} <span class=\"place-type\">{{   place.place_type_label }} idea </span>\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
+"            {{#if place.name }}\n"
+"              named <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{^}}\n"
+"              {{#if place.location }}\n"
+"                at <span class=\"place-name\">{{>location-string place.location }}</span>\n"
+"              {{/if }}\n"
+"            {{/if }}\n"
+"          {{else}}\n"
+"            {{ action }}\n"
+"  \n"
+"            {{#if place.name }}\n"
+"              <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{else}}\n"
+"              a{{# place.type_starts_with_vowel }}n{{/ place.type_starts_with_vowel }} {{ place.  place_type_label }}\n"
+"            {{/if }}\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
 "          {{/if }}\n"
-"        {{/if }}\n"
-"      {{else}}\n"
-"        {{ action }}\n"
-"\n"
-"        {{#if place.name }}\n"
-"          <span class=\"place-name\">{{ place.name }}</span>\n"
-"        {{else}}\n"
-"          a{{# place.type_starts_with_vowel }}n{{/ place."
-"type_starts_with_vowel }} {{ place.place_type_label }}\n"
-"        {{/if }}\n"
-"        {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
-"      {{/if }}\n"
-"      "
-msgstr ""
-"<strong>\n"
-"\n"
-"      {{#if target.submitter}}\n"
-"        <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> "
-"{{ target.submitter.name }}\n"
-"      {{^}}\n"
-"        <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"        <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
-"{{ target.submitter_name }}\n"
-"      {{/if}}\n"
-"      </strong>\n"
-"\n"
-"      {{#if is_place }}\n"
-"        {{ action }} una <span class=\"place-type\"> idea para {{ place."
-"place_type_label }}</span>\n"
-"        {{#if place.CounDist}} en distrito {{ place.CounDist }}{{/if}}\n"
-"        {{#if place.name }}\n"
-"          <span class=\"place-name\">{{ place.name }}</span>\n"
-"        {{^}}\n"
-"          {{#if place.location }}\n"
-"            en <span class=\"place-name\">{{>location-string place."
-"location }}</span>\n"
-"          {{/if }}\n"
-"        {{/if }}\n"
-"      {{else}}\n"
-"        {{ action }}\n"
-"\n"
-"        {{#if place.name }}\n"
-"          <span class=\"place-name\">{{ place.name }}</span>\n"
-"        {{else}}\n"
-"          una idea para {{ place.place_type_label }}\n"
-"        {{/if }}\n"
-"        {{#if place.CounDist}} en distrito {{ place.CounDist }}{{/if}}\n"
-"      {{/if }}\n"
-"      "
+"          "
+msgstr "\n{{#if place.source}}\nUna nueva idea de <span class=\"place-type\">{{ place.place_type_label }} </span>de <strong>\"{{ place.source }}\"</strong>{{#if place.CounDist}} en Distrito {{ place.CounDist }}{{/if}} para <span class=\"place-name\">\"{{ place.name }}\"</span>\n\n\n{{^}}\n<strong>\n\n      {{#if target.submitter}}\n        <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /> {{ target.submitter.name }}\n      {{^}}\n        <!-- TODO: FIXME: don't hardcode image URL -->\n        <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ target.submitter_name }}\n      {{/if}}\n      </strong>\n\n      {{#if is_place }}\n        {{ action }} una <span class=\"place-type\"> idea de {{ place.place_type_label }}</span>\n        {{#if place.CounDist}} en distrito {{ place.CounDist }}{{/if}}\n        {{#if place.name }}\n          <span class=\"place-name\">\"{{ place.name }}\"</span>\n        {{^}}\n          {{#if place.location }}\n            en <span class=\"place-name\">{{>location-string place.location }}</span>\n          {{/if }}\n        {{/if }}\n      {{else}}\n        {{ action }}\n\n        {{#if place.name }}\n          <span class=\"place-name\">{{ place.name }}</span>\n        {{else}}\n          una idea de {{ place.place_type_label }}\n        {{/if }}\n        {{#if place.CounDist}} en distrito {{ place.CounDist }}{{/if}}\n      {{/if }}\n      "
 
 #: flavors/pblb/jstemplates/pages/about.html:1
 msgid "Check out the guidelines</a> to see what ideas can be funded)."
-msgstr ""
-"Echa un vistazo a las pautas </a> para ver cuáles ideas pueden financiarse."
+msgstr "Echa un vistazo a las normas </a> para ver cuáles ideas pueden financiarse)."
 
 #: flavors/pblb/jstemplates/pages/about.html:2
 msgid ""
-"Community members will then review your ideas, alongside all the others, and "
-"develop them into full proposals. In the Spring, residents, business owners, "
-"and non-profit representatives ages 14 and older in District 9 will vote on "
-"the top projects to be funded."
-msgstr ""
-"Los miembros de la comunidad procederán a examinar tus ideas y las de los "
-"demás, y las desarrollarán hasta convertirlas en propuestas cabales. Durante "
-"la primavera, los empresarios y representantes de organizaciones sin fines "
-"de lucro de 14 años o más del distrito 9 votarán por los mejores proyectos "
-"que recibirán fondos."
+"Community members will then review your ideas, alongside all the others, and"
+" develop them into full proposals. In the Spring, residents, business "
+"owners, and non-profit representatives ages 14 and older in District 9 will "
+"vote on the top projects to be funded."
+msgstr "Los miembros de la comunidad procederán a examinar tus ideas y las de los demás, y las desarrollarán hasta convertirlas en propuestas completas. Durante la primavera, residentes, empresarios y representantes de organizaciones sin fines de lucro de 14 años o más del distrito 9 votarán por los proyectos que serán financiados."
 
 #: flavors/pblb/jstemplates/pages/about.html:3
 msgid ""
 "For information on the nationwide movement for PB, visit the website of the "
-msgstr ""
-"Para más información sobre el movimiento de PB a nivel nacional, visita la "
-"página web del "
+msgstr "Para más información sobre el movimiento de PB a nivel nacional, visita la página web del "
 
 #: flavors/pblb/jstemplates/pages/about.html:4
 msgid ""
 "For more information on participatory budgeting in Long Beach District 9, "
 "visit"
-msgstr ""
-"Para más información sobre el Participatory Budgeting en el distrito 9 de "
-"Long Beach, visita"
+msgstr "Para más información sobre Participatory Budgeting en el distrito 9 de Long Beach, visita"
 
 #: flavors/pblb/jstemplates/pages/about.html:5
 msgid ""
 "If you have an idea about how things could work better in your community, "
 "share it on the map "
-msgstr ""
-"Si tienes una idea de cómo podrían funcionar mejor las cosas en tu "
-"comunidad, compártela en el mapa "
+msgstr "Si tienes una idea de cómo podrían funcionar mejor las cosas en tu comunidad, compártela en el mapa "
 
 #: flavors/pblb/jstemplates/pages/about.html:6
 msgid "PB Long Beach"
@@ -521,11 +432,9 @@ msgstr "Proyecto de presupuesto participativo"
 #: flavors/pblb/jstemplates/pages/about.html:8
 msgid ""
 "The top projects will be put on a ballot, and next Spring, all residents "
-"ages 14 and older in participating districts will vote on their top projects."
-msgstr ""
-"Los mejores proyectos se incorporarán en la boleta, y durante la próxima "
-"primavera todos los residentes de 14 años o más de los distritos "
-"participantes votarán por sus proyectos favoritos."
+"ages 14 and older in participating districts will vote on their top "
+"projects."
+msgstr "Los mejores proyectos se incluirán en una boleta electoral, y durante la próxima primavera todos los residentes de 14 años o más de los distritos participantes votarán por sus proyectos favoritos."
 
 #: flavors/pblb/jstemplates/pages/about.html:9
 msgid "and contact the District 9 office at"
@@ -536,18 +445,15 @@ msgid ""
 "is an innovative democratic process that gives Long Beach District 9 "
 "residents the power to decide how to spend $250k in city capital funds in "
 "their district."
-msgstr ""
-"es un innovador proceso democrático que otorga a los residentes del distrito "
-"9 de Long Beach el poder de decidir cómo utilizar $250,000 en fondos "
-"capitales de la ciudad en su distrito"
+msgstr "es un innovador proceso democrático que otorga a los residentes del distrito 9 de Long Beach el poder de decidir cómo utilizar $250,000 en fondos de capital de la ciudad en su distrito."
 
 #: flavors/pblb/jstemplates/pages/guidelines.html:1
 msgid "<strong>Anyone</strong> can post ideas."
-msgstr "<strong>Cualquiera</strong> puede publicar sus ideas."
+msgstr "<strong>Todos</strong> pueden publicar sus ideas."
 
 #: flavors/pblb/jstemplates/pages/guidelines.html:2
 msgid "Basketball court, park benches, or a skate park"
-msgstr "Cancha de baloncesto, bancos en los parques o un parque de patinaje."
+msgstr "Cancha de baloncesto, bancos para parques o un parque de patinaje"
 
 #: flavors/pblb/jstemplates/pages/guidelines.html:3
 msgid "Educational programs"
@@ -559,20 +465,15 @@ msgid ""
 "physical infrastructure for public benefit, like park improvements or new "
 "windows for school classrooms. \"Expense\" projects, like afterschool "
 "programs or expanding bus service, are not eligible."
-msgstr ""
-"Las ideas aptas son aquellas que proponen <strong>proyectos de \"capital\":</"
-"strong> infraestructura física duradera para beneficio del público, como "
-"mejoras a parques o nuevas ventanas para aulas de clase. Los proyectos de "
-"\"gasto\", como los programas extracurriculares o la expansión del servicio "
-"de autobús, no califican."
+msgstr "Las ideas aceptables son aquellas que proponen <strong>proyectos de \"capital\":</strong> infraestructura física duradera para beneficio del público, como mejoras a parques o nuevas ventanas para aulas de clase. Los proyectos de \"gasto\", como los programas extracurriculares o la expansión del servicio de autobús, no califican."
 
 #: flavors/pblb/jstemplates/pages/guidelines.html:5
 msgid "Eligible:"
-msgstr "Apto:"
+msgstr "Aceptable:"
 
 #: flavors/pblb/jstemplates/pages/guidelines.html:6
 msgid "Examples of Eligible Capital Ideas"
-msgstr "Ejemplos de ideas capitales calificadas"
+msgstr "Ejemplos de ideas para proyectos capitales aceptables"
 
 #: flavors/pblb/jstemplates/pages/guidelines.html:8
 msgid "More staff for youth programs"
@@ -595,18 +496,13 @@ msgid ""
 "To add an idea, drag the map until the crosshairs are over the desired "
 "location. <strong>Only ideas within the boundaries of Council District 9 "
 "will be considered.</strong>"
-msgstr ""
-"Para proponer una idea, arrastra el mapa hasta que la cruceta se encuentre "
-"sobre la ubicación deseada. <strong>Solo se considerarán las ideas dentro de "
-"los confines del distrito 9 del concejo.</strong>"
+msgstr "Para proponer una idea, arrastra el mapa hasta que la cruceta se encuentre sobre la ubicación deseada. <strong>Solo se considerarán las ideas dentro de los confines del distrito 9 del Concejo.</strong>"
 
 #: flavors/pblb/jstemplates/pages/involved.html:1
 msgid ""
 "Already submitted an idea? There are many more ways to get involved in "
 "participatory budgeting:"
-msgstr ""
-"¿Ya enviaste tu idea? Hay muchas otras formas de ser partícipe del "
-"presupuesto participativo:"
+msgstr "¿Ya enviaste tu idea? Hay muchas otras formas de ser partícipe del proceso de presupuestación participativa:"
 
 #: flavors/pblb/jstemplates/pages/involved.html:2
 msgid "Attend a Neighborhood Assembly"
@@ -614,9 +510,7 @@ msgstr "Asiste a una asamblea de vecinos"
 
 #: flavors/pblb/jstemplates/pages/involved.html:3
 msgid "Click here</a> for upcoming assembly dates, times, and locations."
-msgstr ""
-"Haz clic aquí</a> para ver las fechas, horarios y ubicación de las próximas "
-"asambleas."
+msgstr "Haz clic aquí</a> para ver las fechas, horarios y ubicación de las próximas asambleas."
 
 #: flavors/pblb/jstemplates/pages/involved.html:4
 msgid "Connect with Us"
@@ -628,41 +522,30 @@ msgstr "Comunícate con nosotros"
 
 #: flavors/pblb/jstemplates/pages/involved.html:6
 msgid ""
-"Discuss your ideas in person with your friends and neighbors at a District 9 "
-"Neighborhood Assembly! "
-msgstr ""
-"Conversa sobre tus ideas en persona con tus amigos y vecinos en la asamblea "
-"de vecinos del distrito 9."
+"Discuss your ideas in person with your friends and neighbors at a District 9"
+" Neighborhood Assembly! "
+msgstr "Conversa sobre tus ideas en persona con tus amigos y vecinos en la asamblea de vecinos del distrito 9."
 
 #: flavors/pblb/jstemplates/pages/involved.html:7
 msgid ""
-"Find us on <a href=\"https://www.facebook.com/rexrichardsonlb\" target="
-"\"_blank\"> Facebook</a> and follow us on <a href=\"https://twitter.com/"
-"rexrichardson\" target=\"_blank\"> Twitter"
-msgstr ""
-"Encuéntranos en <a href=\"https://www.facebook.com/rexrichardsonlb\" target="
-"\"_blank\"> Facebook</a> y síguenos en <a href=\"https://twitter.com/"
-"rexrichardson\" target=\"_blank\"> Twitter"
+"Find us on <a href=\"https://www.facebook.com/rexrichardsonlb\" "
+"target=\"_blank\"> Facebook</a> and follow us on <a "
+"href=\"https://twitter.com/rexrichardson\" target=\"_blank\"> Twitter"
+msgstr "Encuéntranos en <a href=\"https://www.facebook.com/rexrichardsonlb\" target=\"_blank\"> Facebook</a> y síguenos en <a href=\"https://twitter.com/rexrichardson\" target=\"_blank\"> Twitter"
 
 #: flavors/pblb/jstemplates/pages/involved.html:9
 msgid ""
-"Have a question? Feel free to <a href=\"mailto:ginny@participatorybudgeting."
-"org\">contact us"
-msgstr ""
-"¿Tienes preguntas? No dudeas en <a href=\"mailto:"
-"ginny@participatorybudgeting.org\">comunicarte con nosotros."
+"Have a question? Feel free to <a "
+"href=\"mailto:ginny@participatorybudgeting.org\">contact us"
+msgstr "¿Tienes preguntas? No dudes en <a href=\"mailto:ginny@participatorybudgeting.org\">comunicarte con nosotros"
 
 #: flavors/pblb/jstemplates/pages/involved.html:10
 msgid ""
-"If you live in a participating Council District (currently just District 9), "
-"don't forget to come out and vote next Spring for which projects to fund! "
-"Stay tuned to <a href=\"http://www.pblongbeach.org\" target=\"_blank"
-"\">pblongbeach.org</a>"
-msgstr ""
-"Si vives en un distrito participante del Concejo (actualmente solo el "
-"distrito 9), no olvides salir a votar en la primavera del próximo años por "
-"los proyectos que serán financiados. Manténte al tanto con <a href=\"http://"
-"www.pblongbeach.org\" target=\"_blank\">pblongbeach.org</a>"
+"If you live in a participating Council District (currently just District 9),"
+" don't forget to come out and vote next Spring for which projects to fund! "
+"Stay tuned to <a href=\"http://www.pblongbeach.org\" "
+"target=\"_blank\">pblongbeach.org</a>"
+msgstr "Si vives en un distrito participante del Concejo (actualmente solo el distrito 9), no olvides salir a votar en la primavera del próximo año por los proyectos que serán financiados. Manténte al corriente de <a href=\"http://www.pblongbeach.org\" target=\"_blank\">pblongbeach.org</a>"
 
 #: flavors/pblb/jstemplates/pages/involved.html:11
 msgid "Sign up here"
@@ -670,95 +553,79 @@ msgstr "Regístrate aquí"
 
 #: flavors/pblb/jstemplates/pages/involved.html:12
 msgid ""
-"There are lots of ways to get involved in PB Long Beach! You can help to get "
-"the word out to underserved communities, facilitate small group meetings, "
+"There are lots of ways to get involved in PB Long Beach! You can help to get"
+" the word out to underserved communities, facilitate small group meetings, "
 "help translate materials, or design flyers. "
-msgstr ""
-"¡Hay muchas formas de participar en PB Long Beach! Pueden ayudar a esparcir "
-"la voz en comunidades marginadas, facilitar reuniones en pequeños grupos, "
-"ayudar a traducir materiales y diseñar volantes."
+msgstr "¡Hay muchas formas de participar en PB Long Beach! Puedes ayudar a correr la voz en comunidades marginadas, facilitar reuniones en pequeños grupos, ayudar a traducir materiales y diseñar volantes (\"flyers\")."
 
 #: flavors/pblb/jstemplates/pages/involved.html:13
 msgid "VOTE!"
 msgstr "¡VOTA!"
 
 #: flavors/pblb/jstemplates/place-detail.html:1
-#, fuzzy
-#| msgid ""
-#| "<strong class=\"point-submitter\">\n"
-#| "          {{#if submitter}}\n"
-#| "            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> "
-#| "{{ submitter.name }}\n"
-#| "          {{^}}\n"
-#| "            <!-- TODO: FIXME: don't hardcode image URL -->\n"
-#| "            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /"
-#| "> {{ submitter_name }}\n"
-#| "          {{/if}}\n"
-#| "    \n"
-#| "            </strong> suggested this {{place_type_label location_type }} "
-#| "idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. \n"
-#| "            <p><small>Near {{>location-string location }}</small></p>\n"
-#| "\n"
-#| "        "
 msgid ""
-"<strong class=\"point-submitter\">\n"
+"\n"
+"\n"
+"        {{#if source}}\n"
+"          A {{place_type_label location_type }} idea {{#if CounDist}} in District {{ CounDist }}{{/if}} from <strong>{{ source }}</strong>\n"
+"        {{^}}\n"
+"        <strong class=\"point-submitter\">\n"
 "          {{#if submitter}}\n"
-"            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> "
-"{{ submitter.name }}\n"
+"            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> {{ submitter.name }}\n"
 "          {{^}}\n"
 "            <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
-"{{ submitter_name }}\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ submitter_name }}\n"
 "          {{/if}}\n"
-"    \n"
-"            </strong> suggested this {{place_type_label location_type }} "
-"idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. \n"
-"            <p><small>{{#_}}Near {{>location-string location }}"
-msgstr ""
-"<strong class=\"point-submitter\">\n"
-"          {{#if submitter}}\n"
-"            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> "
-"{{ submitter.name }}\n"
-"          {{^}}\n"
-"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
-"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
-"{{ submitter_name }}\n"
-"          {{/if}}\n"
-"    \n"
-"            </strong> sugerió esta idea de {{place_type_label "
-"location_type }} {{#if CounDist}} en distrito {{ CounDist }}{{/if}}. \n"
-"            <p><small>Cerca de {{>location-string location }}</small></p>\n"
+"            </strong> suggested this {{place_type_label location_type }} idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. \n"
+"        {{/if}}\n"
+"            <p><small>Near {{>location-string location }}</small></p>\n"
 "\n"
 "        "
+msgstr "\n\n{{#if source}}\nUna idea de {{place_type_label location_type }} {{#if CounDist}} en Distrito {{ CounDist }}{{/if}} de <strong>\"{{ source }}\"</strong>\n{{^}}\n<strong class=\"point-submitter\">\n{{#if submitter}}\n<img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> {{ submitter.name }}\n{{^}}\n<!-- TODO: FIXME: don't hardcode image URL -->\n<img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> {{ submitter_name }}\n{{/if}}\n</strong> sugerió esta idea para {{place_type_label location_type }} {{#if CounDist}} en Distrito {{ CounDist }}{{/if}}. \n{{/if}}\n<p><small>Cerca de {{>location-string location }}</small></p>"
 
-#: flavors/pblb/jstemplates/place-detail.html:11
+#: flavors/pblb/jstemplates/place-detail.html:18
 msgid ""
-"A {{ place_type_label location_type }} project in District {{ District }} "
-"funded by {{#is District '19' }}City Council{{^}}{{ council_member }}{{/"
-"is }} in <strong>{{ year }}</strong>."
-msgstr ""
-
-#: flavors/pblb/jstemplates/place-detail.html:12
-msgid "A {{ place_type_label location_type }} project on the ballot in 2014."
-msgstr ""
-
-#: flavors/pblb/jstemplates/place-detail.html:13
-#, fuzzy
-#| msgid "My project idea is..."
-msgid "My project idea is:"
-msgstr "Mi idea de proyecto es..."
-
-#: flavors/pblb/jstemplates/place-detail.html:14
-msgid "So that people could:"
-msgstr ""
-
-#: flavors/pblb/jstemplates/place-detail.html:15
-msgid "View On Map"
-msgstr ""
+"\n"
+"  {{#if shortlisted }}\n"
+"    <p><strong>Location</strong>: {{ Location }}</p>\n"
+"    <p><strong>Description</strong>: {{ description }}</p>\n"
+"    <p><strong>Cost</strong>: {{ Cost }}</p>\n"
+"    <p>Vote for this project between March 29th and April 6th. <a href=\"http://pbnyc.org/\" title=\"Participatory Budgeting in New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Find out how and where</a>.</p>\n"
+"  {{ else }}\n"
+"    {{#if year }} <!-- it's a manually-added project from previous years -->\n"
+"      <p class=\"description\">{{ description }}</p>\n"
+"    \n"
+"      {{#if status }}\n"
+"        <p><strong>Status</strong>: {{ status }} {{#if updated }} (last updated {{ updated }}) {{/if }}</p>\n"
+"      {{/if }}\n"
+"\n"
+"      <p><strong>Cost</strong>: {{ cost }}</p>\n"
+"      {{#if agency}}<p><strong>Agency</strong>: {{ agency }}</p> {{/if}}\n"
+"    \n"
+"    {{ else }}\n"
+"  \n"
+"      {{#if name }} <p>My project idea is: <span class=\"idea-title\">{{ name }}</span></p> {{/if }}\n"
+"\n"
+"      {{#if description }} <p>Details: {{ description }}</p> {{/if }}\n"
+"  \n"
+"      {{# attachments }}\n"
+"        <div class=\"place-item place-attachment-{{ name }}\">\n"
+"          <img src=\"{{ file }}\" class=\"place-value place-value-{{ name }}\" alt=\"{{ name }}\">\n"
+"        </div>\n"
+"      {{/ attachments }}\n"
+"\n"
+"    {{/if }}\n"
+"  {{/if }}\n"
+"  \n"
+"  {{^if survey_config}}\n"
+"    <a href=\"/place/{{ id }}\" class=\"view-on-map-btn btn btn-small\">View On Map</a>\n"
+"  {{/if}}\n"
+"  "
+msgstr "\n  {{#if shortlisted }}\n    <p><strong>Ubicación</strong>: {{ Location }}</p>\n    <p><strong>Idea</strong>: {{ description }}</p>\n    <p><strong>Costo</strong>: {{ Cost }}</p>\n    <p>Vote for this project between March 29th and April 6th. <a href=\"http://pbnyc.org/\" title=\"Participatory Budgeting in New York City | REAL MONEY. REAL PROJECTS. REAL POWER.\">Find out how and where</a>.</p>\n  {{ else }}\n    {{#if year }} <!-- it's a manually-added project from previous years -->\n      <p class=\"description\">{{ description }}</p>\n    \n      {{#if status }}\n        <p><strong>Estatus</strong>: {{ status }} {{#if updated }} (last updated {{ updated }}) {{/if }}</p>\n      {{/if }}\n\n      <p><strong>Costo</strong>: {{ cost }}</p>\n      {{#if agency}}<p><strong>Agencia</strong>: {{ agency }}</p> {{/if}}\n    \n    {{ else }}\n  \n      {{#if name }} <p>Mi idea es: <span class=\"idea-title\">{{ name }}</span></p> {{/if }}\n\n      {{#if description }} <p>Detalles: {{ description }}</p> {{/if }}\n  \n      {{# attachments }}\n        <div class=\"place-item place-attachment-{{ name }}\">\n          <img src=\"{{ file }}\" class=\"place-value place-value-{{ name }}\" alt=\"{{ name }}\">\n        </div>\n      {{/ attachments }}\n\n    {{/if }}\n  {{/if }}\n  \n  {{^if survey_config}}\n    <a href=\"/place/{{ id }}\" class=\"view-on-map-btn btn btn-small\">Ver en el mapa</a>\n  {{/if}}\n  "
 
 #: flavors/pblb/templates/index.html:49
 msgid "Culture and Community Facilities"
-msgstr "Instalaciones culturas y comunitarias"
+msgstr "Instalaciones culturales y comunitarias"
 
 #: flavors/pblb/templates/index.html:52
 msgid "Parks and Recreation"
@@ -774,21 +641,21 @@ msgstr "Potenciado por"
 
 #: flavors/pblb/templates/index.html:90
 msgid "Approximate location:"
-msgstr ""
+msgstr "Ubicación aproximada:"
 
 #: flavors/pblb/templates/index.html:99
 msgid ""
 "<h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> "
 "and will help us to assess whether these maps are reaching the full "
 "diversity of our community:"
-msgstr ""
+msgstr "<h5>¡Gracias!</h5> <p>Las preguntas a continuación son <strong>opcionales</strong> y nos ayudarán a determinar si estos mapas recogen toda la diversidad de nuestra comunidad:"
 
 #: flavors/pblb/templates/index.html:100
 msgid ""
 "Note: Council district staff will review idea categories and make any "
 "revisions as needed."
-msgstr ""
+msgstr "Nota: El personal del distrito del Concejo examinará las categorías de ideas y realizará las revisiones necesarias."
 
 #: flavors/pblb/templates/index.html:102
 msgid "Your Race/Ethnicity:"
-msgstr ""
+msgstr "Su raza/etnia:"
