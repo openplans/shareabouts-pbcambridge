@@ -570,7 +570,7 @@ place:
   show_map_button_label: _(Show on a map)
   title: _(Describe your idea)
   action_text: _(suggested)
-  help_text: _(Ideas must be "capital" projects - building, installing, or repairing something for public benefit.)
+  help_text: _(Ideas must be for <strong>capital</strong> projects – Please see the guidelines here)
   anonymous_name: _(Someone)
   submit_button_label: _(Share my idea)
   location_item_name: location
@@ -652,13 +652,44 @@ place:
       attrs:
         - key: value
           value: _(Volunteer)
-    - prompt: _(Your Age)
-      type: text
+    - prompt: _(Your age)
+      type: select
       name: private-age
       sticky: true
-      attrs:
-        - key: size
-          value: 30
+      options:
+        - label: _(Please choose...)
+          value:
+        - label: _(Under 10)
+          value: under10
+        - label: _(10 - 19)
+          value: 10to19
+        - label: _(20 - 29)
+          value: 20to29
+        - label: _(30 to 39)
+          value: 30to39
+        - label: _(40 to 49)
+          value: 40to49
+        - label: _(50 to 59)
+          value: 50to59
+        - label: _(60 to 69)
+          value: 60to69
+        - label: _(70 to 79)
+          value: 70to79
+        - label: _(80 and older)
+          value: 80orOlder
+    - prompt: _(Your gender)
+      type: select
+      name: private-gender
+      sticky: true
+      options:
+        - label: _(Please choose...)
+          value:
+        - label: _(Female)
+          value: female
+        - label: _(Male)
+          value: male
+        - label: _(Other)
+          value: other
     - prompt: _(Your Race/Ethnicity)
       type: text
       name: private-race
