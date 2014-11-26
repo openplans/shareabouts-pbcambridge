@@ -1,0 +1,639 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-31 15:38-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: flavors/pblb/_config.translations.py:1
+msgid "Enter an address..."
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:2
+msgid "Participatory Budgeting for Long Beach"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:3
+msgid "How would YOU spend $250K?"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:4
+#: flavors/pblb/_config.translations.py:5
+msgid "Participatory Budgeting Long Beach"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:6
+msgid "supported"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:7
+#: flavors/pblb/_config.translations.py:20
+#: flavors/pblb/_config.translations.py:71
+msgid "Someone"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:8
+msgid "support"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:9
+msgid "Support This!"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:10
+msgid "supports"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:11
+msgid "comments"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:12
+msgid "commented on"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:13
+#: flavors/pblb/_config.translations.py:19
+msgid "Leave a Comment"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:14
+#: flavors/pblb/_config.translations.py:15
+#: flavors/pblb/_config.translations.py:17
+msgid "Comment"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:16
+msgid "Your Name"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:18
+msgid "comment"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:21
+msgid "Show on a map"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:22
+msgid "Share my idea"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:23
+msgid "Describe your idea"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:24
+msgid "My project idea is..."
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:25
+msgid "..."
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:26
+msgid "My idea is needed because..."
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:27
+msgid ""
+"What need does your idea address? Who does it benefit? Share any relevant "
+"details about your idea."
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:28
+msgid "Pick a category for your idea"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:29
+#: flavors/pblb/_config.translations.py:57
+msgid "Please choose..."
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:30
+#: flavors/pblb/_config.translations.py:78
+#: flavors/pblb/_config.translations.py:84
+msgid "Culture & Community Facilities"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:31
+#: flavors/pblb/_config.translations.py:77
+#: flavors/pblb/_config.translations.py:80
+#: flavors/pblb/templates/index.html:50
+msgid "Education"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:32
+#: flavors/pblb/_config.translations.py:81
+#: flavors/pblb/_config.translations.py:82
+#: flavors/pblb/templates/index.html:51
+msgid "Environment"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:33
+#: flavors/pblb/_config.translations.py:74
+#: flavors/pblb/_config.translations.py:86
+msgid "Parks & Recreation"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:34
+#: flavors/pblb/_config.translations.py:88
+msgid "Public Health & Safety"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:35
+#: flavors/pblb/_config.translations.py:76
+#: flavors/pblb/_config.translations.py:83
+msgid "Streets & Sidewalks"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:36
+msgid "Your Name (required, will be shown on the map)"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:37
+msgid "Your Email (required, will NOT be shown on the map)"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:38
+msgid "Your Phone Number (optional, will NOT be shown on the map)"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:39
+msgid "I'd like to volunteer"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:40
+#: flavors/pblb/jstemplates/pages/involved.html:14
+msgid "Volunteer"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:41
+msgid "Your Age"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:42
+#: flavors/pblb/_config.translations.py:43
+msgid "American Indian/Alaskan Native"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:44
+#: flavors/pblb/_config.translations.py:45
+msgid "Asian"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:46
+#: flavors/pblb/_config.translations.py:47
+msgid "Black or African American"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:48
+#: flavors/pblb/_config.translations.py:49
+msgid "Hispanic or Latino/a"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:50
+#: flavors/pblb/_config.translations.py:51
+msgid "Native Hawaiian or Pacific Islander"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:52
+#: flavors/pblb/_config.translations.py:53
+msgid "White"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:54
+#: flavors/pblb/_config.translations.py:55
+msgid "Other"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:56
+msgid "Your Household Income"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:58
+msgid "Under $10,000"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:59
+msgid "$10,000 - $14,999"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:60
+msgid "$15,000 - $24,999"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:61
+msgid "$25,000 - $34,999"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:62
+msgid "$35,000 - $49,999"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:63
+msgid "$50,000 - $74,999"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:64
+msgid "$75,000 - $99,999"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:65
+msgid "$100,000 - $149,999"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:66
+msgid "$150,000 or more"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:67
+msgid "Submit an idea"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:68
+msgid "Show as a list"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:69
+msgid "suggested"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:70
+msgid ""
+"Ideas must be \"capital\" projects - building, installing, or repairing "
+"something for public benefit."
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:72
+#: flavors/pblb/_config.translations.py:79
+msgid "Seniors"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:73
+#: flavors/pblb/_config.translations.py:87
+msgid "Youth"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:75
+#: flavors/pblb/_config.translations.py:85
+msgid "Transit"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:89
+#: flavors/pblb/templates/index.html:53
+msgid "Public Health and Safety"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:90
+msgid "About"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:91
+#: flavors/pblb/jstemplates/pages/guidelines.html:7
+msgid "Guidelines"
+msgstr ""
+
+#: flavors/pblb/_config.translations.py:92
+#: flavors/pblb/jstemplates/pages/involved.html:8
+msgid "Get More Involved"
+msgstr ""
+
+#: flavors/pblb/jstemplates/activity-list-item.html:1
+msgid ""
+"\n"
+"\n"
+"        {{#if place.source}}\n"
+"        A new <span class=\"place-type\">{{   place.place_type_label }} idea "
+"</span>from <strong>{{ place.source }}</strong>{{#if place.CounDist}} in "
+"District {{ place.CounDist }}{{/if}} named <span class=\"place-name"
+"\">{{ place.name }}</span>\n"
+"\n"
+"        {{^}}\n"
+"          <strong>\n"
+"          {{#if target.submitter}}\n"
+"            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /"
+"> {{ target.submitter.name }}\n"
+"          {{^}}\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
+"{{ target.submitter_name }}\n"
+"          {{/if}}\n"
+"          </strong>\n"
+"    \n"
+"          {{#if is_place }}\n"
+"            {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} "
+"<span class=\"place-type\">{{     place.place_type_label }} idea </span>\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
+"            {{#if place.name }}\n"
+"              named <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{^}}\n"
+"              {{#if place.location }}\n"
+"                at <span class=\"place-name\">{{>location-string place."
+"location }}</span>\n"
+"              {{/if }}\n"
+"            {{/if }}\n"
+"          {{else}}\n"
+"            {{ action }}\n"
+"    \n"
+"            {{#if place.name }}\n"
+"              <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{else}}\n"
+"              a{{# place.type_starts_with_vowel }}n{{/ place."
+"type_starts_with_vowel }} {{ place.    place_type_label }}\n"
+"            {{/if }}\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
+"          {{/if }}\n"
+"          "
+msgstr ""
+
+#: flavors/pblb/jstemplates/activity-list-item.html:37
+msgid ""
+"\n"
+"        {{#if place.source}}\n"
+"        A new <span class=\"place-type\">{{   place.place_type_label }} idea "
+"</span>from <strong>{{ place.source }}</strong>{{#if place.CounDist}} in "
+"District {{ place.CounDist }}{{/if}} named <span class=\"place-name"
+"\">{{ place.name }}</span>\n"
+"\n"
+"        {{^}}\n"
+"          <strong>\n"
+"          {{#if target.submitter}}\n"
+"            <img src=\"{{ target.submitter.avatar_url }}\" class=\"avatar\" /"
+"> {{ target.submitter.name }}\n"
+"          {{^}}\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
+"{{ target.submitter_name }}\n"
+"          {{/if}}\n"
+"          </strong>\n"
+"  \n"
+"          {{#if is_place }}\n"
+"            {{ action }} a{{#if place.type_starts_with_vowel }}n{{/if }} "
+"<span class=\"place-type\">{{   place.place_type_label }} idea </span>\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
+"            {{#if place.name }}\n"
+"              named <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{^}}\n"
+"              {{#if place.location }}\n"
+"                at <span class=\"place-name\">{{>location-string place."
+"location }}</span>\n"
+"              {{/if }}\n"
+"            {{/if }}\n"
+"          {{else}}\n"
+"            {{ action }}\n"
+"  \n"
+"            {{#if place.name }}\n"
+"              <span class=\"place-name\">{{ place.name }}</span>\n"
+"            {{else}}\n"
+"              a{{# place.type_starts_with_vowel }}n{{/ place."
+"type_starts_with_vowel }} {{ place.  place_type_label }}\n"
+"            {{/if }}\n"
+"            {{#if place.CounDist}} in District {{ place.CounDist }}{{/if}}\n"
+"          {{/if }}\n"
+"          "
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/about.html:1
+msgid "Check out the guidelines</a> to see what ideas can be funded)."
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/about.html:2
+msgid ""
+"Community members will then review your ideas, alongside all the others, and "
+"develop them into full proposals. In the Spring, residents, business owners, "
+"and non-profit representatives ages 14 and older in District 9 will vote on "
+"the top projects to be funded."
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/about.html:3
+msgid ""
+"For information on the nationwide movement for PB, visit the website of the "
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/about.html:4
+msgid ""
+"For more information on participatory budgeting in Long Beach District 9, "
+"visit"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/about.html:5
+msgid ""
+"If you have an idea about how things could work better in your community, "
+"share it on the map "
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/about.html:6
+msgid "PB Long Beach"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/about.html:7
+msgid "Participatory Budgeting Project"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/about.html:8
+msgid ""
+"The top projects will be put on a ballot, and next Spring, all residents "
+"ages 14 and older in participating districts will vote on their top projects."
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/about.html:9
+msgid "and contact the District 9 office at"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/about.html:10
+msgid ""
+"is an innovative democratic process that gives Long Beach District 9 "
+"residents the power to decide how to spend $250k in city capital funds in "
+"their district."
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:1
+msgid "<strong>Anyone</strong> can post ideas."
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:2
+msgid "Basketball court, park benches, or a skate park"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:3
+msgid "Educational programs"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:4
+msgid ""
+"Eligible ideas must be for <strong>\"capital\" projects:</strong> lasting "
+"physical infrastructure for public benefit, like park improvements or new "
+"windows for school classrooms. \"Expense\" projects, like afterschool "
+"programs or expanding bus service, are not eligible."
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:5
+msgid "Eligible:"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:6
+msgid "Examples of Eligible Capital Ideas"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:8
+msgid "More staff for youth programs"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:9
+msgid "Non-Eligible"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:10
+msgid "Public road resurfacing"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:11
+msgid "Repairs to privately-owned sidewalks"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/guidelines.html:12
+msgid ""
+"To add an idea, drag the map until the crosshairs are over the desired "
+"location. <strong>Only ideas within the boundaries of Council District 9 "
+"will be considered.</strong>"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:1
+msgid ""
+"Already submitted an idea? There are many more ways to get involved in "
+"participatory budgeting:"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:2
+msgid "Attend a Neighborhood Assembly"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:3
+msgid "Click here</a> for upcoming assembly dates, times, and locations."
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:4
+msgid "Connect with Us"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:5
+msgid "Contact Us"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:6
+msgid ""
+"Discuss your ideas in person with your friends and neighbors at a District 9 "
+"Neighborhood Assembly! "
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:7
+msgid ""
+"Find us on <a href=\"https://www.facebook.com/rexrichardsonlb\" target="
+"\"_blank\"> Facebook</a> and follow us on <a href=\"https://twitter.com/"
+"rexrichardson\" target=\"_blank\"> Twitter"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:9
+msgid ""
+"Have a question? Feel free to <a href=\"mailto:ginny@participatorybudgeting."
+"org\">contact us"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:10
+msgid ""
+"If you live in a participating Council District (currently just District 9), "
+"don't forget to come out and vote next Spring for which projects to fund! "
+"Stay tuned to <a href=\"http://www.pblongbeach.org\" target=\"_blank"
+"\">pblongbeach.org</a>"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:11
+msgid "Sign up here"
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:12
+msgid ""
+"There are lots of ways to get involved in PB Long Beach! You can help to get "
+"the word out to underserved communities, facilitate small group meetings, "
+"help translate materials, or design flyers. "
+msgstr ""
+
+#: flavors/pblb/jstemplates/pages/involved.html:13
+msgid "VOTE!"
+msgstr ""
+
+#: flavors/pblb/jstemplates/place-detail.html:1
+msgid ""
+"\n"
+"\n"
+"        {{#if source}}\n"
+"          A {{place_type_label location_type }} idea {{#if CounDist}} in "
+"District {{ CounDist }}{{/if}} from <strong>{{ source }}</strong>\n"
+"        {{^}}\n"
+"        <strong class=\"point-submitter\">\n"
+"          {{#if submitter}}\n"
+"            <img src=\"{{ submitter.avatar_url }}\" class=\"avatar\" /> "
+"{{ submitter.name }}\n"
+"          {{^}}\n"
+"            <!-- TODO: FIXME: don't hardcode image URL -->\n"
+"            <img src=\"/static/css/images/user-50.png\" class=\"avatar\" /> "
+"{{ submitter_name }}\n"
+"          {{/if}}\n"
+"            </strong> suggested this {{place_type_label location_type }} "
+"idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. \n"
+"        {{/if}}\n"
+"            <p><small>Near {{>location-string location }}</small></p>\n"
+"\n"
+"        "
+msgstr ""
+
+#: flavors/pblb/templates/index.html:49
+msgid "Culture and Community Facilities"
+msgstr ""
+
+#: flavors/pblb/templates/index.html:52
+msgid "Parks and Recreation"
+msgstr ""
+
+#: flavors/pblb/templates/index.html:54
+msgid "Streets and Sidewalks"
+msgstr ""
+
+#: flavors/pblb/templates/index.html:62
+msgid "Powered by"
+msgstr ""
+
+#: flavors/pblb/templates/index.html:90
+msgid "Approximate location:"
+msgstr ""
+
+#: flavors/pblb/templates/index.html:99
+msgid ""
+"<h5>Thanks!</h5> <p>The following questions are <strong>optional</strong> "
+"and will help us to assess whether these maps are reaching the full "
+"diversity of our community:"
+msgstr ""
+
+#: flavors/pblb/templates/index.html:100
+msgid ""
+"Note: Council district staff will review idea categories and make any "
+"revisions as needed."
+msgstr ""
+
+#: flavors/pblb/templates/index.html:102
+msgid "Your Race/Ethnicity:"
+msgstr ""

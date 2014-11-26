@@ -1,20 +1,13 @@
 # Settings for the app
 app:
   # HTML Title
-  title: _(Participatory Budgeting Long Beach)
+  title: _(City of Cambridge Participatory Budgeting)
   # Header name
-  name: _(Participatory Budgeting Long Beach)
+  name: _(City of Cambridge Participatory Budgeting)
   # Meta description that will show up in Google search results
-  meta_description: _(Participatory Budgeting for Long Beach)
+  meta_description: _(Participatory Budgeting for Cambridge, MA)
   district: 
-  tagline: _(How would YOU spend $250K?)
-
-languages:
-  - code: en
-    label: English
-
-  - code: es
-    label: Español
+  tagline: _(How would YOU spend $500K?)
 
 # Settings for map and layer configs
 map:
@@ -25,8 +18,8 @@ map:
   geocode_field_label: _(Enter an address...)
   options:
     center:
-      lat: 33.87084
-      lng: -118.18002
+      lat: 42.3783903
+      lng: -71.1129096
     zoom: 14
     minZoom: 13
     maxZoom: 18
@@ -637,6 +630,15 @@ place:
           value: 30
         - key: required
           value: true
+    - prompt: _(Your ZIP Code (required, will NOT be shown on the map))
+      type: text
+      name: private-zip
+      sticky: true
+      attrs:
+        - key: size
+          value: 10
+        - key: required
+          value: true
     - prompt: _(Your Phone Number (optional, will NOT be shown on the map))
       type: text
       name: private-phone
@@ -657,48 +659,13 @@ place:
       attrs:
         - key: size
           value: 30
-    - prompt: _(American Indian/Alaskan Native)
-      type: checkbox
-      name: private-race-amerind
+    - prompt: _(Your Race/Ethnicity)
+      type: text
+      name: private-race
+      sticky: true
       attrs:
-        - key: value
-          value: _(American Indian/Alaskan Native)
-    - prompt: _(Asian)
-      type: checkbox
-      name: private-race-asian
-      attrs:
-        - key: value
-          value: _(Asian)
-    - prompt: _(Black or African American)
-      type: checkbox
-      name: private-race-black
-      attrs:
-        - key: value
-          value: _(Black or African American)
-    - prompt: _(Hispanic or Latino/a)
-      type: checkbox
-      name: private-race-hispanic
-      attrs:
-        - key: value
-          value: _(Hispanic or Latino/a)
-    - prompt: _(Native Hawaiian or Pacific Islander)
-      type: checkbox
-      name: private-race-pacific
-      attrs:
-        - key: value
-          value: _(Native Hawaiian or Pacific Islander)
-    - prompt: _(White)
-      type: checkbox
-      name: private-race-white
-      attrs:
-        - key: value
-          value: _(White)
-    - prompt: _(Other)
-      type: checkbox
-      name: private-race-other
-      attrs:
-        - key: value
-          value: _(Other)
+        - key: size
+          value: 30
     - prompt: _(Your Household Income)
       type: select
       options:
