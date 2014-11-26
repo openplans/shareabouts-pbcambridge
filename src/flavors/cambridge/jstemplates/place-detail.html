@@ -37,10 +37,8 @@
             <!-- TODO: FIXME: don't hardcode image URL -->
             <img src="/static/css/images/user-50.png" class="avatar" /> {{ submitter_name }}
           {{/if}}
-            </strong> suggested this {{place_type_label location_type }} idea {{#if CounDist}} in District {{ CounDist }}{{/if}}. 
+            </strong> suggested this {{place_type_label location_type }} idea{{#if CounDist}} in District {{ CounDist }}{{/if}} near {{location.street}}. 
         {{/if}}
-            <p><small>Near {{>location-string location }}</small></p>
-
         {{/_}}
 
         <time datetime="{{ created_datetime }}" class="response-date">{{ pretty_created_datetime }}</time>
@@ -70,9 +68,7 @@
     
     {{ else }}
   
-      {{#if name }} <p>My project idea is: <span class="idea-title">{{ name }}</span></p> {{/if }}
-
-      {{#if description }} <p>Details: {{ description }}</p> {{/if }}
+      {{#if description }} <p>{{ description }}</p> {{/if }}
   
       {{# attachments }}
         <div class="place-item place-attachment-{{ name }}">
