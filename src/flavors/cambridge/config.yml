@@ -731,9 +731,9 @@ pages:
   - title: _(Guidelines)
     slug: guidelines
     name: guidelines
-  - title: _(Get More Involved)
-    slug: involved
-    name: involved
+  - title: _(Cambridge PB Home)
+    external: true
+    url: http://www.cambridgema.gov/yourbudget
 
 notifications:
   on_new_place: true
