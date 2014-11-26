@@ -661,9 +661,9 @@ place:
           value:
         - label: _(Under 10)
           value: under10
-        - label: _(10 - 19)
+        - label: _(10 to 19)
           value: 10to19
-        - label: _(20 - 29)
+        - label: _(20 to 29)
           value: 20to29
         - label: _(30 to 39)
           value: 30to39
