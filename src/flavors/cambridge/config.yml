@@ -646,12 +646,6 @@ place:
       attrs:
         - key: size
           value: 10
-    - prompt: _(I'd like to volunteer)
-      type: checkbox
-      name: private-volunteer
-      attrs:
-        - key: value
-          value: _(Volunteer)
     - prompt: _(Your age)
       type: select
       name: private-age
