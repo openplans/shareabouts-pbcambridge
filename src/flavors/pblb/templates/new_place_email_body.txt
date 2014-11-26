@@ -1,7 +1,7 @@
-Thanks for submitting a new idea to improve your community!
+Thanks for sharing an idea to improve Cambridge!
 
 Here's what you suggested: {{ place.properties.name }}
 
-You can see people's comments on your idea at http://ideas.pblongbeach.org/place/{{ place.id }}.
+You can see people's comments on your idea at http://shareabouts-pbcambridge.herokuapp.com/{{ place.id }}.
 
-For more information on the participatory budgeting process, go to www.pblongbeach.org. 
+For more information on the participatory budgeting process, go to http://www.cambridgema.gov/yourbudget.
