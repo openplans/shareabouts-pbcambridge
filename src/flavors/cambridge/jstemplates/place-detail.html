@@ -37,7 +37,7 @@
             <!-- TODO: FIXME: don't hardcode image URL -->
             <img src="/static/css/images/user-50.png" class="avatar" /> {{ submitter_name }}
           {{/if}}
-            </strong> suggested this {{place_type_label location_type }} idea{{#if CounDist}} in District {{ CounDist }}{{/if}} near {{location.street}}. 
+            </strong> suggested this {{place_type_label location_type }} idea{{#if CounDist}} in District {{ CounDist }}{{/if}}{{#if location.street}} near {{location.street}}{{/if}}. 
         {{/if}}
         {{/_}}
 
