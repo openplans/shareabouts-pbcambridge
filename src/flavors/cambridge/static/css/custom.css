@@ -12,14 +12,14 @@ label { font-size: 1em; text-transform: none; color: #555; }
 .btn,
 .btn:visited,
 .btn:link {
-  background-color: #f93c04;
+  background-color: #7226ff;
   color: #fff;
 }
 .btn:hover, .button:hover, button:hover {
   background-color: #1b194a;
 }
 .btn-primary, .btn-primary:visited, .btn-primary:link {
-  background-color: #f93c04;
+  background-color: #7226ff;
   color: #fff;
 }
 .btn-primary:hover {
@@ -32,7 +32,7 @@ label { font-size: 1em; text-transform: none; color: #555; }
   color: #fff;
 }
 .btn-secondary:hover {
-  background-color: #1b194a;
+  background-color: #7226ff;
   color: #fff;
 }
 
@@ -75,6 +75,12 @@ textarea:focus {
   font-weight: 700;
   text-shadow: none;
 }
+  #site-title a:link,
+  #site-title a:visited {
+    font-size: 1em;
+    color:#000;
+  }
+
 #site-logo {
   float: left;
   height: 1.25em;
@@ -90,7 +96,7 @@ textarea:focus {
 .access a:active, 
 .access a:link {
   color: #fff;
-  background-color: #f93c04;
+  background-color: #7226ff;
   border: 0;
 }
 .access a:hover {
@@ -99,7 +105,7 @@ textarea:focus {
 }
 #auth-nav-container {}
 a#sign-in-btn {
-  color: #f93c04;
+  color: #7226ff;
 }
 a#sign-in-btn:hover {
   color: #1b194a;
@@ -114,11 +120,11 @@ a#sign-in-btn:hover {
   border: 0;
 }
 a#add-place {
-  background-color: #1b194a;
+  background-color: #f93c04;
   color: #fff;
 }
 a#add-place:hover {
-  background-color: #f93c04;
+  background-color: #1b194a;
   color: #fff;
 }
 
@@ -195,8 +201,8 @@ input.geocode-address-field {
 .recent-points li:hover a,
 .recent-points a:hover {
   color: #fff;
-  background-color: #f93c04;
-  border-color: #f93c04;
+  background-color: #7226ff;
+  border-color: #7226ff;
 }
 
 
@@ -399,7 +405,7 @@ p.checkbox + p.select {
     box-shadow: none;
   }
   .access a:hover {
-    background-color: #f93c04;
+    background-color: #7226ff;
     color: #fff;
   }
   .list-toggle-nav {
@@ -416,7 +422,7 @@ p.checkbox + p.select {
     border: 0;
   }
   a.list-toggle-btn:hover {
-    background-color: #f93c04;
+    background-color: #7226ff;
     color: #fff;
   }
   #add-place-btn-container {

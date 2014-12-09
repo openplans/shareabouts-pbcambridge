@@ -566,7 +566,7 @@ place:
   adding_supported: true
   add_button_label: _(Submit an idea)
   # Labels for the buttons that toggle the map and list views
-  show_list_button_label: _(Show as a list)
+  show_list_button_label: _(Show Ideas as a list)
   show_map_button_label: _(Show on a map)
   title: _(Describe your idea)
   action_text: _(suggested)
