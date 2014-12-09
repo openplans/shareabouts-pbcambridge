@@ -4,6 +4,6 @@ Here's what you suggested: {{ place.properties.name }}
 
 You can see people's comments on your idea at http://shareabouts-pbcambridge.herokuapp.com/{{ place.id }}.
 
-For more information on the participatory budgeting process, go to http://www.cambridgema.gov/yourbudget.
+Volunteer as a Budget Delegate!  Help us turn these ideas into concrete project proposals. Sign up here!  http://cambridgema.nationbuilder.com/volunteer
 
-Sign up to volunteer for PB Cambridge at http://cambridgema.nationbuilder.com/volunteer.
+For more information on the participatory budgeting process, go to http://www.cambridgema.gov/yourbudget.
