@@ -37,10 +37,10 @@
     <meta property="og:title" content="{{ config.app.title }}" />
     <meta property="og:description" content="{{ config.app.meta_description }}" />
   {% endif%}
-  
+
   <!-- google translate button -->
    <meta name="google-translate-customization" content="3c552f6e53f80301-15c3ddc023b5ea89-g0cef58dda6812023-25"></meta>
-  
+
 {% endblock %}
 
 <!--
@@ -48,7 +48,7 @@
  -->
 {% block sidebar %}
 
-<ul class="legend">
+<ul class="icons legend">
   <li class="clearfix"><img src="/static/css/images/markers/new/facilities-small.png" width="25" height="30"> {% trans 'Culture and Community Facilities' %}</li>
   <li class="clearfix"><img src="/static/css/images/markers/new/education-small.png" width="25" height="30"> {% trans 'Education' %}</li>
   <li class="clearfix"><img src="/static/css/images/markers/new/tree-small.png" width="25" height="30"> {% trans 'Environment' %}</li>
@@ -56,7 +56,7 @@
   <li class="clearfix"><img src="/static/css/images/markers/new/health-small.png" width="25" height="30"> {% trans 'Public Health and Safety' %}</li>
   <li class="clearfix"><img src="/static/css/images/markers/new/street-sidewalk-small.png" width="25" height="30"> {% trans 'Streets and Sidewalks' %}</li>
 </ul>
-<ul class="legend">
+<ul class="translate legend">
 <div id="google_translate_element"></div><script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,ht,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
@@ -112,7 +112,7 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
       var firstRaceItem = $('#place-private-race-amerind').parent('p');
       $( "<br/><label>{% trans 'Your Race/Ethnicity:' %}</label>" ).insertBefore(firstRaceItem);
     });
-    
+
     var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
     NS.LayerView.prototype.onMarkerClick = function(evt) {
       var self = this;

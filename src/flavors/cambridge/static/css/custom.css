@@ -102,9 +102,9 @@ a.reply-link.btn.btn-small {
   color: #1b194a;
   text-shadow: none;
 }
-.access a, 
-.access a:visited, 
-.access a:active, 
+.access a,
+.access a:visited,
+.access a:active,
 .access a:link {
   color: #fff;
   background-color: #7226ff;
@@ -324,37 +324,37 @@ input.geocode-address-field {
   background-repeat: no-repeat;
 }
 .culture .approved-location-icon {
-  background-image: url(images/markers/new/facilities-small.png); 
+  background-image: url(images/markers/new/facilities-small.png);
 }
 .education .approved-location-icon {
-  background-image: url(images/markers/new/education-small.png); 
+  background-image: url(images/markers/new/education-small.png);
 }
 .environment .approved-location-icon {
-  background-image: url(images/markers/new/tree-small.png); 
+  background-image: url(images/markers/new/tree-small.png);
 }
 .housing .approved-location-icon {
-  background-image: url(images/markers/new/housing-small.png); 
+  background-image: url(images/markers/new/housing-small.png);
 }
 .parks .approved-location-icon {
-  background-image: url(images/markers/new/playground-small.png); 
+  background-image: url(images/markers/new/playground-small.png);
 }
 .health .approved-location-icon {
-  background-image: url(images/markers/new/health-small.png); 
+  background-image: url(images/markers/new/health-small.png);
 }
 .safety .approved-location-icon {
-  background-image: url(images/markers/new/safety-small.png); 
+  background-image: url(images/markers/new/safety-small.png);
 }
 .seniors .approved-location-icon {
-  background-image: url(images/markers/new/seniors-small.png); 
+  background-image: url(images/markers/new/seniors-small.png);
 }
 .streets .approved-location-icon {
-  background-image: url(images/markers/new/street-sidewalk-small.png); 
+  background-image: url(images/markers/new/street-sidewalk-small.png);
 }
 .transit .approved-location-icon {
-  background-image: url(images/markers/new/transit-small.png); 
+  background-image: url(images/markers/new/transit-small.png);
 }
 .youth .approved-location-icon {
-  background-image: url(images/markers/new/youth-small.png); 
+  background-image: url(images/markers/new/youth-small.png);
 }
 
 /* Promotion: Voting & Sharing */
@@ -407,9 +407,9 @@ p.checkbox + p.select {
   .access li {
     margin: 0;
   }
-  .access a, 
-  .access a:visited, 
-  .access a:active, 
+  .access a,
+  .access a:visited,
+  .access a:active,
   .access a:link {
     background-color: #fff;
     color: #1b194a;
@@ -423,8 +423,8 @@ p.checkbox + p.select {
     font-size: 0.75em;
     float: left;
   }
-  a.list-toggle-btn:visited, 
-  a.list-toggle-btn:active, 
+  a.list-toggle-btn:visited,
+  a.list-toggle-btn:active,
   a.list-toggle-btn:link {
     background-color: #fff;
     color: #1b194a;
@@ -439,6 +439,21 @@ p.checkbox + p.select {
   #add-place-btn-container {
     background-color: transparent;
   }
+
+  /* Make the legend taller, because we no longer show
+   * activity (static map data).
+   */
+  .legend.translate {
+    border-top: 1px solid #ddd;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+  }
+  .legend.icons {
+    height: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media only screen and (min-width: 70em) {
@@ -446,4 +461,27 @@ p.checkbox + p.select {
   .list-toggle-nav {
     font-size: 0.875em;
   }
+}
+
+#auth-nav-container {
+  display: none;
+}
+.or-sign-in {
+  display: none;
+}
+div #reply {
+  display: none;
+}
+a.reply-link.btn.btn-small {
+  display: none;
+}
+
+.support .user-support:hover {
+  background-color: #7226ff;
+  color: #fff;
+  cursor: default;
+}
+.support .user-support:hover label {
+  background-color: transparent;
+  color: #fff;
 }
