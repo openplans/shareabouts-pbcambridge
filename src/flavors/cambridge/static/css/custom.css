@@ -84,16 +84,6 @@ input:checked + .detail-text {
   display: inline;
 }
 
-/* hiding comment fields at end of submissions */
-
-div #reply {
-  display: none;
-}
-
-a.reply-link.btn.btn-small {
-  display: none;
-}
-
 
 /* =The Site Header
 -------------------------------------------------------------- */
