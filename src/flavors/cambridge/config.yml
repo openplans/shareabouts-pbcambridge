@@ -749,16 +749,13 @@ support:
   anonymous_name: _(Someone)
 
 pages:
-  - title: _(About)
-    slug: about
-    name: about
-    start_page: true
-  - title: _(Guidelines)
-    slug: guidelines
-    name: guidelines
   - title: _(Cambridge PB Home)
     external: true
     url: http://www.cambridgema.gov/yourbudget
+  - title: _(Guidelines)
+    slug: guidelines
+    name: guidelines
+    start_page: true
 
 notifications:
   on_new_place: true
