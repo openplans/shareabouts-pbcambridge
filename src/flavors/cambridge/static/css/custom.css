@@ -439,21 +439,6 @@ p.checkbox + p.select {
   #add-place-btn-container {
     background-color: transparent;
   }
-
-  /* Make the legend taller, because we no longer show
-   * activity (static map data).
-   */
-  .legend.translate {
-    border-top: 1px solid #ddd;
-    position: absolute;
-    width: 100%;
-    box-sizing: border-box;
-    bottom: 0;
-  }
-  .legend.icons {
-    height: 100%;
-    box-sizing: border-box;
-  }
 }
 
 @media only screen and (min-width: 70em) {
@@ -463,7 +448,14 @@ p.checkbox + p.select {
   }
 }
 
-#auth-nav-container {
+
+
+/* =============
+ * Disable input
+ * =============
+ */
+
+/*#auth-nav-container {
   display: none;
 }
 .or-sign-in {
@@ -485,3 +477,27 @@ a.reply-link.btn.btn-small {
   background-color: transparent;
   color: #fff;
 }
+*/
+
+
+/* ==========
+ * Static map
+ * ==========
+ * Make the legend taller, because we no longer show
+ * activity (static map data).
+ */
+
+/*@media only screen and (min-width: 60em) {
+  .legend.translate {
+    border-top: 1px solid #ddd;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+  }
+  .legend.icons {
+    height: 100%;
+    box-sizing: border-box;
+  }
+}
+*/
