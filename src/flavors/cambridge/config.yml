@@ -575,42 +575,6 @@ place:
   submit_button_label: _(Share my idea)
   location_item_name: location
   items:
-    - prompt: _(My project idea is...)
-      type: text
-      name: name
-      attrs:
-        - key: placeholder
-          value: _(...)
-        - key: size
-          value: 30
-        - key: maxlength
-          value: 100
-    - prompt: _(My idea is needed because...)
-      type: textarea
-      name: description
-      attrs:
-        - key: placeholder
-          value: _(What need does your idea address? Who does it benefit? Share any relevant details about your idea.)
-        - key: maxlength
-          value: 1000
-    - prompt: _(Pick a category for your idea)
-      type: select
-      options:
-        - label: _(Please choose...)
-          value:
-        - label: _(Culture & Community Facilities)
-          value: culture
-        - label: _(Education)
-          value: education
-        - label: _(Environment)
-          value: environment
-        - label: _(Parks & Recreation)
-          value: parks
-        - label: _(Public Health & Safety)
-          value: health
-        - label: _(Streets & Sidewalks)
-          value: streets
-      name: location_type
     - prompt: _(Your Name (required, will be shown on the map))
       type: text
       name: submitter_name
@@ -621,6 +585,13 @@ place:
           value: 30
         - key: required
           value: true
+    - prompt: _(Your Phone Number (optional, will NOT be shown on the map))
+      type: text
+      name: private-phone
+      sticky: true
+      attrs:
+        - key: size
+          value: 10
     - prompt: _(Your Email (required, will NOT be shown on the map))
       type: text
       name: private-email
@@ -639,26 +610,118 @@ place:
           value: 10
         - key: required
           value: true
-    - prompt: _(Your Phone Number (optional, will NOT be shown on the map))
+    - prompt: _(My project idea is...)
       type: text
-      name: private-phone
+      name: name
+      optional: false
+      attrs:
+        - key: placeholder
+          value: _(...)
+        - key: size
+          value: 30
+        - key: maxlength
+          value: 100
+        - key: required
+          value: true
+    - prompt: _(My idea is needed because...)
+      type: textarea
+      name: description
+      optional: false
+      attrs:
+        - key: placeholder
+          value: _(What need does your idea address? Who does it benefit? Share any relevant details about your idea.)
+        - key: maxlength
+          value: 1000
+        - key: required
+          value: true
+    - prompt: _(Pick a category for your idea)
+      type: select
+      options:
+        - label: _(Please choose...)
+          value:
+        - label: _(Culture & Community Facilities)
+          value: culture
+        - label: _(Education)
+          value: education
+        - label: _(Environment)
+          value: environment
+        - label: _(Parks & Recreation)
+          value: parks
+        - label: _(Public Health & Safety)
+          value: health
+        - label: _(Streets & Sidewalks)
+          value: streets
+      name: location_type
+      attrs:
+        - key: required
+          value: true
+    - prompt: _(How did you hear about participatory budgeting (please choose all that apply...)?)
+      type: checkbox
+      name: heard_about_pb
       sticky: true
       attrs:
-        - key: size
-          value: 10
+        - key: required
+          value: true
+      options:
+        - label: _(City Council member)
+          value: city-council-member
+        - label: _(City website)
+          value: city-website
+        - label: _(Community group)
+          value: community-group
+          other: true
+        - label: _(Email)
+          value: email
+        - label: _(Event)
+          value: event
+          other: true
+        - label: _(Flyer/door hanger/sign/banner)
+          value: flyer/door-hanger/sign/banner
+        - label: _(Facebook/Twitter)
+          value: facebook/twitter
+        - label: _(Newspaper/TV/radio)
+          value: newspaper-tv-radio
+          other: true
+        - label: _(School)
+          value: school
+          other: true
+        - label: _(Word of mouth)
+          value: word-of-mouth
+        - label: _(Other)
+          value: other
+          other: true
+    - prompt: _(After idea collection closes on August 31, volunteer Budget Delegates will work from September- November to research, assess, and prioritize project ideas to determine which final proposals will appear on the ballot in December for a public vote.  Would you like to volunteer as a Budget Delegate?)
+      name: be_a_delegate
+      sticky: true
+      optional: false
+      type: select
+      attrs:
+        - key: required
+          value: true
+      options:
+      - label: _(Please choose...)
+        value:
+      - label: _(Yes)
+        value: yes
+      - label: _(No)
+        value: no
+      - label: _(Maybe)
+        value: maybe
     - prompt: _(Your age)
       type: select
       name: private-age
       sticky: true
+      optional: false
+      attrs:
+        - key: required
+          value: true
       options:
         - label: _(Please choose...)
           value:
-        - label: _(Under 10)
-          value: under10
-        - label: _(10 to 19)
-          value: 10to19
-        - label: _(20 to 29)
-          value: 20to29
+        - label: _(Under 18)
+          value: under18
+        - label: _(18 to 29)
+          value: 18to29
         - label: _(30 to 39)
           value: 30to39
         - label: _(40 to 49)
@@ -669,12 +732,20 @@ place:
           value: 60to69
         - label: _(70 to 79)
           value: 70to79
-        - label: _(80 and older)
-          value: 80orOlder
+        - label: _(80 to 89)
+          value: 80to89
+        - label: _(90 and older)
+          value: 90-or-older
+        - label: _(Prefer not to answer)
+          value: no-answer
     - prompt: _(Your gender)
       type: select
       name: private-gender
       sticky: true
+      optional: false
+      attrs:
+        - key: required
+          value: true
       options:
         - label: _(Please choose...)
           value:
@@ -684,38 +755,91 @@ place:
           value: male
         - label: _(Other)
           value: other
+        - label: _(Prefer not to answer)
+          value: no-answer
     - prompt: _(Your Race/Ethnicity)
-      type: text
+      type: checkbox
       name: private-race
       sticky: true
+      optional: false
       attrs:
-        - key: size
-          value: 30
+        - key: required
+          value: true
+      options:
+        - label: _(American Indian or Alaska native)
+          value: american-indian-or-alaska-native
+        - label: _(Asian)
+          value: asian
+        - label: _(Black or African American)
+          value: black-or-african-american
+        - label: _(Hawaii native or Pacific Islander)
+          value: hawaii-native-or-pacific-islander
+        - label: _(White)
+          value: white
+        - label: _(Hispanic)
+          value: hispanic
+        - label: _(Non-Hispanic)
+          value: non-hispanic
+        - label: _(Prefer not to answer)
+          value: no-answer
     - prompt: _(Your Household Income)
       type: select
+      attrs:
+        - key: required
+          value: true
       options:
         - label: _(Please choose...)
           value:
-        - label: _(Under $10,000)
-          value: under10
-        - label: _($10,000 - $14,999)
-          value: 10to15
-        - label: _($15,000 - $24,999)
-          value: 15to25
-        - label: _($25,000 - $34,999)
-          value: 25to35
-        - label: _($35,000 - $49,999)
-          value: 35to50
-        - label: _($50,000 - $74,999)
-          value: 50to75
-        - label: _($75,000 - $99,999)
-          value: 75to100
-        - label: _($100,000 - $149,999)
-          value: 100to150
-        - label: _($150,000 or more)
-          value: 150ormore
+        - label: _(Less than $30,000)
+          value: under30
+        - label: _($30,000 - $59,999)
+          value: 30to59
+        - label: _($60,000 - $89,999)
+          value: 60to89
+        - label: _($90,000 - $119,999)
+          value: 90to119
+        - label: _($120,000 or more)
+          value: 120ormore
+        - label: _(Prefer not to answer)
+          value: no-answer
       name: private-income
       sticky: true
+      optional: false
+    - prompt: _(Number of people in your household)
+      type: select
+      attrs:
+        - key: required
+          value: true
+      options:
+        - label: _(Please choose...)
+          value:
+        - label: _(1)
+          value: 1
+        - label: _(2)
+          value: 2
+        - label: _(3)
+          value: 3
+        - label: _(4)
+          value: 4
+        - label: _(5)
+          value: 5
+        - label: _(6)
+          value: 6
+        - label: _(7)
+          value: 7
+        - label: _(8)
+          value: 8
+        - label: _(9)
+          value: 9
+        - label: _(10)
+          value: 10
+        - label: _(More than 10)
+          value: more-than-10
+        - label: _(Prefer not to answer)
+          value: no-answer
+      name: private-household_size
+      sticky: true
+      optional: false
 
 survey:
   submission_type: comments
@@ -757,6 +881,6 @@ pages:
     name: guidelines
     start_page: true
 
-notifications:
-  on_new_place: true
-  submitter_email_field: "private-email"
+# notifications:
+#   on_new_place: true
+  # submitter_email_field: "private-email"

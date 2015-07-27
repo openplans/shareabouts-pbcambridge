@@ -1,9 +1,9 @@
         <p class="drag-marker-instructions">{{#_}}Drag the map to your location.{{/_}}</p>
         <p class="drag-marker-warning is-visuallyhidden">{{#_}}It looks like you didn't set your location yet. Please drag the map to your location.{{/_}}</p>
 
-        <h4 class="">{{ place_config.title }}</h4>
+        {{!-- <h4 class="">{{ place_config.title }}</h4> --}}
 
-        <p>Ideas must be for <strong>capital</strong> projects – please <a href="http://shareabouts-pbcambridge.herokuapp.com/page/guidelines" title="City of Cambridge Participatory Budgeting">see the guidelines here</a>.</p>
+        {{!-- <p>Ideas must be for <strong>capital</strong> projects – please <a href="/page/guidelines" title="City of Cambridge Participatory Budgeting Guidelines">see the guidelines here</a>.</p> --}}
 
         <form id="place-form" class="place-form clearfix">
 
@@ -11,11 +11,23 @@
             <input type="hidden" name="visible" value="on">
             <input type="hidden" name="user_token" value="{{{ user_token }}}">
 
-            <!-- TODO We need user data in the template to know whether a user
-                      is already logged in.
-              -->
-
             {{# place_config.items }}
+
+            {{! Heading -- Separate each section by a heading }}
+            {{#is name 'submitter_name'}}
+            <h4>{{#_}}Contact Information{{/_}}</h4>
+            <p>{{#_}}Please tell us how we can contact you about your idea.{{/_}}</p>
+            {{/is}}
+
+            {{#is name 'name'}}
+            <h4>{{#_}}Describe your idea{{/_}}</h4>
+            <p>{{#_}}Ideas must be for <strong>capital</strong> projects – please <a href="/page/guidelines" title="City of Cambridge Participatory Budgeting Guidelines">see the guidelines here</a>.{{/_}}</p>
+            {{/is}}
+
+            {{#is name 'private-age'}}
+            <h4>{{#_}}Personal Information{{/_}}</h4>
+            <p>{{#_}}<strong>Please tell us a little more about yourself to help us assess whether we are reaching the full diversity of our community.</strong>{{/_}}</p>
+            {{/is}}
 
             <p class="{{ type }}">
               {{#is_authenticated}}
@@ -26,8 +38,8 @@
               <label for="place-{{ name }}">{{ prompt }} {{# optional }}<small>({{#_}}optional{{/_}})</small>{{/ optional }}</label>
               {{/is_authenticated}}
 
-
-              {{#if is_input}}
+              {{#isAny type 'textarea' 'select' 'file' 'checkbox'}}
+              {{else}}
                 {{#is_submitter_name}}
                   {{^is_authenticated}}
                     <input id="place-{{ name }}" name="{{ name }}" type="{{ type }}" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}} value="{{get_value ../../../.. name}}">
@@ -36,7 +48,7 @@
                 {{^}}
                   <input id="place-{{ name }}" name="{{ name }}" type="{{ type }}" {{#attrs}} {{ key }}="{{ value }}"{{/attrs}} value="{{get_value ../../.. name}}">
                 {{/is_submitter_name}}
-              {{/if}}
+              {{/isAny}}
 
               {{#is_textarea}}
               <textarea id="place-{{ name }}" name="{{ name }}"{{#attrs}} {{ key }}="{{ value }}"{{/attrs}}>{{get_value ../.. name}}</textarea>
@@ -55,6 +67,25 @@
                 {{/select_item_value}}
               </select>
               {{/is_select}}
+
+              {{#is type 'checkbox'}}
+              {{#select_item_value ../.. name}}
+              {{#each options}}
+                {{#if label}}
+                <div>
+                  <label>
+                    <input type="checkbox" value="{{value}}" name={{../../../../name}}>
+                    {{label}}{{#if other}}<span class="detail-text">:
+                      <input type="text" name="{{../../../../../name}}-{{value}}-detail" value="{{get_value ../../../../../.. ../../../../../name}}">
+                    </span>{{/if}}
+                  </label>
+                </div>
+                {{else}}
+                <div><label><input type="checkbox" value="{{.}}" name={{../name}}> {{.}}</label></div>
+                {{/if}} {{! label }}
+              {{/each}} {{! options }}
+              {{/select_item_value}}
+              {{/is}}
 
               {{#is_file}}
               <!--[if lt IE 10 ]><br>Sorry, your browser isn't compatible with our file upload method.<![endif]-->

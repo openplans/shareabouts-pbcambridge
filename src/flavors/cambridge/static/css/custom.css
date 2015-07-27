@@ -63,6 +63,24 @@ textarea:focus {
   outline: 2px solid #f93c04;
 }
 
+.detail-text input[type=text],
+.detail-text input[type=text]:focus {
+  display: inline-block;
+  width: 10em;
+  height: 1.25em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+.detail-text {
+  display: none;
+}
+
+input:checked + .detail-text {
+  display: inline;
+}
 
 /* hiding comment fields at end of submissions */
 
