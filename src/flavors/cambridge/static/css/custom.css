@@ -4,11 +4,12 @@
 
 /* Typography */
 body, select, input, textarea {
-  font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif;
+  font-family: "Lato", Verdana, Segoe, sans-serif;
 }
 label { font-size: 1em; text-transform: none; color: #555; }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", Tahoma, sans-serif;
+  font-weight: 700;
 }
 
 /* Buttons */
