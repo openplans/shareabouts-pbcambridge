@@ -2,6 +2,9 @@
 
 <header class="place-header clearfix">
 
+  <div><small><strong>My project idea is&hellip;</strong></small></div>
+  <h3>{{name}}</h3>
+
   <span class="place-submission-details">
     {{#_}}
     <strong class="point-submitter">
@@ -22,9 +25,9 @@
 <section class="place-items">
   {{#_}}
     {{#if name}}
-      <div><small><strong>My project idea is&hellip;</strong></small></div>
+      {{!-- <div><small><strong>My project idea is&hellip;</strong></small></div> --}}
       {{!-- <h6>My project idea is&hellip;</h6> --}}
-      <p>{{name}}</p>
+      {{!-- <p>{{name}}</p> --}}
     {{/if}}
 
     {{#if description}}
