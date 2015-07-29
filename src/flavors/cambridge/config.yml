@@ -880,6 +880,30 @@ pages:
     slug: guidelines
     name: guidelines
     start_page: true
+  - title: Filter Ideas
+    slug: filter-type
+    pages:
+      - title: All
+        external: true
+        url: /filter/all
+      - title: _(Culture & Community Facilities)
+        url: /filter/culture
+        external: true
+      - title: _(Education)
+        url: /filter/education
+        external: true
+      - title: _(Environment)
+        url: /filter/environment
+        external: true
+      - title: _(Parks & Recreation)
+        url: /filter/parks
+        external: true
+      - title: _(Public Health & Safety)
+        url: /filter/health
+        external: true
+      - title: _(Streets & Sidewalks)
+        url: /filter/streets
+        external: true
 
 # notifications:
 #   on_new_place: true

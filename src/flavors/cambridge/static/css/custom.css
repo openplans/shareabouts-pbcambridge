@@ -467,6 +467,20 @@ p.checkbox + p.select {
 }
 
 
+#current-filter-type {
+  position: absolute;
+  width: 100%;
+  margin-top: -0.3em;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+#current-filter-type.unfiltered { background: none; border: none; }
+
+
+
 
 /* =============
  * Disable input
