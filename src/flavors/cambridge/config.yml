@@ -780,6 +780,9 @@ place:
           value: hispanic
         - label: _(Non-Hispanic)
           value: non-hispanic
+        - label: _(Other)
+          value: other
+          other: true
         - label: _(Prefer not to answer)
           value: no-answer
     - prompt: _(Your Household Income)
