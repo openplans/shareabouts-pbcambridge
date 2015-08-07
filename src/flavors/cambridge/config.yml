@@ -908,6 +908,6 @@ pages:
         url: /filter/streets
         external: true
 
-# notifications:
-#   on_new_place: true
-  # submitter_email_field: "private-email"
+notifications:
+  on_new_place: true
+  submitter_email_field: "private-email"
